@@ -188,7 +188,10 @@ def create_network(nodes, labels, base_node_color, edges, bg_color):
 st.set_page_config(layout="wide")
 
 # Sidebar to upload GEDCOM file and select colors
-st.sidebar.image("logo.png", use_column_width=True)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+
+st.sidebar.image(IMAGE_PATH, use_column_width=True)
 
 uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "gedcom"])
 
@@ -240,6 +243,6 @@ st.sidebar.markdown(""" **Instructions:** <div style="text-align: justify;"> \n
 3. Choose the colors of your preference.  
 4. Click 'Generate Network'. \n 
 Please be patient while the network loads – time increases with the number of individuals and connections.  
-For better results the after generated the network goes through a physics simulation.  
+After generation the network goes through a physics simulation to better distribute nodes.  
 Nodes can also be moved to wield better separations. </div> \n 
 **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
