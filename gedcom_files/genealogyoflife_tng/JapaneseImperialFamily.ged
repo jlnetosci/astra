@@ -1,0 +1,1634 @@
+0 HEAD
+1 SOUR PAF 2.2
+1 DEST PAF
+1 DATE 03 MAR 95
+1 FILE p-imp.ged      from japan.prn     
+1 CHAR ANSEL
+0 @S1@ SUBM
+1 NAME Doug White
+1 ADDR School Social Science
+2 CONT UC Irvine 92717
+2 CONT Internet Email address: drwhite@uci.edu
+1 PHON 714-824-5893
+0 @I1@ INDI
+1 NAME 1. Jimmu                                
+1 SEX M
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME 2. Suizei                               
+1 SEX M
+1 FAMS @F2@
+1 FAMC @F1@
+0 @I3@ INDI
+1 NAME 3. Annei                                
+1 SEX M
+1 FAMS @F3@
+1 FAMC @F2@
+0 @I4@ INDI
+1 NAME 4. Itoku                                
+1 SEX M
+1 FAMS @F4@
+1 FAMC @F3@
+0 @I5@ INDI
+1 NAME 5. K?sh?                                
+1 SEX M
+1 FAMS @F5@
+1 FAMC @F4@
+0 @I6@ INDI
+1 NAME 6. K?an                                 
+1 SEX M
+1 FAMS @F6@
+1 FAMC @F5@
+0 @I7@ INDI
+1 NAME 7. K?rei                                
+1 SEX M
+1 FAMS @F7@
+1 FAMC @F6@
+0 @I8@ INDI
+1 NAME 8. K?gen                                
+1 SEX M
+1 FAMS @F8@
+1 FAMC @F7@
+0 @I9@ INDI
+1 NAME 9. Kaika                                
+1 SEX M
+1 FAMS @F9@
+1 FAMC @F8@
+0 @I10@ INDI
+1 NAME 10. Sujin                               
+1 SEX M
+1 FAMS @F10@
+1 FAMC @F9@
+0 @I11@ INDI
+1 NAME 11. Suinin                              
+1 SEX M
+1 FAMS @F11@
+1 FAMC @F10@
+0 @I12@ INDI
+1 NAME 12. Keik?                               
+1 SEX M
+1 FAMS @F12@
+1 FAMC @F11@
+0 @I13@ INDI
+1 NAME 13. Seimu                               
+1 SEX M
+1 FAMS @F13@
+1 FAMC @F12@
+0 @I14@ INDI
+1 NAME Brother                                 
+1 SEX M
+1 FAMS @F14@
+1 FAMC @F12@
+0 @I15@ INDI
+1 NAME 14. Chuai                               
+1 SEX M
+1 FAMS @F15@
+1 FAMC @F14@
+0 @I16@ INDI
+1 NAME 15. ?jin                                
+1 SEX M
+1 FAMS @F16@
+1 FAMC @F15@
+0 @I17@ INDI
+1 NAME 16. Nintoku                             
+1 SEX M
+1 FAMS @F17@
+1 FAMC @F16@
+0 @I18@ INDI
+1 NAME 17. Richu                               
+1 SEX M
+1 FAMS @F18@
+1 FAMC @F17@
+0 @I19@ INDI
+1 NAME 18. Hanzei                              
+1 SEX M
+1 FAMS @F19@
+1 FAMC @F17@
+0 @I20@ INDI
+1 NAME 19. Ingy?                               
+1 SEX M
+1 FAMS @F20@
+1 FAMC @F17@
+0 @I21@ INDI
+1 NAME 20. Ank?                                
+1 SEX M
+1 FAMS @F21@
+1 FAMC @F20@
+0 @I22@ INDI
+1 NAME 21. Yuryaku                             
+1 SEX M
+1 FAMS @F22@
+1 FAMC @F20@
+0 @I23@ INDI
+1 NAME 22. Seinei                              
+1 SEX M
+1 FAMS @F23@
+1 FAMC @F22@
+0 @I186@ INDI
+1 NAME 23Son                                   
+1 SEX M
+1 FAMS @F24@
+1 FAMC @F17@
+0 @I24@ INDI
+1 NAME 23. Kenz?                               
+1 SEX M
+1 FAMS @F25@
+1 FAMC @F23@
+0 @I25@ INDI
+1 NAME 24. Ninken                              
+1 SEX M
+1 FAMS @F26@
+1 FAMC @F23@
+0 @I26@ INDI
+1 NAME 25. Buretsu                             
+1 SEX M
+1 FAMS @F27@
+1 FAMC @F26@
+0 @I27@ INDI
+1 NAME Brother                                 
+1 SEX M
+1 FAMS @F28@
+1 FAMC @F17@
+0 @I28@ INDI
+1 NAME Son                                     
+1 SEX M
+1 FAMS @F29@
+1 FAMC @F28@
+0 @I29@ INDI
+1 NAME 26. Keiti                               
+1 SEX M
+1 FAMS @F30@
+1 FAMC @F29@
+0 @I30@ INDI
+1 NAME 27. Ankan                               
+1 SEX M
+1 FAMS @F31@
+1 FAMC @F30@
+0 @I31@ INDI
+1 NAME 28. Senka                               
+1 SEX M
+1 FAMS @F32@
+1 FAMC @F30@
+0 @I32@ INDI
+1 NAME 29. Kinmei                              
+1 SEX M
+1 FAMS @F33@
+1 FAMC @F30@
+0 @I33@ INDI
+1 NAME 30. Bidatsu                             
+1 SEX M
+1 FAMS @F34@
+1 FAMS @F38@
+1 FAMC @F33@
+0 @I34@ INDI
+1 NAME 33. Suika                               
+1 SEX F
+1 FAMS @F34@
+1 FAMC @F33@
+0 @I35@ INDI
+1 NAME 31. Y?mei                               
+1 SEX M
+1 FAMS @F35@
+1 FAMC @F33@
+0 @I36@ INDI
+1 NAME 32. Sushun                              
+1 SEX M
+1 FAMS @F36@
+1 FAMC @F33@
+0 @I37@ INDI
+1 NAME Oshizakahikobiton?e                     
+1 SEX M
+1 FAMS @F37@
+1 FAMC @F38@
+0 @I38@ INDI
+1 NAME 34. Jomei                               
+1 SEX M
+1 FAMS @F39@
+1 FAMS @F45@
+1 FAMC @F37@
+0 @I40@ INDI
+1 NAME 35. K?gyoku/37. Saimei                  
+1 SEX F
+1 FAMS @F39@
+1 FAMC @F40@
+0 @I39@ INDI
+1 NAME Prince Chinu                            
+1 SEX M
+1 FAMS @F40@
+1 FAMC @F37@
+0 @I41@ INDI
+1 NAME 36. K?tuku                              
+1 SEX M
+1 FAMS @F41@
+1 FAMC @F37@
+0 @I42@ INDI
+1 NAME 38. Tenchi                              
+1 SEX M
+1 FAMS @F42@
+1 FAMC @F39@
+0 @I43@ INDI
+1 NAME 39. K?bun                               
+1 SEX M
+1 FAMS @F43@
+1 FAMC @F42@
+0 @I44@ INDI
+1 NAME 40. Tenmu                               
+1 SEX M
+1 FAMS @F44@
+1 FAMC @F45@
+0 @I45@ INDI
+1 NAME 41. Jit?                                
+1 SEX F
+1 FAMS @F46@
+1 FAMC @F42@
+0 @I46@ INDI
+1 NAME Prince Kusakabe                         
+1 SEX M
+1 FAMS @F47@
+1 FAMC @F44@
+0 @I47@ INDI
+1 NAME Fujiwara no Fuhito                      
+1 SEX M
+1 FAMS @F48@
+0 @I49@ INDI
+1 NAME 42. Monmu                               
+1 SEX M
+1 FAMS @F49@
+1 FAMC @F47@
+0 @I48@ INDI
+1 NAME Miyako                                  
+1 SEX F
+1 FAMS @F49@
+1 FAMC @F48@
+0 @I50@ INDI
+1 NAME 43. Genmei                              
+1 SEX F
+1 FAMS @F50@
+1 FAMC @F42@
+0 @I51@ INDI
+1 NAME 44. Gensh?                              
+1 SEX F
+1 FAMS @F51@
+1 FAMC @F47@
+0 @I52@ INDI
+1 NAME 45. Sh?mu                               
+1 SEX M
+1 FAMS @F52@
+1 FAMC @F49@
+0 @I53@ INDI
+1 NAME K?my?                                   
+1 SEX F
+1 FAMS @F52@
+1 FAMC @F48@
+0 @I54@ INDI
+1 NAME 46. K?ken/48. Shotoku                   
+1 SEX F
+1 FAMS @F53@
+1 FAMC @F52@
+0 @I55@ INDI
+1 NAME Toneri-?                                
+1 SEX M
+1 FAMS @F54@
+1 FAMC @F45@
+0 @I56@ INDI
+1 NAME 47. Junnin                              
+1 SEX M
+1 FAMS @F55@
+1 FAMC @F54@
+0 @I57@ INDI
+1 NAME Shiki-?                                 
+1 SEX M
+1 FAMS @F56@
+1 FAMC @F42@
+0 @I58@ INDI
+1 NAME 49. K?nin                               
+1 SEX M
+1 FAMS @F57@
+1 FAMC @F56@
+0 @I59@ INDI
+1 NAME 50. Kanmu/Kwammu                        
+1 SEX F
+1 FAMS @F58@
+1 FAMC @F57@
+0 @I60@ INDI
+1 NAME 51. Heizi/Heij?                         
+1 SEX M
+1 FAMS @F59@
+1 FAMC @F58@
+0 @I61@ INDI
+1 NAME 52. Saga                                
+1 SEX M
+1 FAMS @F60@
+1 FAMC @F58@
+0 @I62@ INDI
+1 NAME 53. Junna                               
+1 SEX M
+1 FAMS @F61@
+1 FAMC @F62@
+0 @I59@ INDI
+1 NAME                                         
+1 SEX M
+1 FAMS @F62@
+0 @I63@ INDI
+1 NAME 54. Ninmy?                              
+1 SEX M
+1 FAMS @F63@
+1 FAMC @F60@
+0 @I64@ INDI
+1 NAME 55. Montoku                             
+1 SEX M
+1 FAMS @F64@
+1 FAMC @F63@
+0 @I65@ INDI
+1 NAME 56. Seiwa                               
+1 SEX M
+1 FAMS @F65@
+1 FAMC @F64@
+0 @I66@ INDI
+1 NAME 57. Y?zei                               
+1 SEX M
+1 FAMS @F66@
+1 FAMC @F65@
+0 @I67@ INDI
+1 NAME 58. K?k?                                
+1 SEX M
+1 FAMS @F67@
+1 FAMC @F63@
+0 @I68@ INDI
+1 NAME 59. Uda                                 
+1 SEX M
+1 FAMS @F68@
+1 FAMC @F67@
+0 @I69@ INDI
+1 NAME 60. Daigo                               
+1 SEX M
+1 FAMS @F69@
+1 FAMC @F68@
+0 @I70@ INDI
+1 NAME 61. Suzaku                              
+1 SEX M
+1 FAMS @F70@
+1 FAMC @F69@
+0 @I71@ INDI
+1 NAME 62. Murakami                            
+1 SEX M
+1 FAMS @F71@
+1 FAMC @F69@
+0 @I72@ INDI
+1 NAME 63. Reizei                              
+1 SEX M
+1 FAMS @F72@
+1 FAMC @F71@
+0 @I73@ INDI
+1 NAME 64. Enyu                                
+1 SEX M
+1 FAMS @F73@
+1 FAMC @F71@
+0 @I74@ INDI
+1 NAME 65. Kazan                               
+1 SEX M
+1 FAMS @F74@
+1 FAMC @F72@
+0 @I75@ INDI
+1 NAME 66. Ichij?                              
+1 SEX M
+1 FAMS @F75@
+1 FAMS @F76@
+1 FAMC @F73@
+0 @I78@ INDI
+1 NAME Akiko                                   
+1 SEX F
+1 FAMS @F75@
+1 FAMC @F77@
+0 @I85@ INDI
+1 NAME Fujiwara no Sh?shi                      
+1 SEX F
+1 FAMS @F76@
+0 @I76@ INDI
+1 NAME Fujiwara no Michinaga                   
+1 SEX M
+1 FAMS @F77@
+0 @I77@ INDI
+1 NAME Minamoto no Rinshi                      
+1 SEX F
+1 FAMS @F77@
+0 @I79@ INDI
+1 NAME 67. Sanj?                               
+1 SEX M
+1 FAMS @F78@
+1 FAMC @F72@
+0 @I80@ INDI
+1 NAME Kenshi                                  
+1 SEX F
+1 FAMS @F78@
+1 FAMC @F77@
+0 @I81@ INDI
+1 NAME 68. Go-Ichij?                           
+1 SEX M
+1 FAMS @F79@
+1 FAMC @F76@
+0 @I82@ INDI
+1 NAME Toshiko                                 
+1 SEX F
+1 FAMS @F79@
+1 FAMC @F77@
+0 @I83@ INDI
+1 NAME 69. Go-Suzaku                           
+1 SEX M
+1 FAMS @F80@
+1 FAMC @F76@
+0 @I84@ INDI
+1 NAME Yoshiko                                 
+1 SEX F
+1 FAMS @F80@
+1 FAMC @F77@
+0 @I86@ INDI
+1 NAME 70. Go-Reizei                           
+1 SEX M
+1 FAMS @F81@
+1 FAMS @F84@
+1 FAMC @F80@
+0 @I87@ INDI
+1 NAME Hiroko                                  
+1 SEX F
+1 FAMS @F81@
+1 FAMC @F82@
+0 @I88@ INDI
+1 NAME Fujiwara no Yorimichi                   
+1 SEX M
+1 FAMS @F82@
+1 FAMC @F77@
+0 @I89@ INDI
+1 NAME 71. Go-Sanj?                            
+1 SEX M
+1 FAMS @F83@
+1 FAMC @F84@
+0 @I90@ INDI
+1 NAME 72. Shirakawa                           
+1 SEX M
+1 FAMS @F85@
+1 FAMC @F84@
+0 @I91@ INDI
+1 NAME 73. Horikawa                            
+1 SEX M
+1 FAMS @F86@
+1 FAMC @F85@
+0 @I92@ INDI
+1 NAME 74. Toba                                
+1 SEX M
+1 FAMS @F87@
+1 FAMS @F88@
+1 FAMC @F86@
+0 @I94@ INDI
+1 NAME Tamako                                  
+1 SEX F
+1 FAMS @F87@
+1 FAMC @F89@
+0 @I95@ INDI
+1 NAME Tokuko                                  
+1 SEX F
+1 FAMS @F88@
+0 @I93@ INDI
+1 NAME Fujiwara no Kinzane                     
+1 SEX M
+1 FAMS @F89@
+1 FAMC @F77@
+0 @I96@ INDI
+1 NAME 75. Sutoku                              
+1 SEX M
+1 FAMS @F90@
+1 FAMC @F87@
+0 @I97@ INDI
+1 NAME 76. Konoe                               
+1 SEX M
+1 FAMS @F91@
+1 FAMC @F88@
+0 @I98@ INDI
+1 NAME 77. Go-Shirakawa                        
+1 SEX M
+1 FAMS @F92@
+1 FAMS @F93@
+1 FAMC @F86@
+0 @I99@ INDI
+1 NAME Minamoto no Arihito                     
+1 SEX F
+1 FAMS @F92@
+0 @I100@ INDI
+1 NAME Shigeko                                 
+1 SEX F
+1 FAMS @F93@
+0 @I101@ INDI
+1 NAME 78. Nij?                                
+1 SEX M
+1 FAMS @F94@
+1 FAMC @F92@
+0 @I102@ INDI
+1 NAME 79. Rokuj?                              
+1 SEX M
+1 FAMS @F95@
+1 FAMC @F94@
+0 @I103@ INDI
+1 NAME 80. Takakura                            
+1 SEX M
+1 FAMS @F96@
+1 FAMS @F97@
+1 FAMC @F93@
+0 @I104@ INDI
+1 NAME Tokuko                                  
+1 SEX F
+1 FAMS @F96@
+0 @I105@ INDI
+1 NAME Fujiwara no Masuko                      
+1 SEX F
+1 FAMS @F97@
+0 @I106@ INDI
+1 NAME 81. Antoku                              
+1 SEX M
+1 FAMS @F98@
+1 FAMC @F96@
+0 @I107@ INDI
+1 NAME 82. Go-Toba                             
+1 SEX M
+1 FAMS @F99@
+1 FAMS @F100@
+1 FAMS @F101@
+1 FAMC @F97@
+0 @I108@ INDI
+1 NAME Minamoto no Ariko                       
+1 SEX F
+1 FAMS @F99@
+0 @I109@ INDI
+1 NAME Fujiwara no Shigeko                     
+1 SEX F
+1 FAMS @F100@
+0 @I110@ INDI
+1 NAME Nishi-no-onkata                         
+1 SEX F
+1 FAMS @F101@
+0 @I111@ INDI
+1 NAME 83. Tsuchimikado                        
+1 SEX M
+1 FAMS @F102@
+1 FAMC @F99@
+0 @I112@ INDI
+1 NAME Minamoto no Michiko                     
+1 SEX F
+1 FAMS @F102@
+0 @I113@ INDI
+1 NAME 84. Juntoku                             
+1 SEX M
+1 FAMS @F103@
+1 FAMC @F100@
+0 @I114@ INDI
+1 NAME Fujiwara no Tachiko                     
+1 SEX F
+1 FAMS @F103@
+0 @I115@ INDI
+1 NAME 85. Chukyo                              
+1 SEX M
+1 FAMS @F104@
+1 FAMC @F103@
+0 @I116@ INDI
+1 NAME Prince Morisada                         
+1 SEX M
+1 FAMS @F105@
+1 FAMC @F97@
+0 @I117@ INDI
+1 NAME 86. Go-Horikawa                         
+1 SEX M
+1 FAMS @F106@
+1 FAMC @F105@
+0 @I118@ INDI
+1 NAME 87. Shij?                               
+1 SEX M
+1 FAMS @F107@
+1 FAMC @F106@
+0 @I119@ INDI
+1 NAME 88. Go-Saga                             
+1 SEX M
+1 FAMS @F108@
+1 FAMC @F102@
+0 @I120@ INDI
+1 NAME 89. Go-Fukakasa                         
+1 SEX M
+1 FAMS @F109@
+1 FAMC @F108@
+0 @I121@ INDI
+1 NAME 90. Kameyama                            
+1 SEX M
+1 FAMS @F110@
+1 FAMC @F108@
+0 @I122@ INDI
+1 NAME 91. Go-Uda                              
+1 SEX M
+1 FAMS @F111@
+1 FAMC @F110@
+0 @I123@ INDI
+1 NAME 92. Fushimi                             
+1 SEX M
+1 FAMS @F112@
+1 FAMC @F109@
+0 @I124@ INDI
+1 NAME 93. Go-Fushimi                          
+1 SEX M
+1 FAMS @F113@
+1 FAMC @F112@
+0 @I125@ INDI
+1 NAME 94. Go-Nij?                             
+1 SEX M
+1 FAMS @F114@
+1 FAMC @F111@
+0 @I126@ INDI
+1 NAME 95. Hanazon?                            
+1 SEX M
+1 FAMS @F115@
+1 FAMC @F109@
+0 @I127@ INDI
+1 NAME 96. Go-Daigio                           
+1 SEX M
+1 FAMS @F116@
+1 FAMC @F111@
+0 @I128@ INDI
+1 NAME 97. Go-Murakami                         
+1 SEX M
+1 FAMS @F117@
+1 FAMC @F116@
+0 @I129@ INDI
+1 NAME 98. Ch?kei                              
+1 SEX M
+1 FAMS @F118@
+1 FAMC @F117@
+0 @I130@ INDI
+1 NAME 99. Go-Kameyama                         
+1 SEX M
+1 FAMS @F119@
+1 FAMC @F117@
+0 @I131@ INDI
+1 NAME 100. Go-Komatsu                         
+1 SEX M
+1 FAMS @F120@
+1 FAMC @F121@
+0 @I185@ INDI
+1 NAME 5(N). Go-Enyu                           
+1 SEX M
+1 FAMS @F121@
+1 FAMC @F167@
+0 @I132@ INDI
+1 NAME 101. Sh?k?                              
+1 SEX M
+1 FAMS @F122@
+1 FAMC @F120@
+0 @I133@ INDI
+1 NAME 102. Go-Hanazono                        
+1 SEX M
+1 FAMS @F123@
+1 FAMC @F124@
+0 @I182@ INDI
+1 NAME Prince Sadafusa                         
+1 SEX M
+1 FAMS @F124@
+1 FAMC @F165@
+0 @I134@ INDI
+1 NAME 103. Go-Tsuchimikado                    
+1 SEX M
+1 FAMS @F125@
+1 FAMC @F123@
+0 @I135@ INDI
+1 NAME 104. Go-Shiwabara                       
+1 SEX M
+1 FAMS @F126@
+1 FAMC @F125@
+0 @I136@ INDI
+1 NAME 105. Go-Nara                            
+1 SEX M
+1 FAMS @F127@
+1 FAMC @F126@
+0 @I137@ INDI
+1 NAME 106. Ogimachi                           
+1 SEX M
+1 FAMS @F128@
+1 FAMC @F127@
+0 @I138@ INDI
+1 NAME Prince Masahito                         
+1 SEX M
+1 FAMS @F129@
+1 FAMC @F128@
+0 @I139@ INDI
+1 NAME 107. Go-Y?zei                           
+1 SEX M
+1 FAMS @F130@
+1 FAMC @F129@
+0 @I140@ INDI
+1 NAME 108. Go-Minoo                           
+1 SEX M
+1 FAMS @F131@
+1 FAMS @F134@
+1 FAMC @F130@
+0 @I141@ INDI
+1 NAME Tokugawa Kazuko                         
+1 SEX F
+1 FAMS @F131@
+0 @I142@ INDI
+1 NAME 109. My?shu                             
+1 SEX F
+1 FAMS @F132@
+1 FAMC @F131@
+0 @I143@ INDI
+1 NAME 110. Go-K?my?                           
+1 SEX M
+1 FAMS @F133@
+1 FAMC @F134@
+0 @I144@ INDI
+1 NAME 111. Go-Sai                             
+1 SEX M
+1 FAMS @F135@
+1 FAMC @F134@
+0 @I145@ INDI
+1 NAME 112. Reigen                             
+1 SEX M
+1 FAMS @F136@
+1 FAMC @F134@
+0 @I146@ INDI
+1 NAME 113. Higashiyama                        
+1 SEX M
+1 FAMS @F137@
+1 FAMC @F136@
+0 @I147@ INDI
+1 NAME 114. Nakamikado                         
+1 SEX M
+1 FAMS @F138@
+1 FAMC @F137@
+0 @I148@ INDI
+1 NAME 115. Sakuramachi                        
+1 SEX M
+1 FAMS @F139@
+1 FAMC @F138@
+0 @I149@ INDI
+1 NAME 116. Monozono                           
+1 SEX M
+1 FAMS @F140@
+1 FAMC @F139@
+0 @I150@ INDI
+1 NAME 117. Go-Sakuramachi                     
+1 SEX F
+1 FAMS @F141@
+1 FAMC @F139@
+0 @I151@ INDI
+1 NAME 118. Go-Monozono                        
+1 SEX M
+1 FAMS @F142@
+1 FAMC @F140@
+0 @I152@ INDI
+1 NAME 119. K?kaku                             
+1 SEX M
+1 FAMS @F143@
+1 FAMC @F144@
+0 @I155@ INDI
+1 NAME Yoshiko                                 
+1 SEX F
+1 FAMS @F143@
+1 FAMC @F142@
+0 @I153@ INDI
+1 NAME Prince Kan'in Sukehito                  
+1 SEX M
+1 FAMS @F144@
+1 FAMS @F145@
+1 FAMC @F137@
+0 @I154@ INDI
+1 NAME Tashibano ni Iwayo-ko                   
+1 SEX F
+1 FAMS @F145@
+0 @I157@ INDI
+1 NAME 120. Nink?                              
+1 SEX M
+1 FAMS @F146@
+1 FAMS @F149@
+1 FAMC @F143@
+0 @I156@ INDI
+1 NAME Yasuko/Shin Seiwa-In                    
+1 SEX F
+1 FAMS @F146@
+0 @I158@ INDI
+1 NAME Shin K?wiga-In                          
+1 SEX F
+1 FAMS @F147@
+1 FAMS @F149@
+0 @I159@ INDI
+1 NAME 121. Komei                              
+1 SEX M
+1 FAMS @F148@
+1 FAMC @F149@
+0 @I160@ INDI
+1 NAME Eish?                                   
+1 SEX F
+1 FAMS @F148@
+0 @I161@ INDI
+1 NAME 122. Meiji                              
+1 SEX M
+1 FAMS @F150@
+1 FAMS @F152@
+1 FAMC @F148@
+0 @I162@ INDI
+1 NAME Sh?ken                                  
+1 SEX F
+1 FAMS @F150@
+0 @I163@ INDI
+1 NAME 123. Taish?                             
+1 SEX M
+1 FAMS @F151@
+1 FAMC @F152@
+0 @I165@ INDI
+1 NAME Teimei                                  
+1 SEX F
+1 FAMS @F151@
+0 @I164@ INDI
+1 NAME Yanagiwara Naruko                       
+1 SEX F
+1 FAMS @F152@
+1 FAMS @F153@
+0 @I166@ INDI
+1 NAME 124. Sh?wa                              
+1 SEX M
+1 FAMS @F154@
+1 FAMC @F151@
+0 @I167@ INDI
+1 NAME Kojun                                   
+1 SEX F
+1 FAMS @F154@
+0 @I168@ INDI
+1 NAME 125. The Emperor Akihito                
+1 SEX M
+1 FAMS @F155@
+1 FAMC @F154@
+0 @I169@ INDI
+1 NAME The Empress Michiko                     
+1 SEX F
+1 FAMS @F155@
+0 @I170@ INDI
+1 NAME The Crown Prince Naruhito               
+1 SEX M
+1 FAMS @F156@
+1 FAMC @F155@
+0 @I171@ INDI
+1 NAME The Crown Princess Masako               
+1 SEX F
+1 FAMS @F156@
+0 @I173@ INDI
+1 NAME Prince Akishino                         
+1 SEX M
+1 FAMS @F157@
+1 FAMC @F155@
+0 @I172@ INDI
+1 NAME Princess Toshi                          
+1 SEX F
+1 FAMS @F157@
+1 FAMC @F156@
+0 @I174@ INDI
+1 NAME Princess Mako                           
+1 SEX F
+1 FAMS @F158@
+1 FAMC @F157@
+0 @I175@ INDI
+1 NAME Princess Kako                           
+1 SEX F
+1 FAMS @F159@
+1 FAMC @F157@
+0 @I176@ INDI
+1 NAME Princess Nori                           
+1 SEX F
+1 FAMS @F160@
+1 FAMC @F155@
+0 @I177@ INDI
+1 NAME 1(N). K?gon                             
+1 SEX M
+1 FAMS @F161@
+1 FAMS @F164@
+1 FAMC @F113@
+0 @I178@ INDI
+1 NAME Kwan-shi-Naishinn?                      
+1 SEX F
+1 FAMS @F161@
+1 FAMC @F116@
+0 @I179@ INDI
+1 NAME 2(N). K?myo                             
+1 SEX M
+1 FAMS @F162@
+1 FAMC @F113@
+0 @I180@ INDI
+1 NAME 3(N). Suk?                              
+1 SEX M
+1 FAMS @F163@
+1 FAMC @F164@
+0 @I181@ INDI
+1 NAME Prince Yoshihito                        
+1 SEX M
+1 FAMS @F165@
+1 FAMC @F163@
+0 @I183@ INDI
+1 NAME Prince Sadastune                        
+1 SEX M
+1 FAMS @F166@
+1 FAMC @F124@
+0 @I184@ INDI
+1 NAME 4(N). Go-K?gon                          
+1 SEX M
+1 FAMS @F167@
+1 FAMC @F164@
+0 @F1@ FAM
+1 REFN F1
+1 HUSB @I1@
+1 CHIL @I2@
+0 @F2@ FAM
+1 REFN F2
+1 HUSB @I2@
+1 CHIL @I3@
+0 @F3@ FAM
+1 REFN F3
+1 HUSB @I3@
+1 CHIL @I4@
+0 @F4@ FAM
+1 REFN F4
+1 HUSB @I4@
+1 CHIL @I5@
+0 @F5@ FAM
+1 REFN F5
+1 HUSB @I5@
+1 CHIL @I6@
+0 @F6@ FAM
+1 REFN F6
+1 HUSB @I6@
+1 CHIL @I7@
+0 @F7@ FAM
+1 REFN F7
+1 HUSB @I7@
+1 CHIL @I8@
+0 @F8@ FAM
+1 REFN F8
+1 HUSB @I8@
+1 CHIL @I9@
+0 @F9@ FAM
+1 REFN F9
+1 HUSB @I9@
+1 CHIL @I10@
+0 @F10@ FAM
+1 REFN F10
+1 HUSB @I10@
+1 CHIL @I11@
+0 @F11@ FAM
+1 REFN F11
+1 HUSB @I11@
+1 CHIL @I12@
+0 @F12@ FAM
+1 REFN F12
+1 HUSB @I12@
+1 CHIL @I13@
+1 CHIL @I14@
+0 @F13@ FAM
+1 REFN F13
+1 HUSB @I13@
+0 @F14@ FAM
+1 REFN F14
+1 HUSB @I14@
+1 CHIL @I15@
+0 @F15@ FAM
+1 REFN F15
+1 HUSB @I15@
+1 CHIL @I16@
+0 @F16@ FAM
+1 REFN F16
+1 HUSB @I16@
+1 CHIL @I17@
+0 @F17@ FAM
+1 REFN F17
+1 HUSB @I17@
+1 CHIL @I18@
+1 CHIL @I19@
+1 CHIL @I20@
+1 CHIL @I186@
+1 CHIL @I27@
+0 @F18@ FAM
+1 REFN F18
+1 HUSB @I18@
+0 @F19@ FAM
+1 REFN F19
+1 HUSB @I19@
+0 @F20@ FAM
+1 REFN F20
+1 HUSB @I20@
+1 CHIL @I21@
+1 CHIL @I22@
+0 @F21@ FAM
+1 REFN F21
+1 HUSB @I21@
+0 @F22@ FAM
+1 REFN F22
+1 HUSB @I22@
+1 CHIL @I23@
+0 @F23@ FAM
+1 REFN F23
+1 HUSB @I23@
+1 CHIL @I24@
+1 CHIL @I25@
+0 @F24@ FAM
+1 REFN F24
+1 HUSB @I186@
+0 @F25@ FAM
+1 REFN F25
+1 HUSB @I24@
+0 @F26@ FAM
+1 REFN F26
+1 HUSB @I25@
+1 CHIL @I26@
+0 @F27@ FAM
+1 REFN F27
+1 HUSB @I26@
+0 @F28@ FAM
+1 REFN F28
+1 HUSB @I27@
+1 CHIL @I28@
+0 @F29@ FAM
+1 REFN F29
+1 HUSB @I28@
+1 CHIL @I29@
+0 @F30@ FAM
+1 REFN F30
+1 HUSB @I29@
+1 CHIL @I30@
+1 CHIL @I31@
+1 CHIL @I32@
+0 @F31@ FAM
+1 REFN F31
+1 HUSB @I30@
+0 @F32@ FAM
+1 REFN F32
+1 HUSB @I31@
+0 @F33@ FAM
+1 REFN F33
+1 HUSB @I32@
+1 CHIL @I33@
+1 CHIL @I34@
+1 CHIL @I35@
+1 CHIL @I36@
+0 @F34@ FAM
+1 REFN F34
+1 HUSB @I33@
+1 WIFE @I34@
+0 @F35@ FAM
+1 REFN F35
+1 HUSB @I35@
+0 @F36@ FAM
+1 REFN F36
+1 HUSB @I36@
+0 @F37@ FAM
+1 REFN F37
+1 HUSB @I37@
+1 CHIL @I38@
+1 CHIL @I39@
+1 CHIL @I41@
+0 @F38@ FAM
+1 REFN F38
+1 HUSB @I33@
+1 CHIL @I37@
+0 @F39@ FAM
+1 REFN F39
+1 HUSB @I38@
+1 WIFE @I40@
+1 CHIL @I42@
+0 @F40@ FAM
+1 REFN F40
+1 HUSB @I39@
+1 CHIL @I40@
+0 @F41@ FAM
+1 REFN F41
+1 HUSB @I41@
+0 @F42@ FAM
+1 REFN F42
+1 HUSB @I42@
+1 CHIL @I43@
+1 CHIL @I45@
+1 CHIL @I50@
+1 CHIL @I57@
+0 @F43@ FAM
+1 REFN F43
+1 HUSB @I43@
+0 @F44@ FAM
+1 REFN F44
+1 HUSB @I44@
+1 CHIL @I46@
+0 @F45@ FAM
+1 REFN F45
+1 HUSB @I38@
+1 CHIL @I44@
+1 CHIL @I55@
+0 @F46@ FAM
+1 REFN F46
+1 WIFE @I45@
+0 @F47@ FAM
+1 REFN F47
+1 HUSB @I46@
+1 CHIL @I49@
+1 CHIL @I51@
+0 @F48@ FAM
+1 REFN F48
+1 HUSB @I47@
+1 CHIL @I48@
+1 CHIL @I53@
+0 @F49@ FAM
+1 REFN F49
+1 HUSB @I49@
+1 WIFE @I48@
+1 CHIL @I52@
+0 @F50@ FAM
+1 REFN F50
+1 WIFE @I50@
+0 @F51@ FAM
+1 REFN F51
+1 WIFE @I51@
+0 @F52@ FAM
+1 REFN F52
+1 HUSB @I52@
+1 WIFE @I53@
+1 CHIL @I54@
+0 @F53@ FAM
+1 REFN F53
+1 WIFE @I54@
+0 @F54@ FAM
+1 REFN F54
+1 HUSB @I55@
+1 CHIL @I56@
+0 @F55@ FAM
+1 REFN F55
+1 HUSB @I56@
+0 @F56@ FAM
+1 REFN F56
+1 HUSB @I57@
+1 CHIL @I58@
+0 @F57@ FAM
+1 REFN F57
+1 HUSB @I58@
+1 CHIL @I59@
+0 @F58@ FAM
+1 REFN F58
+1 WIFE @I59@
+1 CHIL @I60@
+1 CHIL @I61@
+0 @F59@ FAM
+1 REFN F59
+1 HUSB @I60@
+0 @F60@ FAM
+1 REFN F60
+1 HUSB @I61@
+1 CHIL @I63@
+0 @F61@ FAM
+1 REFN F61
+1 HUSB @I62@
+0 @F62@ FAM
+1 REFN F62
+1 HUSB @I59@
+1 CHIL @I62@
+0 @F63@ FAM
+1 REFN F63
+1 HUSB @I63@
+1 CHIL @I64@
+1 CHIL @I67@
+0 @F64@ FAM
+1 REFN F64
+1 HUSB @I64@
+1 CHIL @I65@
+0 @F65@ FAM
+1 REFN F65
+1 HUSB @I65@
+1 CHIL @I66@
+0 @F66@ FAM
+1 REFN F66
+1 HUSB @I66@
+0 @F67@ FAM
+1 REFN F67
+1 HUSB @I67@
+1 CHIL @I68@
+0 @F68@ FAM
+1 REFN F68
+1 HUSB @I68@
+1 CHIL @I69@
+0 @F69@ FAM
+1 REFN F69
+1 HUSB @I69@
+1 CHIL @I70@
+1 CHIL @I71@
+0 @F70@ FAM
+1 REFN F70
+1 HUSB @I70@
+0 @F71@ FAM
+1 REFN F71
+1 HUSB @I71@
+1 CHIL @I72@
+1 CHIL @I73@
+0 @F72@ FAM
+1 REFN F72
+1 HUSB @I72@
+1 CHIL @I74@
+1 CHIL @I79@
+0 @F73@ FAM
+1 REFN F73
+1 HUSB @I73@
+1 CHIL @I75@
+0 @F74@ FAM
+1 REFN F74
+1 HUSB @I74@
+0 @F75@ FAM
+1 REFN F75
+1 HUSB @I75@
+1 WIFE @I78@
+0 @F76@ FAM
+1 REFN F76
+1 HUSB @I75@
+1 WIFE @I85@
+1 CHIL @I81@
+1 CHIL @I83@
+0 @F77@ FAM
+1 REFN F77
+1 HUSB @I76@
+1 WIFE @I77@
+1 CHIL @I78@
+1 CHIL @I80@
+1 CHIL @I82@
+1 CHIL @I84@
+1 CHIL @I88@
+1 CHIL @I93@
+0 @F78@ FAM
+1 REFN F78
+1 HUSB @I79@
+1 WIFE @I80@
+0 @F79@ FAM
+1 REFN F79
+1 HUSB @I81@
+1 WIFE @I82@
+0 @F80@ FAM
+1 REFN F80
+1 HUSB @I83@
+1 WIFE @I84@
+1 CHIL @I86@
+0 @F81@ FAM
+1 REFN F81
+1 HUSB @I86@
+1 WIFE @I87@
+0 @F82@ FAM
+1 REFN F82
+1 HUSB @I88@
+1 CHIL @I87@
+0 @F83@ FAM
+1 REFN F83
+1 HUSB @I89@
+0 @F84@ FAM
+1 REFN F84
+1 HUSB @I86@
+1 CHIL @I89@
+1 CHIL @I90@
+0 @F85@ FAM
+1 REFN F85
+1 HUSB @I90@
+1 CHIL @I91@
+0 @F86@ FAM
+1 REFN F86
+1 HUSB @I91@
+1 CHIL @I92@
+1 CHIL @I98@
+0 @F87@ FAM
+1 REFN F87
+1 HUSB @I92@
+1 WIFE @I94@
+1 CHIL @I96@
+0 @F88@ FAM
+1 REFN F88
+1 HUSB @I92@
+1 WIFE @I95@
+1 CHIL @I97@
+0 @F89@ FAM
+1 REFN F89
+1 HUSB @I93@
+1 CHIL @I94@
+0 @F90@ FAM
+1 REFN F90
+1 HUSB @I96@
+0 @F91@ FAM
+1 REFN F91
+1 HUSB @I97@
+0 @F92@ FAM
+1 REFN F92
+1 HUSB @I98@
+1 WIFE @I99@
+1 CHIL @I101@
+0 @F93@ FAM
+1 REFN F93
+1 HUSB @I98@
+1 WIFE @I100@
+1 CHIL @I103@
+0 @F94@ FAM
+1 REFN F94
+1 HUSB @I101@
+1 CHIL @I102@
+0 @F95@ FAM
+1 REFN F95
+1 HUSB @I102@
+0 @F96@ FAM
+1 REFN F96
+1 HUSB @I103@
+1 WIFE @I104@
+1 CHIL @I106@
+0 @F97@ FAM
+1 REFN F97
+1 HUSB @I103@
+1 WIFE @I105@
+1 CHIL @I107@
+1 CHIL @I116@
+0 @F98@ FAM
+1 REFN F98
+1 HUSB @I106@
+0 @F99@ FAM
+1 REFN F99
+1 HUSB @I107@
+1 WIFE @I108@
+1 CHIL @I111@
+0 @F100@ FAM
+1 REFN F100
+1 HUSB @I107@
+1 WIFE @I109@
+1 CHIL @I113@
+0 @F101@ FAM
+1 REFN F101
+1 HUSB @I107@
+1 WIFE @I110@
+0 @F102@ FAM
+1 REFN F102
+1 HUSB @I111@
+1 WIFE @I112@
+1 CHIL @I119@
+0 @F103@ FAM
+1 REFN F103
+1 HUSB @I113@
+1 WIFE @I114@
+1 CHIL @I115@
+0 @F104@ FAM
+1 REFN F104
+1 HUSB @I115@
+0 @F105@ FAM
+1 REFN F105
+1 HUSB @I116@
+1 CHIL @I117@
+0 @F106@ FAM
+1 REFN F106
+1 HUSB @I117@
+1 CHIL @I118@
+0 @F107@ FAM
+1 REFN F107
+1 HUSB @I118@
+0 @F108@ FAM
+1 REFN F108
+1 HUSB @I119@
+1 CHIL @I120@
+1 CHIL @I121@
+0 @F109@ FAM
+1 REFN F109
+1 HUSB @I120@
+1 CHIL @I123@
+1 CHIL @I126@
+0 @F110@ FAM
+1 REFN F110
+1 HUSB @I121@
+1 CHIL @I122@
+0 @F111@ FAM
+1 REFN F111
+1 HUSB @I122@
+1 CHIL @I125@
+1 CHIL @I127@
+0 @F112@ FAM
+1 REFN F112
+1 HUSB @I123@
+1 CHIL @I124@
+0 @F113@ FAM
+1 REFN F113
+1 HUSB @I124@
+1 CHIL @I177@
+1 CHIL @I179@
+0 @F114@ FAM
+1 REFN F114
+1 HUSB @I125@
+0 @F115@ FAM
+1 REFN F115
+1 HUSB @I126@
+0 @F116@ FAM
+1 REFN F116
+1 HUSB @I127@
+1 CHIL @I128@
+1 CHIL @I178@
+0 @F117@ FAM
+1 REFN F117
+1 HUSB @I128@
+1 CHIL @I129@
+1 CHIL @I130@
+0 @F118@ FAM
+1 REFN F118
+1 HUSB @I129@
+0 @F119@ FAM
+1 REFN F119
+1 HUSB @I130@
+0 @F120@ FAM
+1 REFN F120
+1 HUSB @I131@
+1 CHIL @I132@
+0 @F121@ FAM
+1 REFN F121
+1 HUSB @I185@
+1 CHIL @I131@
+0 @F122@ FAM
+1 REFN F122
+1 HUSB @I132@
+0 @F123@ FAM
+1 REFN F123
+1 HUSB @I133@
+1 CHIL @I134@
+0 @F124@ FAM
+1 REFN F124
+1 HUSB @I182@
+1 CHIL @I133@
+1 CHIL @I183@
+0 @F125@ FAM
+1 REFN F125
+1 HUSB @I134@
+1 CHIL @I135@
+0 @F126@ FAM
+1 REFN F126
+1 HUSB @I135@
+1 CHIL @I136@
+0 @F127@ FAM
+1 REFN F127
+1 HUSB @I136@
+1 CHIL @I137@
+0 @F128@ FAM
+1 REFN F128
+1 HUSB @I137@
+1 CHIL @I138@
+0 @F129@ FAM
+1 REFN F129
+1 HUSB @I138@
+1 CHIL @I139@
+0 @F130@ FAM
+1 REFN F130
+1 HUSB @I139@
+1 CHIL @I140@
+0 @F131@ FAM
+1 REFN F131
+1 HUSB @I140@
+1 WIFE @I141@
+1 CHIL @I142@
+0 @F132@ FAM
+1 REFN F132
+1 WIFE @I142@
+0 @F133@ FAM
+1 REFN F133
+1 HUSB @I143@
+0 @F134@ FAM
+1 REFN F134
+1 HUSB @I140@
+1 CHIL @I143@
+1 CHIL @I144@
+1 CHIL @I145@
+0 @F135@ FAM
+1 REFN F135
+1 HUSB @I144@
+0 @F136@ FAM
+1 REFN F136
+1 HUSB @I145@
+1 CHIL @I146@
+0 @F137@ FAM
+1 REFN F137
+1 HUSB @I146@
+1 CHIL @I147@
+1 CHIL @I153@
+0 @F138@ FAM
+1 REFN F138
+1 HUSB @I147@
+1 CHIL @I148@
+0 @F139@ FAM
+1 REFN F139
+1 HUSB @I148@
+1 CHIL @I149@
+1 CHIL @I150@
+0 @F140@ FAM
+1 REFN F140
+1 HUSB @I149@
+1 CHIL @I151@
+0 @F141@ FAM
+1 REFN F141
+1 WIFE @I150@
+0 @F142@ FAM
+1 REFN F142
+1 HUSB @I151@
+1 CHIL @I155@
+0 @F143@ FAM
+1 REFN F143
+1 HUSB @I152@
+1 WIFE @I155@
+1 CHIL @I157@
+0 @F144@ FAM
+1 REFN F144
+1 HUSB @I153@
+1 CHIL @I152@
+0 @F145@ FAM
+1 REFN F145
+1 HUSB @I153@
+1 WIFE @I154@
+0 @F146@ FAM
+1 REFN F146
+1 HUSB @I157@
+1 WIFE @I156@
+0 @F147@ FAM
+1 REFN F147
+1 WIFE @I158@
+0 @F148@ FAM
+1 REFN F148
+1 HUSB @I159@
+1 WIFE @I160@
+1 CHIL @I161@
+0 @F149@ FAM
+1 REFN F149
+1 HUSB @I157@
+1 WIFE @I158@
+1 CHIL @I159@
+0 @F150@ FAM
+1 REFN F150
+1 HUSB @I161@
+1 WIFE @I162@
+0 @F151@ FAM
+1 REFN F151
+1 HUSB @I163@
+1 WIFE @I165@
+1 CHIL @I166@
+0 @F152@ FAM
+1 REFN F152
+1 HUSB @I161@
+1 WIFE @I164@
+1 CHIL @I163@
+0 @F153@ FAM
+1 REFN F153
+1 WIFE @I164@
+0 @F154@ FAM
+1 REFN F154
+1 HUSB @I166@
+1 WIFE @I167@
+1 CHIL @I168@
+0 @F155@ FAM
+1 REFN F155
+1 HUSB @I168@
+1 WIFE @I169@
+1 CHIL @I170@
+1 CHIL @I173@
+1 CHIL @I176@
+0 @F156@ FAM
+1 REFN F156
+1 HUSB @I170@
+1 WIFE @I171@
+1 CHIL @I172@
+0 @F157@ FAM
+1 REFN F157
+1 HUSB @I173@
+1 WIFE @I172@
+1 CHIL @I174@
+1 CHIL @I175@
+0 @F158@ FAM
+1 REFN F158
+1 WIFE @I174@
+0 @F159@ FAM
+1 REFN F159
+1 WIFE @I175@
+0 @F160@ FAM
+1 REFN F160
+1 WIFE @I176@
+0 @F161@ FAM
+1 REFN F161
+1 HUSB @I177@
+1 WIFE @I178@
+0 @F162@ FAM
+1 REFN F162
+1 HUSB @I179@
+0 @F163@ FAM
+1 REFN F163
+1 HUSB @I180@
+1 CHIL @I181@
+0 @F164@ FAM
+1 REFN F164
+1 HUSB @I177@
+1 CHIL @I180@
+1 CHIL @I184@
+0 @F165@ FAM
+1 REFN F165
+1 HUSB @I181@
+1 CHIL @I182@
+0 @F166@ FAM
+1 REFN F166
+1 HUSB @I183@
+0 @F167@ FAM
+1 REFN F167
+1 HUSB @I184@
+1 CHIL @I185@
+0 TRLR

@@ -1,0 +1,972 @@
+0 HEAD
+1 SOUR FTM
+2 VERS Family Tree Maker (17.0.0.965)
+2 NAME Family Tree Maker for Windows
+2 CORP The Generations Network
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTM
+1 DATE 05 AUG 2008
+1 CHAR ANSI
+1 FILE C:\Users\socrtwo\Desktop\Shakespeare.ged
+1 SUBM @SUBM@
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+0 @SUBM@ SUBM
+0 @I00143@ INDI
+1 NAME Grace /Arden/
+1 SEX F
+1 FAMS @F00064@
+0 @I00139@ INDI
+1 NAME Margaret /Arden/
+1 SEX F
+1 BIRT
+2 DATE ABT 1538
+2 PLAC Wilmcote, England
+1 FAMS @F00060@
+1 FAMC @F00067@
+0 @I00140@ INDI
+1 NAME Mary /Arden/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 SEX F
+1 BIRT
+2 DATE 1537
+2 PLAC Wilmcote, Aston Cantlowe, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 09 SEP 1608
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 BIRT
+2 DATE 1540
+2 PLAC Stratford, Warwickshire, England
+1 FAMS @F00063@
+1 FAMC @F00067@
+0 @I00138@ INDI
+1 NAME Robert /Arden/
+1 SEX M
+1 BIRT
+2 PLAC Wilmcote, England
+1 FAMS @F00067@
+0 @I01464@ INDI
+1 NAME John /Barnard/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 SEX M
+1 BIRT
+2 DATE 1600
+2 PLAC England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 DEAT
+2 DATE 1674
+2 PLAC Abington Hall, Abington, Northamptonshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 FAMS @F00512@
+0 @I00120@ INDI
+1 NAME Elizabeth /Hall/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 SEX F
+1 BIRT
+2 DATE 21 FEB 1608
+2 PLAC England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 DEAT
+2 DATE 17 FEB 1670
+2 PLAC Abington Hall, Abington, Northamptonshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 BIRT
+2 DATE 1608
+2 PLAC Stratford, Warwickshire, England
+1 FAMS @F00512@
+1 FAMS @F00513@
+1 FAMC @F00070@
+0 @I00119@ INDI
+1 NAME John /Hall/
+1 SEX M
+1 FAMS @F00070@
+0 @I01463@ INDI
+1 NAME William /Hart/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 1569
+2 PLAC Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 DEAT
+2 DATE 17 APR 1616
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 FAMS @F00511@
+0 @I00115@ INDI
+1 NAME Anne /Hathaway/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 SEX F
+1 BIRT
+2 DATE 1556
+2 PLAC Shottery, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 06 AUG 1623
+2 PLAC Stratford, On Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 FAMS @F00069@
+0 @I01436@ INDI
+1 NAME Joan //
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 SEX F
+1 BIRT
+2 DATE 1485
+2 PLAC England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 FAMS @F00493@
+0 @I01440@ INDI
+1 NAME /Margaret/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 SEX F
+1 FAMS @F00494@
+0 @I01465@ INDI
+1 NAME Thomas /Nash/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 SEX M
+1 BIRT
+2 DATE 20 JUN 1593
+2 PLAC Stratford On Avon, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 DEAT
+2 DATE 1670
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+1 FAMS @F00513@
+0 @I01445@ INDI
+1 NAME Shakespeare /Quiney/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 23 NOV 1616
+2 PLAC Stratford-On Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 DEAT
+2 DATE 08 MAY 1617
+2 PLAC Stratford-On Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 FAMC @F00496@
+0 @I01442@ INDI
+1 NAME Thomas /Quiney/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Thomas Quiney
+1 SEX M
+1 BIRT
+2 DATE 26 FEB 1589
+2 PLAC Stratford-On-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Thomas Quiney
+1 DEAT
+2 DATE 09 FEB 1662
+2 PLAC Stratford On Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Thomas Quiney
+1 FAMS @F00496@
+1 FAMS @F00498@
+1 FAMS @F00499@
+0 @I01444@ INDI
+1 NAME Thomas /Quiney/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 23 JAN 1619
+2 PLAC Stratford-Upon-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 DEAT
+2 DATE 04 FEB 1638
+2 PLAC Stratford On Avon, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 FAMC @F00496@
+0 @I01443@ INDI
+1 NAME Richard /Quinney/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 09 FEB 1617
+2 PLAC Stratford-On Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 DEAT
+2 DATE 24 FEB 1638
+2 PLAC St Stephen, Wallbrook, London, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 FAMC @F00496@
+0 @I01438@ INDI
+1 NAME Henry /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 1538
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 DEAT
+2 DATE 1596
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 FAMS @F00494@
+1 FAMS @F00495@
+1 FAMC @F00068@
+0 @I01437@ INDI
+1 NAME John /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 1485
+2 PLAC England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 FAMS @F00493@
+0 @I01441@ INDI
+1 NAME Lettice /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 SEX F
+1 BIRT
+2 DATE 04 JUN 1583
+2 PLAC Ingon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 DEAT
+2 DATE 10 NOV 1623
+2 PLAC Arden, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Henry Shakespeare
+1 FAMC @F00495@
+0 @I00111@ INDI
+1 NAME Richard /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 1513
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 DEAT
+2 DATE 1561
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 NAME Richard /Shakesphere/
+1 FAMS @F00068@
+1 FAMC @F00493@
+0 @I01439@ INDI
+1 NAME Thomas /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 1539
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 DEAT
+2 DATE 1583
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 FAMC @F00068@
+0 @I00114@ INDI
+1 NAME William /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 SEX M
+1 BIRT
+2 DATE 23 APR 1564
+2 PLAC Stratford-Upon-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 23 APR 1616
+2 PLAC Stratford-Upon-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 NAME William /Shakesphere/
+1 BIRT
+2 DATE 23 APR 1564
+2 PLAC Stratford, Warwickshire, England
+1 DEAT
+2 DATE 03 MAY 1616
+2 PLAC Stratford, Warwickshire, England
+1 NOTE @N00037@
+1 FAMS @F00069@
+1 FAMC @F00063@
+0 @I00117@ INDI
+1 NAME Hamnet /Shakesphere/
+1 SEX M
+1 BIRT
+2 DATE 02 FEB 1585
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 11 AUG 1596
+2 PLAC Stratford-On-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 NAME Hamnet /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 BIRT
+2 DATE 1585
+2 PLAC Stratford, Warwickshire, England
+1 FAMC @F00069@
+0 @I00113@ INDI
+1 NAME Joan /Shakesphere/
+1 SEX F
+1 BIRT
+2 PLAC Stratford, Warwickshire, England
+1 DEAT
+2 DATE 1646
+2 PLAC Stratford-On-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 NAME Joan /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 BIRT
+2 DATE 1558
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Joan Shakespeare
+1 FAMS @F00511@
+1 FAMC @F00063@
+0 @I00112@ INDI
+1 NAME John /Shakesphere/
+1 SEX M
+1 BIRT
+2 DATE 1537
+2 PLAC Snitterfield, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 1601
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 NAME John /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 DEAT
+2 DATE 1601
+2 PLAC Stratford, Warwickshire, England
+1 NOTE @N00036@
+1 FAMS @F00063@
+1 FAMC @F00068@
+0 @I00118@ INDI
+1 NAME Judith /Shakesphere/
+1 SEX F
+1 BIRT
+2 DATE 02 FEB 1585
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 DEAT
+2 DATE FEB 1662
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 NAME Judith /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 NAME Judith /Shakespeare/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+1 BIRT
+2 DATE 1585
+2 PLAC Stratford, Warwickshire, England
+1 BIRT
+2 DATE 02 FEB 1585
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+1 FAMS @F00496@
+1 FAMC @F00069@
+0 @I00104@ INDI
+1 NAME Margaret /Shakesphere/
+1 SEX F
+1 BIRT
+2 PLAC Stratford, Warwickshire, England
+1 FAMC @F00063@
+0 @I00116@ INDI
+1 NAME Susanna /Shakesphere/
+1 SEX F
+1 BIRT
+2 DATE 1583
+2 PLAC Stratford, Warwickshire, England
+1 FAMS @F00070@
+1 FAMC @F00069@
+0 @I00110@ INDI
+1 NAME Abigail /Webb/
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 SEX F
+1 BIRT
+2 DATE 06 JUN 1515
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 DEAT
+2 DATE 1595
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+1 BIRT
+2 DATE ABT 1516
+1 FAMS @F00068@
+1 FAMC @F00065@
+0 @I00109@ INDI
+1 NAME Agnes /Webb/
+1 SEX F
+1 BIRT
+2 DATE ABT 1514
+1 FAMC @F00065@
+0 @I00141@ INDI
+1 NAME Alexander /Webb/
+1 SEX M
+1 BIRT
+2 DATE 24 DEC 1534
+2 PLAC Stratford, Warwickshire, England
+1 DEAT
+2 DATE 1573
+2 PLAC Stratford, Warwickshire, England
+1 FAMS @F00060@
+1 FAMC @F00064@
+0 @I00124@ INDI
+1 NAME Geofrey /Webb/
+1 SEX M
+1 BIRT
+2 DATE 12 APR 1372
+2 PLAC Warwickshire, England
+1 NOTE @N00041@
+1 FAMS @F00073@
+1 FAMC @F00074@
+0 @I00125@ INDI
+1 NAME Henry /Webb/
+1 SEX M
+1 BIRT
+2 DATE 15 MAY 1350
+2 PLAC Warwickshire, England
+1 NOTE @N00042@
+1 FAMS @F00074@
+0 @I00105@ INDI
+1 NAME Henry Alexander /Webb/
+1 SEX M
+1 BIRT
+2 DATE 11 MAY 1510
+2 PLAC Stratford, Warwickshire, England
+1 NOTE @N00034@
+1 FAMS @F00064@
+1 FAMC @F00065@
+0 @I00123@ INDI
+1 NAME John /Webb/
+1 SEX M
+1 BIRT
+2 DATE 1405
+2 PLAC Warwickshire, England
+1 NOTE @N00040@
+1 FAMS @F00072@
+1 FAMC @F00073@
+0 @I00121@ INDI
+1 NAME John /Webb/
+1 SEX M
+1 BIRT
+2 DATE 09 JUL 1450
+2 PLAC Oldsrck, England
+1 DEAT
+2 PLAC Stratford, Warwickshire, England
+1 NOTE @N00038@
+1 FAMS @F00066@
+1 FAMC @F00071@
+0 @I00107@ INDI
+1 NAME John Alexander /Webb/
+1 SEX M
+1 BIRT
+2 DATE 11 JAN 1484
+2 PLAC Stratford, Warwickshire, England
+1 NOTE @N00035@
+1 FAMS @F00065@
+1 FAMC @F00066@
+0 @I00108@ INDI
+1 NAME Mary /Webb/
+1 SEX F
+1 BIRT
+2 DATE 05 FEB 1512
+2 PLAC Wilmcote, England
+1 DEAT
+2 DATE BEF 1550
+1 FAMS @F00067@
+1 FAMC @F00065@
+0 @I00122@ INDI
+1 NAME William /Webb/
+1 SEX M
+1 BIRT
+2 DATE 16 MAR 1425
+2 PLAC London, England
+1 DEAT
+2 PLAC Oldsrck, England
+1 NOTE @N00039@
+1 FAMS @F00071@
+1 FAMC @F00072@
+0 @F00064@ FAM
+1 HUSB @I00105@
+1 WIFE @I00143@
+1 CHIL @I00141@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1533
+0 @F00060@ FAM
+1 HUSB @I00141@
+1 WIFE @I00139@
+1 MARR
+2 DATE 1555
+2 PLAC Stratford, Warwickshire, England
+0 @F00063@ FAM
+1 HUSB @I00112@
+1 WIFE @I00140@
+1 CHIL @I00114@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00113@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00104@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00067@ FAM
+1 HUSB @I00138@
+1 WIFE @I00108@
+1 CHIL @I00139@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00140@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00512@ FAM
+1 HUSB @I01464@
+1 WIFE @I00120@
+1 MARR
+2 DATE 1649
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+0 @F00513@ FAM
+1 HUSB @I01465@
+1 WIFE @I00120@
+1 MARR
+2 DATE 22 APR 1626
+2 PLAC Holy Trinity, Coventry, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Elizabeth Hall
+0 @F00070@ FAM
+1 HUSB @I00119@
+1 WIFE @I00116@
+1 CHIL @I00120@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1607
+2 PLAC Stratford, Warwickshire, England
+0 @F00511@ FAM
+1 HUSB @I01463@
+1 WIFE @I00113@
+0 @F00069@ FAM
+1 HUSB @I00114@
+1 WIFE @I00115@
+1 CHIL @I00116@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00117@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00118@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1582
+2 PLAC Stratford, Warwickshire, England
+1 MARR
+2 DATE 28 NOV 1582
+2 PLAC Worcester, Worcestershire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for William Shakespeare
+0 @F00493@ FAM
+1 HUSB @I01437@
+1 WIFE @I01436@
+1 CHIL @I00111@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00494@ FAM
+1 HUSB @I01438@
+1 WIFE @I01440@
+0 @F00496@ FAM
+1 HUSB @I01442@
+1 WIFE @I00118@
+1 CHIL @I01443@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I01444@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I01445@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 10 FEB 1615
+2 PLAC Stratford, On-Avon, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Judith Shakespeare
+0 @F00498@ FAM
+1 HUSB @I01442@
+0 @F00499@ FAM
+1 HUSB @I01442@
+0 @F00495@ FAM
+1 HUSB @I01438@
+1 CHIL @I01441@
+2 _FREL Natural
+0 @F00068@ FAM
+1 HUSB @I00111@
+1 WIFE @I00110@
+1 CHIL @I00112@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I01438@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I01439@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1535
+2 PLAC Stratford, Warwickshire, England
+2 SOUR @S00001@
+3 PAGE Database online.
+3 DATA
+4 TEXT Record for Richard Shakespeare
+0 @F00073@ FAM
+1 HUSB @I00124@
+1 CHIL @I00123@
+2 _FREL Natural
+0 @F00074@ FAM
+1 HUSB @I00125@
+1 CHIL @I00124@
+2 _FREL Natural
+0 @F00072@ FAM
+1 HUSB @I00123@
+1 CHIL @I00122@
+2 _FREL Natural
+0 @F00066@ FAM
+1 HUSB @I00121@
+1 CHIL @I00107@
+2 _FREL Natural
+0 @F00065@ FAM
+1 HUSB @I00107@
+1 CHIL @I00105@
+2 _FREL Natural
+1 CHIL @I00108@
+2 _FREL Natural
+1 CHIL @I00109@
+2 _FREL Natural
+1 CHIL @I00110@
+2 _FREL Natural
+0 @F00071@ FAM
+1 HUSB @I00122@
+1 CHIL @I00121@
+2 _FREL Natural
+0 @N00034@ NOTE
+1 CONC Sir Henry was usher in the privy council of Catherine Parr, Queen Rege
+1 CONC ntof Britian in the 16Th century. Parr, Catherine (1512-48), 6th quee
+1 CONC n ofHenry VIII of England; tactful, kindly woman to whose influence he
+1 CONC rstepchildren, the future sovereigns Edward VI, Mary I, and Elizabeth 
+1 CONC I,owed much
+1 CONT Among the few existing documents connected with the regency ofCatherin
+1 CONC e Parr, While Henry The VIII was conducting the seige of BoulogneA. D
+1 CONC . 1544, there is in the Crotonain Collections a letter to her councilh
+1 CONC eaded: " Katherine, Queen Regent, K. P. in favor of her trusty and wel
+1 CONC lbeloved servent, Henry Webb, gentlemen, usher of her Privy Chamber".T
+1 CONC his letter is in regard to some grants and privileges to Henry Webb, b
+1 CONC utwhich have not been fulfilled. It concludes thus: " we most heartily
+1 CONC desire and pray you to be favorible to him at this our earnest request
+1 CONC .Given under my Hand and Signet, at my Lord, the King's Majesty's Hono
+1 CONC r ofHampton Court, the 23d of July  and the 36th of his Highness most 
+1 CONC nobleReign."
+1 CONT The Webb Coat of arms was granted to Sir Henry on June 17, 1577 while 
+1 CONC atHampton Court ( Elizabeth I was Queen of England).   In a letter fro
+1 CONC mHiram Webb of New Bedford Mass., to Dr. Robert Dickins Webb of YazooC
+1 CONC ity, Miss., year 1884, the following was written; " The family coat of
+1 CONC arms is a cross gule between four eagle falcons and border scroll, red
+1 CONC with gilt letters, brown shadows on all , or crest out of a ducalcoron
+1 CONC et, and a device eagle displayed. Crown has 2 red and 3 blue shotsall 
+1 CONC gold, with red hollows, scarlet shield, edges light yellow.  Thecross 
+1 CONC shows that our ancestor was a crusader.  The hawks denoteswiftness an
+1 CONC d courage.  The coronet that he was fighting under one of theconfedera
+1 CONC te ducal soverigns of France, and that he was an officer." TheWEBB mot
+1 CONC to is " Principles not Men ". " IN ALTA TENDO "
+0 @N00035@ NOTE
+1 CONC See " Norwalk " by Rev. Dr. Selleck 1898 page 403. Sir Alexander Webb 
+1 CONC b:1484 was an Officer of rank in the army of King Henry VIII and had H
+1 CONC enry,Mary and Abigail.  The name of his wife is unknown.
+0 @N00036@ NOTE
+1 CONC John Shakespeare was a tanner and glovemaker. He was an alderman ofStr
+1 CONC atford for years. He also served a term as high bailiff, or mayor.Towa
+1 CONC rd the end of his life John Shakespeare lost most of his money. Whenh
+1 CONC e died in 1601, he left William only a little real estate.
+0 @N00037@ NOTE
+1 CONC William Shakespeare was born in Stratford-upon-Avon, England, in 1564.
+1 CONC This was the sixth year of the reign of Queen Elizabeth I. He waschris
+1 CONC tened on April 26 of that year. The day of his birth is unknown. Itha
+1 CONC s long been celebrated on April 23, the feast of St. George.
+1 CONT By 1592 Shakespeare was in London and was already recognized as anacto
+1 CONC r and playwright. He was then 28 years old. In that year RobertGreene
+1 CONC , a playwright, accused him of borrowing from the plays of others.
+1 CONT Between 1592 and 1594, plague kept the London theaters closed most oft
+1 CONC he time. During these years Shakespeare wrote his earliest sonnets and
+1 CONC two long narrative poems, 'Venus and Adonis' and 'The Rape of Lucrece'
+1 CONC .Both were printed by Richard Field, a boyhood friend from Stratford. 
+1 CONC Theywere well received and helped establish him as a poet.
+1 CONT Queen Elizabeth I died in 1603. King James I followed her to thethrone
+1 CONC . Shakespeare's theatrical company was taken under the king'spatronag
+1 CONC e and called the King's Company. Shakespeare and the other actorswere 
+1 CONC made officers of the royal household.
+1 CONT Shakespeare retired from his theater work in 1610 and returned toStrat
+1 CONC ford.    On April 23, 1616, Shakespeare died at the age of 52. Thisdat
+1 CONC e is according to the Old Style, or Julian, calendar of his time. TheN
+1 CONC ew Style, or Gregorian, calendar date is May 3, 1616  He was buried in
+1 CONC the chancel of the Church of the Holy Trinity in Stratford.
+1 CONT In 1607, when he was 43, he may have suffered a serious physicalbreakd
+1 CONC own. In the same year his older daughter Susanna married John Hall,a d
+1 CONC octor. The next year Shakespeare's first grandchild, Elizabeth, wasbor
+1 CONC n. Also in 1607 his brother Edmund, also a London actor, died at theag
+1 CONC e of 27.
+0 @N00038@ NOTE
+1 CONC See WEBB Genealogy Page 11.
+0 @N00039@ NOTE
+1 CONC See " Heraldica " by J. J. Howard, L.L.D.    William was lord mayor of
+1 CONC London during the time of Henry VIII.
+0 @N00040@ NOTE
+1 CONC See Selleck, Rev. Charles M. "Norwalk" page 398.
+0 @N00041@ NOTE
+1 CONC Charles M. Selleck, A.M. (Rev.), Norwalk, Connecticut (parts 1 & 2),(N
+1 CONC orwalk, Co:Pub by arthur, 1896), F/104/N9/S4/1896, in custody of NewEn
+1 CONC gland Historic Library, Boston, Suffolk County, Mass. p398.
+0 @N00042@ NOTE
+1 CONC James Brintnall Webb, WEBB Genealogy from 1350, copied, M. Bartlett, f
+1 CONC orBMS 1989, INC., Spanish Point, Florida (Webb Family), in custody of 
+1 CONC BettyMargaret Webb Styler, Sarasota, Florida.
+0 @S00001@ SOUR
+1 AUTH Ancestry.com
+1 TITL OneWorldTree
+1 PUBL Name: The Generations Network, Inc.; Location: Provo, UT, USA;
+1 REPO @R00001@
+0 @R00001@ REPO
+1 NAME www.ancestry.com
+1 ADDR
+1 EMAIL
+1 PHON
+0 TRLR

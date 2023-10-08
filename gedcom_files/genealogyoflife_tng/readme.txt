@@ -1,0 +1,1 @@
+https://web.archive.org/web/*/http://genealogyoflife.com/tng/gedcom/*

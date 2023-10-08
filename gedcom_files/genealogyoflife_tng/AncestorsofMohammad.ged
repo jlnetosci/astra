@@ -1,0 +1,889 @@
+0 HEAD
+1 SOUR FTW
+2 VERS Family Tree Maker (13.0.281)
+2 NAME Family Tree Maker for Windows
+2 CORP MyFamily.com, Inc.
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTW
+1 DATE 9 FEB 2006
+1 CHAR ANSI
+1 SUBM Unknown
+1 FILE C:\Program Files\Family Tree Maker 2006\ralphroberts.ged
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+1 _SCHEMA
+2 INDI
+3 _FA1
+4 LABL Fact 1
+3 _FA2
+4 LABL Fact 2
+3 _FA3
+4 LABL Fact 3
+3 _FA4
+4 LABL Fact 4
+3 _FA5
+4 LABL Fact 5
+3 _FA6
+4 LABL Fact 6
+3 _FA7
+4 LABL Fact 7
+3 _FA8
+4 LABL Fact 8
+3 _FA9
+4 LABL Fact 9
+3 _FA10
+4 LABL Fact 10
+3 _FA11
+4 LABL Fact 11
+3 _FA12
+4 LABL Fact 12
+3 _FA13
+4 LABL Fact 13
+3 _MREL
+4 LABL Relationship to Mother
+3 _FREL
+4 LABL Relationship to Father
+2 FAM
+3 _FA1
+4 LABL Marriage fact
+3 _FA2
+4 LABL Fact 2
+3 _MSTAT
+4 LABL Marriage Beginning Status
+3 _MEND
+4 LABL Marriage Ending Status
+0 @I014034@ INDI
+1 NAME Abu /Tabid/
+1 SEX M
+1 FAMS @F06232@
+1 FAMC @F06233@
+0 @I043181@ INDI
+1 NAME Abd /AL-MUTTALIB/
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 FAMS @F17151@
+1 FAMC @F17152@
+0 @I051167@ INDI
+1 NAME Hashem /Amir/, founder of the Hasemite clan
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 BIRT
+2 DATE 464
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 FAMS @F17152@
+1 FAMC @F19658@
+0 @I051178@ INDI
+1 NAME /Salma/
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 FAMS @F17152@
+0 @I082727@ INDI
+1 NAME Fatima /az-Zahra'/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 BIRT
+2 DATE ABT 606
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE ABT 632
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 EVEN
+2 TYPE Lineage
+2 PLAC ancestor of the Shi'ite Imams
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 9302
+1 FAMS @F31806@
+1 FAMC @F31807@
+1 NOTE @NI082727@
+0 @I082728@ INDI
+1 NAME the Prophet /Muhammad/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 ALIA /Mohammed/
+1 NAME Muhammed=Highly /Praised/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 BIRT
+2 DATE 25 MAR 570
+2 PLAC Mecca
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE 8 JUN 632
+2 PLAC Medina
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+2 CAUS poisoned
+3 SOUR @S0005065@
+4 DATA
+5 TEXT Date of Import: Nov 18, 2001
+3 SOUR @S0011098@
+4 DATA
+5 TEXT Date of Import: Dec 15, 2003
+1 REFN 9303
+1 FAMS @F31808@
+1 FAMS @F31809@
+1 FAMS @F31810@
+1 FAMS @F31811@
+1 FAMS @F31812@
+1 FAMS @F31813@
+1 FAMS @F31814@
+1 FAMS @F31807@
+1 FAMS @F31815@
+1 FAMS @F31816@
+1 FAMS @F31817@
+1 FAMS @F31818@
+1 FAMC @F06233@
+1 NOTE @NI082728@
+0 @I082729@ INDI
+1 NAME Khadija Bint /Khuwalyid/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 BIRT
+2 DATE 555
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE 619
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 RELI
+2 PLAC Islam's 1st convert
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 11644
+1 FAMS @F31807@
+0 @I082733@ INDI
+1 NAME /A'isha/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 BIRT
+2 DATE 603
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 26952
+1 FAMS @F31815@
+0 @I082734@ INDI
+1 NAME Hafsa Bint /Umar/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 26954
+1 FAMS @F31808@
+0 @I082735@ INDI
+1 NAME /Rukayya/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 26964
+1 FAMS @F31819@
+1 FAMS @F31820@
+1 FAMC @F31807@
+0 @I082746@ INDI
+1 NAME Sauda Bint /Zam'a/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30156
+1 FAMS @F31816@
+0 @I082747@ INDI
+1 NAME Safiya Bint /Huyayy/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 BIRT
+2 DATE 611
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30159
+1 FAMS @F31818@
+0 @I082748@ INDI
+1 NAME Mary The /Copt/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 ALIA /Mariya/
+1 DEAT
+2 DATE FEB 636/37
+2 PLAC Muharram
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30160
+1 FAMS @F31817@
+0 @I082749@ INDI
+1 NAME /Ibrahim/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 BIRT
+2 DATE 632
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 DATE 27 JAN 631/32
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30161
+1 FAMC @F31817@
+0 @I082750@ INDI
+1 NAME Umm /Kulthum/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 NAME Kuttum Umm /Kashim/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 DEAT
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30183
+1 FAMS @F31821@
+1 FAMS @F31830@
+1 FAMC @F31807@
+0 @I082752@ INDI
+1 NAME Al Qasim Abd Allah Ibn /Muhammad/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30186
+1 FAMC @F31807@
+0 @I082753@ INDI
+1 NAME /Tayyib/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30187
+1 FAMC @F31807@
+0 @I082754@ INDI
+1 NAME /Tahir/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30188
+1 FAMC @F31807@
+0 @I082755@ INDI
+1 NAME /Zaynab/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30189
+1 FAMC @F31807@
+0 @I082756@ INDI
+1 NAME Maymuna Bint Al /Harith/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30191
+1 FAMS @F31809@
+0 @I082757@ INDI
+1 NAME Zaynab Bint /Khuzayma/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30196
+1 FAMS @F31810@
+0 @I082758@ INDI
+1 NAME Umm Habiba Ramla Bint Abu /Sufyan/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30198
+1 FAMS @F31811@
+0 @I082759@ INDI
+1 NAME Zaynab Bint /Jahsh/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30200
+1 FAMS @F31812@
+0 @I082760@ INDI
+1 NAME Juwayriyyah Bint /Harith/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30201
+1 FAMS @F31813@
+0 @I082761@ INDI
+1 NAME Umm Salama Hind Bint Abi /Umayya/
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX F
+1 DEAT
+2 DATE UNKNOWN
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 30203
+1 FAMS @F31814@
+0 @I102821@ INDI
+1 NAME Abd /MANAF/
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 FAMS @F19658@
+0 @I110418@ INDI
+1 NAME /Abdullah/
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 SEX M
+1 FAMS @F06233@
+1 FAMC @F17151@
+0 @F06232@ FAM
+1 HUSB @I014034@
+0 @F06233@ FAM
+1 HUSB @I110418@
+1 CHIL @I082728@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I014034@
+2 _FREL Natural
+2 _MREL Natural
+0 @F17151@ FAM
+1 HUSB @I043181@
+1 CHIL @I110418@
+2 _FREL Natural
+2 _MREL Natural
+0 @F17152@ FAM
+1 HUSB @I051167@
+1 WIFE @I051178@
+1 CHIL @I043181@
+2 _FREL Natural
+2 _MREL Natural
+0 @F19658@ FAM
+1 HUSB @I102821@
+1 CHIL @I051167@
+2 _FREL Natural
+2 _MREL Natural
+0 @F31806@ FAM
+1 WIFE @I082727@
+1 REFN 67541
+0 @F31807@ FAM
+1 HUSB @I082728@
+1 WIFE @I082729@
+1 CHIL @I082735@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082750@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082752@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082753@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082754@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082755@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I082727@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE ABT 595
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 67551
+0 @F31808@ FAM
+1 HUSB @I082728@
+1 WIFE @I082734@
+1 REFN 67567
+0 @F31809@ FAM
+1 HUSB @I082728@
+1 WIFE @I082756@
+1 REFN 67568
+0 @F31810@ FAM
+1 HUSB @I082728@
+1 WIFE @I082757@
+1 REFN 67569
+0 @F31811@ FAM
+1 HUSB @I082728@
+1 WIFE @I082758@
+1 REFN 67570
+0 @F31812@ FAM
+1 HUSB @I082728@
+1 WIFE @I082759@
+1 REFN 67571
+0 @F31813@ FAM
+1 HUSB @I082728@
+1 WIFE @I082760@
+1 REFN 67573
+0 @F31814@ FAM
+1 HUSB @I082728@
+1 WIFE @I082761@
+1 REFN 67574
+0 @F31815@ FAM
+1 HUSB @I082728@
+1 WIFE @I082733@
+1 MARR
+2 DATE 620
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 67575
+0 @F31816@ FAM
+1 HUSB @I082728@
+1 WIFE @I082746@
+1 MARR
+2 DATE 620
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 67576
+0 @F31817@ FAM
+1 HUSB @I082728@
+1 WIFE @I082748@
+1 CHIL @I082749@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 627
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 67577
+0 @F31818@ FAM
+1 HUSB @I082728@
+1 WIFE @I082747@
+1 MARR
+2 DATE 628
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 REFN 67578
+0 @F31819@ FAM
+1 WIFE @I082735@
+1 REFN 150857
+0 @F31820@ FAM
+1 WIFE @I082735@
+1 _FA1
+2 PLAC Divorced
+2 SOUR @S0005065@
+3 DATA
+4 TEXT Date of Import: Nov 18, 2001
+2 SOUR @S0011098@
+3 DATA
+4 TEXT Date of Import: Dec 15, 2003
+1 _MEND Divorce
+1 REFN 150858
+0 @F31821@ FAM
+1 WIFE @I082750@
+1 REFN 150865
+0 @F31830@ FAM
+1 WIFE @I082750@
+1 REFN 160882
+0 @NI082727@ NOTE
+1 CONC [ralphroberts.ged]
+1 CONT
+1 CONT [ddandrm.ged]
+1 CONT
+1 CONT
+1 CONT
+1 CONT
+1 CONT Fatima az- Zahra'
+1 CONT
+1 CONT Fatima az-Zahra' was one of the three daughters of the Prophet Muhammad (p
+1 CONC .b.u.h) and whose mother, Khadija, was the Prophet’s first wife. The Proph
+1 CONC et commended Fatima’s character, once saying to her, "Thou art the highe
+1 CONC st of the women of the people of Paradise, excepting only the Virgin Mar
+1 CONC y, daughter of Imran" (Lings M, Muhammad; his life based on the earliest s
+1 CONC ources 1988, p332). She is usually referred to as Fatima az-zahra whi
+1 CONC ch in English means ‘Fatima the Resplendent’. She married ‘Ali ibn Abi Tal
+1 CONC ib, the Prophet’s paternal cousin, who was also the fourth Caliph, and h
+1 CONC ad two sons Al-Hassan and Al-Hussein.
+1 CONT Six months after the death of the Prophet Muhammad (p.b.u.h), the grievi
+1 CONC ng Fatima too passed away. Today she is held in great reverence by Sunni a
+1 CONC nd Shi’ite Muslims alike and a sepulchre called Fatima’s Tomb is located n
+1 CONC ear the tomb of the Prophet in the Prophet’s mosque. However she is believ
+1 CONC ed to be buried in al-Baqi cemetery in al-Medina al-Munawwara.
+1 CONT
+1 CONT http://www.kinghussein.gov.jo/hash_fatima.html
+0 @NI082728@ NOTE
+1 CONC [ralphroberts.ged]
+1 CONT
+1 CONT [ddandrm.ged]
+1 CONT
+1 CONT
+1 CONT
+1 CONT
+1 CONT Muhammad, the Messenger of God
+1 CONT (... -9 AH / 570-632 CE).
+1 CONT
+1 CONT Muslims believe that Islam completes the revelation of God’s final messa
+1 CONC ge to man through the Prophet Muhammad Praise Be Unto Him (PBUH) and the H
+1 CONC oly Qur’an. For Muslims, God began His message with Judaism and Christiani
+1 CONC ty, and Islam is the capstone of the monotheistic tradition. The Prophet
+1 CONC ’s name means "the praised one" or "he who is glorified" and traditional
+1 CONC ly every mention of the Prophet by name is followed by one of several invo
+1 CONC cations. Usually it is sufficient to say ‘alayhis-salam’ or ‘Peace be up
+1 CONC on him’ (PBUH). The Prophet is a descendant of the Prophets Ibrahim (Abrah
+1 CONC am) and Ismail (Ishmael). His father was Abdullah, the son of Abdel Mutal
+1 CONC ib and the grandson of Hashem who was the founder of the Hashemite clan.
+1 CONT As the Prophet was born after his father’s death, and in keeping with pre-
+1 CONC Islamic tribal law, he was unable to inherit from his father and was se
+1 CONC nt to be raised with a Bedouin foster mother, Halima al-Sa’diya, in the de
+1 CONC sert. The Prophet returned to Mecca under the care of his uncle Abu Tali
+1 CONC b, and as a young man, he earned a reputation for resolving inter-tribal d
+1 CONC ifferences. In fact, he was known within his Quraysh tribe as al-Sadeq al-
+1 CONC Ameen, or ‘the honest, the trustworthy’. When he was twenty-five he marri
+1 CONC ed Khadija who bore the Prophet two sons that died in infancy, and four da
+1 CONC ughters.
+1 CONT
+1 CONT When the Prophet was forty years old, having already experienced vision
+1 CONC s, he received the first revelation of the Qur’an and the Divine messa
+1 CONC ge by the Angel Gabriel in a cave. His wife was the first to convert, foll
+1 CONC owed by his young cousin ‘Ali, the son of Abu Talib, and Zeid his servan
+1 CONC t. The Prophet Muhammad (PBUH) first began to publicly preach to his own c
+1 CONC lan the Hashemites, and the first to convert from outside his family was A
+1 CONC bu Bakr, his friend and influential merchant dealer. As the message spre
+1 CONC ad and the followers of the new religion grew, so did the opposition in t
+1 CONC he city of Mecca. The city was at the time the center of trade and pilgrim
+1 CONC age because of the Ka’aba, which held for the Meccans many sacred objec
+1 CONC ts and idols of worship.
+1 CONT
+1 CONT With time, resistance to Islam became hostile and despite the ban plac
+1 CONC ed on the Hashemite clan the Prophet remained uncompromising in his messa
+1 CONC ge of monotheism. To escape persecution many Muslims left Mecca, and event
+1 CONC ually so too did the Prophet when it was realized that his life was in dan
+1 CONC ger. With many of his followers already established in al-Medina al-Munaww
+1 CONC ara, the Prophet Muhammad (PBUH) emigrated under the cover of darkne
+1 CONC ss in order to evade the search parties. This celebrated journey (622 C
+1 CONC E) became known as the Hijra (emigration) and was later designated to ma
+1 CONC rk the first year of the Muslim calendar, as the Prophet’s arrival in Medi
+1 CONC na marked the first Islamic state. Al-Medina al-Munawwara thereafter beca
+1 CONC me known as the ‘city of the Prophet’.
+1 CONT
+1 CONT Over the next six years the Prophet lived in Medina, spreading the wo
+1 CONC rd of Islam and practicing its teachings. Soon, it became apparent that t
+1 CONC he Muslims would have to face the Meccans in the field of battle in ord
+1 CONC er to further spread God’s message. In March 624 CE, against a superior fo
+1 CONC rce, the Muslims defeated the idol worshipping Meccans at the Battle of Ba
+1 CONC dr, however only a year later the Muslims were defeated in the disastro
+1 CONC us Battle of Uhud. In 628 CE the Prophet with 1000 men entered the wal
+1 CONC ls of Mecca and soon afterwards the Prophet was acknowledged as the leade
+1 CONC r. Fully established in Mecca, the Messenger of God sent great expeditio
+1 CONC ns to the north of Arabia, inviting others to enter into Islam. This mar
+1 CONC ks the beginning of Islam’s expansion towards Syria and Persia.
+1 CONT
+1 CONT The ninth year of the Hijra (632 CE) is known as the "Year of Deputation
+1 CONC s" when delegates came from all over Arabia to enter into Islam. On Ju
+1 CONC ne 8 of that year, the Prophet died and was buried in accordance to his wi
+1 CONC shes, in his house. The expansion of Islam continued extending from as f
+1 CONC ar West as Spain to as far East as India within one hundred years. Today t
+1 CONC here are around a billion Muslims in the world.
+1 CONT
+1 CONT http://www.kinghussein.gov.jo/prophet_muhammad.html
+1 CONT
+1 CONT
+0 @S0005065@ SOUR
+1 TITL ddandrm.ged
+1 REPO
+2 CALN
+3 MEDI Other
+0 @S0011098@ SOUR
+1 TITL ralphroberts.ged
+1 REPO
+2 CALN
+3 MEDI Other
+0 TRLR

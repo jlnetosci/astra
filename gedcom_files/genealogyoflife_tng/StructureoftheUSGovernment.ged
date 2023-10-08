@@ -1,0 +1,3659 @@
+0 HEAD
+1 SOUR FTM
+2 VERS Family Tree Maker (17.0.0.965)
+2 NAME Family Tree Maker for Windows
+2 CORP The Generations Network
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTM
+1 DATE 13 AUG 2008
+1 CHAR ANSI
+1 FILE C:\Users\socrtwo\Desktop\Structure of the US Government.ged
+1 SUBM @SUBM@
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+0 @SUBM@ SUBM
+0 @I00001@ INDI
+1 NAME Executive /Branch/
+1 SEX U
+1 FAMS @F00002@
+1 FAMC @F00001@
+1 FAMC @F00004@
+0 @I00533@ INDI
+1 NAME Commission on Security and Cooperation in Europe /(Helsinki Commission)/
+1 SEX U
+1 FAMC @F00052@
+0 @I00347@ INDI
+1 NAME Nominations to the Air Force /Academy/
+1 SEX U
+1 FAMC @F00039@
+0 @I00348@ INDI
+1 NAME Nominations to the Military /Academy/
+1 SEX U
+1 FAMC @F00039@
+0 @I00346@ INDI
+1 NAME Nominations to the Naval /Academy/
+1 SEX U
+1 FAMC @F00039@
+0 @I00505@ INDI
+1 NAME Committee on House /Administration/
+1 SEX U
+1 FAMC @F00050@
+0 @I00102@ INDI
+1 NAME Federal Election /Administration/
+1 SEX U
+1 FAMC @F00016@
+0 @I00103@ INDI
+1 NAME General Services /Administration/
+1 SEX U
+1 FAMC @F00016@
+0 @I00084@ INDI
+1 NAME Secretary of Veterans /Administration/
+1 SEX U
+0 @I00105@ INDI
+1 NAME Small Business /Administration/
+1 SEX U
+1 FAMC @F00016@
+0 @I00106@ INDI
+1 NAME Social Security /Administration/
+1 SEX U
+1 FAMC @F00016@
+0 @I00093@ INDI
+1 NAME Verterans /Administration/
+1 SEX U
+1 FAMC @F00015@
+0 @I00507@ INDI
+1 NAME Committee on Foreign /Affairs/
+1 SEX U
+1 FAMC @F00050@
+0 @I00496@ INDI
+1 NAME Committee on Veterans' /Affairs/
+1 SEX U
+1 FAMC @F00050@
+0 @I00100@ INDI
+1 NAME Central Intelligence /Agency/
+1 SEX U
+1 ALIA CIA
+1 FAMC @F00016@
+0 @I00101@ INDI
+1 NAME Environmental Protection /Agency/
+1 SEX U
+1 FAMC @F00016@
+0 @I00514@ INDI
+1 NAME Committee on /Agriculture/
+1 SEX U
+1 FAMC @F00050@
+0 @I00086@ INDI
+1 NAME Department of /Agriculture/
+1 SEX U
+1 FAMC @F00015@
+0 @I00416@ INDI
+1 NAME Nutrition and Forestry Committee /Agriculture/
+1 SEX U
+1 FAMC @F00042@
+0 @I00015@ INDI
+1 NAME Secretary of /Agriculture/
+1 SEX U
+0 @I00386@ INDI
+1 NAME 2 Senators from /Alabama/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00457@ INDI
+1 NAME 7 Representatives from the State of /Alabama/
+1 SEX U
+1 FAMC @F00048@
+0 @I00456@ INDI
+1 NAME 1 Representatives from the State of /Alaska/
+1 SEX U
+1 FAMC @F00048@
+0 @I00385@ INDI
+1 NAME 2 Senators from /Alaska/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00536@ INDI
+1 NAME Human Resources Vacancy /Announcements/
+1 SEX U
+1 FAMC @F00053@
+0 @I00108@ INDI
+1 NAME US Court of /Appeals/
+1 SEX U
+1 FAMS @F00018@
+1 FAMS @F00035@
+1 FAMS @F00040@
+1 FAMC @F00054@
+0 @I00513@ INDI
+1 NAME Committee on /Appropriations/
+1 SEX U
+1 FAMC @F00050@
+0 @I00384@ INDI
+1 NAME 2 Senators from /Arizona/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00455@ INDI
+1 NAME 8 Representatives from the State of /Arizona/
+1 SEX U
+1 FAMC @F00048@
+0 @I00383@ INDI
+1 NAME 2 Senators from /Arkansas/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00454@ INDI
+1 NAME 4 Representatives from the State of /Arkansas/
+1 SEX U
+1 FAMC @F00048@
+0 @I00425@ INDI
+1 NAME Sergeant at /Arms/
+1 SEX U
+1 FAMC @F00043@
+0 @I00489@ INDI
+1 NAME The Sergeant at /Arms/
+1 SEX U
+1 FAMC @F00049@
+0 @I00216@ INDI
+1 NAME Federal Magistrate Judges Secretaries /Association/
+1 SEX U
+1 FAMC @F00026@
+0 @I00005@ INDI
+1 NAME Judicial /Branch/
+1 SEX U
+1 FAMS @F00014@
+1 FAMC @F00001@
+1 FAMC @F00004@
+0 @I00004@ INDI
+1 NAME Legislative /Branch/
+1 SEX U
+1 FAMS @F00007@
+1 FAMC @F00001@
+1 FAMC @F00004@
+0 @I00511@ INDI
+1 NAME Committee on the /Budget/
+1 SEX U
+1 FAMC @F00050@
+0 @I00499@ INDI
+1 NAME Committee on Small /Business/
+1 SEX U
+1 FAMC @F00050@
+0 @I00382@ INDI
+1 NAME 2 Senators from /California/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00453@ INDI
+1 NAME 53 Representatives from the State of /California/
+1 SEX U
+1 FAMC @F00048@
+0 @I00466@ INDI
+1 NAME 13 Representatives from the State of North /Carolina/
+1 SEX U
+1 FAMC @F00048@
+0 @I00354@ INDI
+1 NAME 2 Senators from  North /Carolina/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00398@ INDI
+1 NAME 2 Senators from  South /Carolina/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00459@ INDI
+1 NAME 6 Representatives from the State of South /Carolina/
+1 SEX U
+1 FAMC @F00048@
+0 @I00521@ INDI
+1 NAME Democratic /Caucus/
+1 SEX U
+1 FAMC @F00051@
+0 @I00427@ INDI
+1 NAME Office of the Senate /Chaplain/
+1 SEX U
+1 FAMC @F00043@
+0 @I00515@ INDI
+1 NAME US House of Representatives /Chaplain/
+1 SEX U
+1 FAMC @F00049@
+0 @I00534@ INDI
+1 NAME Congressional Executive Commission on /China/
+1 SEX U
+1 FAMC @F00052@
+0 @I00529@ INDI
+1 NAME Select Committee on Technology Transfer to the People's Republic of /China/
+1 SEX U
+1 FAMC @F00052@
+0 @I00262@ INDI
+1 NAME /Circuit/ DC
+1 SEX U
+1 FAMS @F00032@
+1 FAMC @F00040@
+0 @I00260@ INDI
+1 NAME 10th /Circuit/
+1 SEX U
+1 FAMS @F00030@
+1 FAMC @F00040@
+0 @I00261@ INDI
+1 NAME 11th /Circuit/
+1 SEX U
+1 FAMS @F00031@
+1 FAMC @F00040@
+0 @I00110@ INDI
+1 NAME 1st /Circuit/
+1 SEX U
+1 FAMS @F00020@
+1 FAMC @F00040@
+0 @I00127@ INDI
+1 NAME 2nd /Circuit/
+1 SEX U
+1 FAMS @F00021@
+1 FAMC @F00040@
+0 @I00141@ INDI
+1 NAME 3rd /Circuit/
+1 SEX U
+1 FAMS @F00022@
+1 FAMC @F00040@
+0 @I00155@ INDI
+1 NAME 4th /Circuit/
+1 SEX U
+1 FAMS @F00023@
+1 FAMC @F00040@
+0 @I00177@ INDI
+1 NAME 5th /Circuit/
+1 SEX U
+1 FAMS @F00025@
+1 FAMC @F00040@
+0 @I00202@ INDI
+1 NAME 6th /Circuit/
+1 SEX U
+1 FAMS @F00026@
+1 FAMC @F00040@
+0 @I00217@ INDI
+1 NAME 7th /Circuit/
+1 SEX U
+1 FAMS @F00027@
+1 FAMC @F00040@
+0 @I00237@ INDI
+1 NAME 8th /Circuit/
+1 SEX U
+1 FAMS @F00028@
+1 FAMC @F00040@
+0 @I00259@ INDI
+1 NAME 9th /Circuit/
+1 SEX U
+1 FAMS @F00029@
+1 FAMC @F00040@
+0 @I00293@ INDI
+1 NAME Bankruptcy Appellate Panel of the Ninth /Circuit/
+1 SEX U
+1 FAMC @F00029@
+0 @I00316@ INDI
+1 NAME Bankruptcy Appellate Panel of the Tenth /Circuit/
+1 SEX U
+1 FAMC @F00030@
+0 @I00340@ INDI
+1 NAME Federal /Circuit/
+1 SEX U
+1 FAMS @F00033@
+1 FAMC @F00040@
+0 @I00266@ INDI
+1 NAME The United States Court of Appeals For The District of Columbia /Circuit/
+1 SEX U
+1 FAMC @F00032@
+1 FAMC @F00035@
+0 @I00543@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the Eighth /Circuit/
+1 SEX U
+1 FAMC @F00035@
+0 @I00539@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the First /Circuit/
+1 SEX U
+0 @I00541@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the First /Circuit/
+1 SEX U
+1 ALIA BAP
+1 FAMC @F00035@
+0 @I00544@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the Ninth /Circuit/
+1 SEX U
+1 FAMC @F00035@
+0 @I00542@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the Sixth /Circuit/
+1 SEX U
+1 FAMC @F00035@
+0 @I00545@ INDI
+1 NAME United States Bankruptcy Appellate Panel of the Tenth /Circuit/
+1 SEX U
+1 FAMC @F00035@
+0 @I00256@ INDI
+1 NAME United States Court of Appeals For The Eighth /Circuit/
+1 SEX U
+1 FAMC @F00028@
+1 FAMC @F00035@
+0 @I00265@ INDI
+1 NAME United States Court of Appeals For The Eleventh /Circuit/
+1 SEX U
+1 FAMC @F00031@
+1 FAMC @F00035@
+0 @I00341@ INDI
+1 NAME United States Court of Appeals For the Federal /Circuit/
+1 SEX U
+1 FAMC @F00033@
+1 FAMC @F00035@
+0 @I00190@ INDI
+1 NAME United States Court of Appeals For The Fifth /Circuit/
+1 SEX U
+1 FAMC @F00025@
+1 FAMC @F00035@
+0 @I00126@ INDI
+1 NAME United States Court of Appeals For The First /Circuit/
+1 SEX U
+1 FAMC @F00020@
+1 FAMC @F00035@
+0 @I00176@ INDI
+1 NAME United States Court of Appeals For The Fourth /Circuit/
+1 SEX U
+1 FAMC @F00023@
+1 FAMC @F00035@
+0 @I00263@ INDI
+1 NAME United States Court of Appeals For The Ninth /Circuit/
+1 SEX U
+1 FAMC @F00029@
+1 FAMC @F00035@
+0 @I00138@ INDI
+1 NAME United States Court of Appeals For The Second /Circuit/
+1 SEX U
+1 FAMC @F00021@
+1 FAMC @F00035@
+0 @I00236@ INDI
+1 NAME United States Court of Appeals For The Seventh /Circuit/
+1 SEX U
+1 FAMC @F00027@
+1 FAMC @F00035@
+0 @I00215@ INDI
+1 NAME United States Court of Appeals For The Sixth /Circuit/
+1 SEX U
+1 FAMC @F00026@
+1 FAMC @F00035@
+0 @I00264@ INDI
+1 NAME United States Court of Appeals For The Tenth /Circuit/
+1 SEX U
+1 FAMC @F00030@
+1 FAMC @F00035@
+0 @I00154@ INDI
+1 NAME United States Court of Appeals For The Third /Circuit/
+1 SEX U
+1 FAMC @F00022@
+1 FAMC @F00035@
+0 @I00549@ INDI
+1 NAME Electoral /College/
+1 SEX M
+1 FAMS @F00057@
+1 FAMC @F00005@
+0 @I00381@ INDI
+1 NAME 2 Senators from /Colorado/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00452@ INDI
+1 NAME 7 Representatives from the State of /Colorado/
+1 SEX U
+1 FAMC @F00048@
+0 @I00509@ INDI
+1 NAME Committee on Energy and /Commerce/
+1 SEX U
+1 FAMC @F00050@
+0 @I00087@ INDI
+1 NAME Department of /Commerce/
+1 SEX U
+1 FAMC @F00015@
+0 @I00011@ INDI
+1 NAME Secretary of /Commerce/
+1 SEX U
+0 @I00532@ INDI
+1 NAME House Democracy Assistance /Commission/
+1 SEX U
+1 FAMC @F00052@
+0 @I00104@ INDI
+1 NAME Securities and Exchange /Commission/
+1 SEX U
+1 FAMC @F00016@
+0 @I00528@ INDI
+1 NAME U.S.-China Economic and Security Review /Commission/
+1 SEX U
+1 FAMC @F00052@
+0 @I00345@ INDI
+1 NAME United States Sentencing /Commission/
+1 SEX U
+1 FAMC @F00034@
+0 @I00527@ INDI
+1 NAME House /Commissions/
+1 SEX U
+1 FAMS @F00052@
+1 FAMC @F00047@
+0 @I00415@ INDI
+1 NAME Appropriations /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00414@ INDI
+1 NAME Armed Services /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00413@ INDI
+1 NAME Banking Housing and Urban Affairs /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00417@ INDI
+1 NAME Budget /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00418@ INDI
+1 NAME Commerce Science and Transportation /Committee/
+1 SEX F
+1 FAMC @F00042@
+0 @I00412@ INDI
+1 NAME Energy and Natural Resources /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00411@ INDI
+1 NAME Environment and Public Works /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00410@ INDI
+1 NAME Finance /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00409@ INDI
+1 NAME Foreign Relations /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00407@ INDI
+1 NAME Homeland Security and Governmental Affairs /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00518@ INDI
+1 NAME House Republican Policy /Committee/
+1 SEX U
+1 FAMC @F00051@
+0 @I00494@ INDI
+1 NAME Joint Economic /Committee/
+1 SEX U
+1 FAMC @F00050@
+0 @I00406@ INDI
+1 NAME Judiciary /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00405@ INDI
+1 NAME Rules and Administration /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00404@ INDI
+1 NAME Small Business and Entrepreneurship /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00403@ INDI
+1 NAME Veterans' Affairs /Committee/
+1 SEX U
+1 FAMC @F00042@
+0 @I00387@ INDI
+1 NAME Senate /Committees/
+1 SEX U
+0 @I00490@ INDI
+1 NAME Standing House /Committees/
+1 SEX U
+1 FAMS @F00050@
+1 FAMC @F00047@
+0 @I00498@ INDI
+1 NAME Committee on Standards of Official /Conduct/
+1 SEX U
+1 FAMC @F00050@
+0 @I00519@ INDI
+1 NAME House Republican /Conference/
+1 SEX U
+1 FAMC @F00051@
+0 @I00380@ INDI
+1 NAME 2 Senators from /Connecticut/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00451@ INDI
+1 NAME 5 Representatives from the State of /Connecticut/
+1 SEX U
+1 FAMC @F00048@
+0 @I00017@ INDI
+1 NAME US /Constitution/
+1 SEX U
+1 FAMS @F00004@
+1 FAMC @F00005@
+0 @I00107@ INDI
+1 NAME Peace /Corps/
+1 SEX U
+1 FAMC @F00016@
+0 @I00426@ INDI
+1 NAME Office of the Senate Legislative /Counsel/
+1 SEX U
+1 FAMC @F00043@
+0 @I00337@ INDI
+1 NAME Alabama Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00336@ INDI
+1 NAME Alabama Middle District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00335@ INDI
+1 NAME Alabama Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00334@ INDI
+1 NAME Alabama Northern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00333@ INDI
+1 NAME Alabama Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00332@ INDI
+1 NAME Alabama Southern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00297@ INDI
+1 NAME Alaska Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00296@ INDI
+1 NAME Alaska District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00295@ INDI
+1 NAME Arizona Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00294@ INDI
+1 NAME Arizona District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00258@ INDI
+1 NAME Arkansas Eastern and Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00239@ INDI
+1 NAME Arkansas Eastern District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00257@ INDI
+1 NAME Arkansas Western District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00338@ INDI
+1 NAME Bankruptcy /Court/ DC
+1 SEX U
+1 FAMC @F00032@
+0 @I00292@ INDI
+1 NAME California Central Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00291@ INDI
+1 NAME California Central District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00290@ INDI
+1 NAME California Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00289@ INDI
+1 NAME California Eastern District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00287@ INDI
+1 NAME California Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00286@ INDI
+1 NAME California Northern District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00285@ INDI
+1 NAME California Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00284@ INDI
+1 NAME California Southern District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00315@ INDI
+1 NAME Colorado Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00314@ INDI
+1 NAME Colorado District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00140@ INDI
+1 NAME Connecticut Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00139@ INDI
+1 NAME Connecticut District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00153@ INDI
+1 NAME Delaware Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00152@ INDI
+1 NAME Delaware District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00339@ INDI
+1 NAME District /Court/ DC
+1 SEX U
+1 FAMC @F00032@
+0 @I00331@ INDI
+1 NAME Florida Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00330@ INDI
+1 NAME Florida Middle District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00328@ INDI
+1 NAME Florida Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00327@ INDI
+1 NAME Florida Northern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00325@ INDI
+1 NAME Florida Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00324@ INDI
+1 NAME Florida Southern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00323@ INDI
+1 NAME Georgia Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00322@ INDI
+1 NAME Georgia Middle District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00321@ INDI
+1 NAME Georgia Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00320@ INDI
+1 NAME Georgia Northern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00319@ INDI
+1 NAME Georgia Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00318@ INDI
+1 NAME Georgia Southern District /Court/
+1 SEX U
+1 FAMC @F00031@
+0 @I00281@ INDI
+1 NAME Guam District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00280@ INDI
+1 NAME Hawaii Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00279@ INDI
+1 NAME Hawaii District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00278@ INDI
+1 NAME Idaho Bankruptcy/District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00235@ INDI
+1 NAME Illinois Central Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00234@ INDI
+1 NAME Illinois Central District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00233@ INDI
+1 NAME Illinois Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00232@ INDI
+1 NAME Illinois Northern District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00231@ INDI
+1 NAME Illinois Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00230@ INDI
+1 NAME Illinois Southern District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00228@ INDI
+1 NAME Indiana Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00227@ INDI
+1 NAME Indiana Northern District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00225@ INDI
+1 NAME Indiana Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00224@ INDI
+1 NAME Indiana Southern District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00255@ INDI
+1 NAME Iowa Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00254@ INDI
+1 NAME Iowa Northern District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00253@ INDI
+1 NAME Iowa Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00252@ INDI
+1 NAME Iowa Southern District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00312@ INDI
+1 NAME Kansas Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00311@ INDI
+1 NAME Kansas District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00214@ INDI
+1 NAME Kentucky Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00213@ INDI
+1 NAME Kentucky Eastern District /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00212@ INDI
+1 NAME Kentucky Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00211@ INDI
+1 NAME Kentucky Western District /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00189@ INDI
+1 NAME Louisiana Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00188@ INDI
+1 NAME Louisiana Eastern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00185@ INDI
+1 NAME Louisiana Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00184@ INDI
+1 NAME Louisiana Middle District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00183@ INDI
+1 NAME Louisiana Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00182@ INDI
+1 NAME Louisiana Western District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00125@ INDI
+1 NAME Maine Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00124@ INDI
+1 NAME Maine District /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00175@ INDI
+1 NAME Maryland Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00174@ INDI
+1 NAME Maryland District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00123@ INDI
+1 NAME Massachusetts Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00122@ INDI
+1 NAME Massachusetts District /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00251@ INDI
+1 NAME Minnesota Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00250@ INDI
+1 NAME Minnesota District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00181@ INDI
+1 NAME Mississippi Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00180@ INDI
+1 NAME Mississippi Northern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00201@ INDI
+1 NAME Mississippi Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00200@ INDI
+1 NAME Mississippi Southern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00249@ INDI
+1 NAME Missouri Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00248@ INDI
+1 NAME Missouri Eastern District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00277@ INDI
+1 NAME Montana Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00276@ INDI
+1 NAME Montana District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00245@ INDI
+1 NAME Nebraska Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00244@ INDI
+1 NAME Nebraska District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00275@ INDI
+1 NAME Nevada Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00274@ INDI
+1 NAME Nevada District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00121@ INDI
+1 NAME New Hampshire Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00120@ INDI
+1 NAME New Hampshire District /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00151@ INDI
+1 NAME New Jersey Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00150@ INDI
+1 NAME New Jersey District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00310@ INDI
+1 NAME New Mexico Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00309@ INDI
+1 NAME New Mexico District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00137@ INDI
+1 NAME New York Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00136@ INDI
+1 NAME New York Eastern District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00135@ INDI
+1 NAME New York Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00134@ INDI
+1 NAME New York Northern District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00133@ INDI
+1 NAME New York Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00132@ INDI
+1 NAME New York Southern District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00131@ INDI
+1 NAME New York Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00130@ INDI
+1 NAME New York Western District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00173@ INDI
+1 NAME North Carolina Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00172@ INDI
+1 NAME North Carolina Eastern District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00171@ INDI
+1 NAME North Carolina Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00170@ INDI
+1 NAME North Carolina Middle District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00169@ INDI
+1 NAME North Carolina Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00168@ INDI
+1 NAME North Carolina Western District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00243@ INDI
+1 NAME North Dakota Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00242@ INDI
+1 NAME North Dakota District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00273@ INDI
+1 NAME Northern Mariana Islands District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00306@ INDI
+1 NAME Oklahoma Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00305@ INDI
+1 NAME Oklahoma Eastern District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00304@ INDI
+1 NAME Oklahoma Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00303@ INDI
+1 NAME Oklahoma Northern District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00302@ INDI
+1 NAME Oklahoma Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00301@ INDI
+1 NAME Oklahoma Western District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00271@ INDI
+1 NAME Oregon Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00270@ INDI
+1 NAME Oregon District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00148@ INDI
+1 NAME Pennsylvania Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00147@ INDI
+1 NAME Pennsylvania Eastern District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00146@ INDI
+1 NAME Pennsylvania Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00145@ INDI
+1 NAME Pennsylvania Middle District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00144@ INDI
+1 NAME Pennsylvania Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00143@ INDI
+1 NAME Pennsylvania Western District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00119@ INDI
+1 NAME Puerto Rico Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00118@ INDI
+1 NAME Puerto Rico District /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00115@ INDI
+1 NAME Rhode Island Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00114@ INDI
+1 NAME Rhode Island District /Court/
+1 SEX U
+1 FAMC @F00020@
+0 @I00167@ INDI
+1 NAME South Carolina Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00166@ INDI
+1 NAME South Carolina District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00241@ INDI
+1 NAME South Dakota Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00240@ INDI
+1 NAME South Dakota District /Court/
+1 SEX U
+1 FAMC @F00028@
+0 @I00078@ INDI
+1 NAME Supreme /Court/
+1 SEX U
+1 FAMS @F00054@
+1 FAMS @F00-17@
+1 FAMS @F00055@
+1 FAMC @F00014@
+0 @I00210@ INDI
+1 NAME Tennessee Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00209@ INDI
+1 NAME Tennessee Eastern District /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00208@ INDI
+1 NAME Tennessee Middle Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00207@ INDI
+1 NAME Tennessee Middle District /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00205@ INDI
+1 NAME Tennessee Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00204@ INDI
+1 NAME Tennessee Western District /Court/
+1 SEX U
+1 FAMC @F00026@
+0 @I00199@ INDI
+1 NAME Texas Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00198@ INDI
+1 NAME Texas Eastern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00196@ INDI
+1 NAME Texas Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00195@ INDI
+1 NAME Texas Northern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00193@ INDI
+1 NAME Texas Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00192@ INDI
+1 NAME Texas Western District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00344@ INDI
+1 NAME U.S. Supreme /Court/
+1 SEX U
+1 FAMC @F00034@
+0 @I00300@ INDI
+1 NAME Utah Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00299@ INDI
+1 NAME Utah District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00129@ INDI
+1 NAME Vermont Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00128@ INDI
+1 NAME Vermont District /Court/
+1 SEX U
+1 FAMC @F00021@
+0 @I00142@ INDI
+1 NAME Virgin Islands District /Court/
+1 SEX U
+1 FAMC @F00022@
+0 @I00165@ INDI
+1 NAME Virginia Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00164@ INDI
+1 NAME Virginia Eastern District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00162@ INDI
+1 NAME Virginia Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00161@ INDI
+1 NAME Virginia Western District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00269@ INDI
+1 NAME Washington Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00268@ INDI
+1 NAME Washington Eastern District /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00267@ INDI
+1 NAME Washington Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00029@
+0 @I00160@ INDI
+1 NAME West Virginia Northern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00159@ INDI
+1 NAME West Virginia Northern District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00158@ INDI
+1 NAME West Virginia Southern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00157@ INDI
+1 NAME West Virginia Southern District /Court/
+1 SEX U
+1 FAMC @F00023@
+0 @I00179@ INDI
+1 NAME West Virginia Southern District /Court/
+1 SEX U
+1 FAMC @F00025@
+0 @I00222@ INDI
+1 NAME Wisconsin Eastern Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00221@ INDI
+1 NAME Wisconsin Eastern District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00220@ INDI
+1 NAME Wisconsin Western Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00219@ INDI
+1 NAME Wisconsin Western District /Court/
+1 SEX U
+1 FAMC @F00027@
+0 @I00298@ INDI
+1 NAME Wyoming Bankruptcy /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00317@ INDI
+1 NAME Wyoming District /Court/
+1 SEX U
+1 FAMC @F00030@
+0 @I00567@ INDI
+1 NAME Judges for the Appeals /Courts/
+1 SEX U
+1 FAMC @F00024@
+0 @I00566@ INDI
+1 NAME Judges for the Other /Courts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00238@ INDI
+1 NAME Missouri Western District and Bankruptcy /Courts/
+1 SEX U
+1 FAMC @F00028@
+0 @I00194@ INDI
+1 NAME Texas Southern District/Bankruptcy /Courts/
+1 SEX U
+1 FAMC @F00025@
+0 @I00465@ INDI
+1 NAME 1 Representatives from the State of North /Dakota/
+1 SEX U
+1 FAMC @F00048@
+0 @I00458@ INDI
+1 NAME 1 Representatives from the State of South /Dakota/
+1 SEX U
+1 FAMC @F00048@
+0 @I00353@ INDI
+1 NAME 2 Senators from  North /Dakota/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00397@ INDI
+1 NAME 2 Senators from  South /Dakota/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00094@ INDI
+1 NAME Department of /Defense/
+1 SEX U
+1 FAMC @F00015@
+0 @I00010@ INDI
+1 NAME Secretary of /Defense/
+1 SEX U
+0 @I00450@ INDI
+1 NAME 1 Representatives from the State of /Delaware/
+1 SEX U
+1 FAMC @F00048@
+0 @I00379@ INDI
+1 NAME 2 Senators from /Delaware/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00095@ INDI
+1 NAME Department of Housing and Human /Development/
+1 SEX U
+1 FAMC @F00015@
+0 @I00564@ INDI
+1 NAME Judges for the  Circuit /District/ DC
+1 SEX U
+1 FAMC @F00060@
+0 @I00565@ INDI
+1 NAME Judges for the Federal Circuit /District/
+1 SEX U
+1 FAMC @F00060@
+0 @I00562@ INDI
+1 NAME Judges for the 10th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00563@ INDI
+1 NAME Judges for the 11th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00553@ INDI
+1 NAME Judges for the 1st Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00554@ INDI
+1 NAME Judges for the 2nd Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00555@ INDI
+1 NAME Judges for the 3rd Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00556@ INDI
+1 NAME Judges for the 4th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00557@ INDI
+1 NAME Judges for the 5th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00558@ INDI
+1 NAME Judges for the 6th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00559@ INDI
+1 NAME Judges for the 7th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00560@ INDI
+1 NAME Judges for the 8th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00561@ INDI
+1 NAME Judges for the 9th Circuit /Districts/
+1 SEX U
+1 FAMC @F00060@
+0 @I00088@ INDI
+1 NAME Department of /Education/
+1 SEX U
+1 FAMC @F00015@
+0 @I00079@ INDI
+1 NAME Secretary of /Education/
+1 SEX U
+0 @I00090@ INDI
+1 NAME Department of /Energy/
+1 SEX U
+1 FAMC @F00015@
+0 @I00085@ INDI
+1 NAME Secretary of /Energy/
+1 SEX U
+0 @I00272@ INDI
+1 NAME Office of the Circuit /Executive/
+1 SEX U
+1 FAMC @F00029@
+0 @I00378@ INDI
+1 NAME 2 Senators from /Florida/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00449@ INDI
+1 NAME 25 Representatives from the State of /Florida/
+1 SEX U
+1 FAMC @F00048@
+0 @I00537@ INDI
+1 NAME Office of Finance: Electronic Funds Transfer Enrollment and W-9 /Forms/
+1 SEX U
+1 FAMC @F00053@
+0 @I00008@ INDI
+1 NAME Attorney /General/
+1 SEX U
+1 DEAT
+2 PLAC [Secretary of Justice]
+0 @I00448@ INDI
+1 NAME 13 Representatives from the State of /Georgia/
+1 SEX U
+1 FAMC @F00048@
+0 @I00377@ INDI
+1 NAME 2 Senators from /Georgia/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00028@ INDI
+1 NAME Alabama State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00026@ INDI
+1 NAME Alaska State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00036@ INDI
+1 NAME Arizona State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00027@ INDI
+1 NAME Arkansas State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00042@ INDI
+1 NAME California State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00041@ INDI
+1 NAME Colorado State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00029@ INDI
+1 NAME Connecticut State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00030@ INDI
+1 NAME Delaware State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00035@ INDI
+1 NAME District of Columbia Local /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00031@ INDI
+1 NAME Florida State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00037@ INDI
+1 NAME Georgia State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00032@ INDI
+1 NAME Hawaii State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00075@ INDI
+1 NAME Idaho State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00039@ INDI
+1 NAME Illinois State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00033@ INDI
+1 NAME Indiana State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00034@ INDI
+1 NAME Iowa State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00077@ INDI
+1 NAME Kansas State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00038@ INDI
+1 NAME Kentucky State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00043@ INDI
+1 NAME Louisiana State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00045@ INDI
+1 NAME Maine State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00044@ INDI
+1 NAME Maryland State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00046@ INDI
+1 NAME Massachusetts State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00074@ INDI
+1 NAME Michigan State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00063@ INDI
+1 NAME Minnesota State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00057@ INDI
+1 NAME Mississippi State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00058@ INDI
+1 NAME Missouri State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00072@ INDI
+1 NAME Montana State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00073@ INDI
+1 NAME Nebraska State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00064@ INDI
+1 NAME Nevada State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00049@ INDI
+1 NAME New Hampshire State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00047@ INDI
+1 NAME New Jersey State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00065@ INDI
+1 NAME New Mexico State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00050@ INDI
+1 NAME New York State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00054@ INDI
+1 NAME North Carolina State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00059@ INDI
+1 NAME North Dakota State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00069@ INDI
+1 NAME Ohio State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00070@ INDI
+1 NAME Oklahoma State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00066@ INDI
+1 NAME Oregon State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00068@ INDI
+1 NAME Pennsylvania State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00051@ INDI
+1 NAME Rhode Island State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00060@ INDI
+1 NAME Sout Dakota State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00055@ INDI
+1 NAME South Carolina State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00056@ INDI
+1 NAME Tennessee State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00076@ INDI
+1 NAME Texas State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00071@ INDI
+1 NAME Utah State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00048@ INDI
+1 NAME Vermont State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00052@ INDI
+1 NAME Virginia State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00067@ INDI
+1 NAME Washington State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00053@ INDI
+1 NAME West Virginia State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00062@ INDI
+1 NAME Wisconsin State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00061@ INDI
+1 NAME Wyoming State /Government/
+1 SEX U
+1 FAMC @F00010@
+0 @I00021@ INDI
+1 NAME Local /Governments/
+1 SEX U
+1 FAMS @F00012@
+1 FAMC @F00010@
+1 FAMC @F00011@
+0 @I00020@ INDI
+1 NAME State /Governments/
+1 SEX U
+1 FAMS @F00010@
+1 FAMC @F00004@
+1 FAMC @F00013@
+0 @I00470@ INDI
+1 NAME 2 Representatives from the State of New /Hampshire/
+1 SEX U
+1 FAMC @F00048@
+0 @I00358@ INDI
+1 NAME 2 Senators from  New /Hampshire/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00447@ INDI
+1 NAME 2 Representatives from the State of /Hawaiii/
+1 SEX U
+1 FAMC @F00048@
+0 @I00376@ INDI
+1 NAME 2 Senators from /Hawaiii/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00408@ INDI
+1 NAME Education  Labor  and Pensions Committee /Health/
+1 SEX U
+1 FAMC @F00042@
+0 @I00488@ INDI
+1 NAME Clerk of the /House/
+1 SEX U
+1 FAMC @F00049@
+0 @I00446@ INDI
+1 NAME 2 Representatives from the State of /Idaho/
+1 SEX U
+1 FAMC @F00048@
+0 @I00375@ INDI
+1 NAME 2 Senators from /Idaho/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00445@ INDI
+1 NAME 19 Representatives from the State of /Illinois/
+1 SEX U
+1 FAMC @F00048@
+0 @I00374@ INDI
+1 NAME 2 Senators from /Illinois/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00373@ INDI
+1 NAME 2 Senators from /Indiana/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00444@ INDI
+1 NAME 9 Representatives from the State of /Indiana/
+1 SEX U
+1 FAMC @F00048@
+0 @I00497@ INDI
+1 NAME Committee on Transportation and /Infrastructure/
+1 SEX U
+1 FAMC @F00050@
+0 @I00538@ INDI
+1 NAME Green the Capitol /Initiative/
+1 SEX U
+1 FAMC @F00053@
+0 @I00492@ INDI
+1 NAME House Permanent Select Committee on /Intelligence/
+1 SEX U
+1 FAMC @F00050@
+0 @I00096@ INDI
+1 NAME Department of the /Interior/
+1 SEX U
+1 FAMC @F00015@
+0 @I00081@ INDI
+1 NAME Secretary of the /Interior/
+1 SEX U
+0 @I00372@ INDI
+1 NAME 2 Senators from /Iowa/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00443@ INDI
+1 NAME 5 Representatives from the State of /Iowa/
+1 SEX U
+1 FAMC @F00048@
+0 @I00460@ INDI
+1 NAME 2 Representatives from the State of Rhode /Island/
+1 SEX U
+1 FAMC @F00048@
+0 @I00399@ INDI
+1 NAME 2 Senators from  Rhode /Island/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00469@ INDI
+1 NAME 13 Representatives from the State of New /Jersey/
+1 SEX U
+1 FAMC @F00048@
+0 @I00357@ INDI
+1 NAME 2 Senators from  New /Jersey/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00548@ INDI
+1 NAME Associate /Judges/
+1 SEX U
+1 FAMS @F00059@
+1 FAMC @F00056@
+0 @I00547@ INDI
+1 NAME Chief /Judges/
+1 SEX U
+1 FAMC @F00056@
+1 FAMC @F00059@
+0 @I00552@ INDI
+1 NAME District /Judges/
+1 SEX U
+1 FAMS @F00060@
+1 FAMC @F00024@
+0 @I00546@ INDI
+1 NAME Supreme Court /Judges/
+1 SEX U
+1 FAMS @F00056@
+1 FAMC @F00055@
+1 FAMC @F00024@
+0 @I00504@ INDI
+1 NAME Committee on the /Judiciary/
+1 SEX U
+1 FAMC @F00050@
+0 @I00091@ INDI
+1 NAME Department of /Justice/
+1 SEX U
+1 FAMC @F00015@
+0 @I00371@ INDI
+1 NAME 2 Senators from /Kansas/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00442@ INDI
+1 NAME 4 Representatives from the State of /Kansas/
+1 SEX U
+1 FAMC @F00048@
+0 @I00370@ INDI
+1 NAME 2 Senators from /Kentucky/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00441@ INDI
+1 NAME 6 Representatives from the State of /Kentucky/
+1 SEX U
+1 FAMC @F00048@
+0 @I00510@ INDI
+1 NAME Committee on Education and /Labor/
+1 SEX U
+1 FAMC @F00050@
+0 @I00097@ INDI
+1 NAME Department of /Labor/
+1 SEX U
+1 FAMC @F00015@
+0 @I00082@ INDI
+1 NAME Secretary of /Labor/
+1 SEX U
+0 @I00524@ INDI
+1 NAME Majority /Leader/
+1 SEX U
+1 FAMC @F00051@
+0 @I00525@ INDI
+1 NAME Minority /Leader/
+1 SEX U
+1 FAMC @F00051@
+0 @I00432@ INDI
+1 NAME Senate Majority /Leader/
+1 SEX U
+1 FAMC @F00045@
+0 @I00433@ INDI
+1 NAME Senate Minority /Leader/
+1 SEX U
+1 FAMC @F00045@
+0 @I00517@ INDI
+1 NAME House /Leadership/
+1 SEX U
+1 FAMS @F00051@
+1 FAMC @F00047@
+0 @I00431@ INDI
+1 NAME Senate /Leadership/
+1 SEX U
+1 FAMS @F00045@
+1 FAMC @F00041@
+0 @I00369@ INDI
+1 NAME 2 Senators from /Louisiana/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00440@ INDI
+1 NAME 7 Representatives from the State of /Louisiana/
+1 SEX U
+1 FAMC @F00048@
+0 @I00439@ INDI
+1 NAME 2 Representatives from the State of /Maine/
+1 SEX U
+1 FAMC @F00048@
+0 @I00368@ INDI
+1 NAME 2 Senators from /Maine/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00429@ INDI
+1 NAME Secretary for the /Majority/
+1 SEX U
+1 FAMC @F00044@
+0 @I00367@ INDI
+1 NAME 2 Senators from /Maryland/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00438@ INDI
+1 NAME 8 Representatives from the State of /Maryland/
+1 SEX U
+1 FAMC @F00048@
+0 @I00366@ INDI
+1 NAME 2 Senators from /Massachusett/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00437@ INDI
+1 NAME 10 Representatives from the State of /Massachusetts/
+1 SEX U
+1 FAMC @F00048@
+0 @I00495@ INDI
+1 NAME Committee on Ways and /Means/
+1 SEX U
+1 FAMC @F00050@
+0 @I00530@ INDI
+1 NAME National Bipartisan Commission on the Future of /Medicare/
+1 SEX U
+1 FAMC @F00052@
+0 @I00356@ INDI
+1 NAME 2 Senators from  New /Mexico/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00468@ INDI
+1 NAME 3 Representatives from the State of New /Mexico/
+1 SEX U
+1 FAMC @F00048@
+0 @I00477@ INDI
+1 NAME 15 Representatives from the State of /Michigan/
+1 SEX U
+1 FAMC @F00048@
+0 @I00365@ INDI
+1 NAME 2 Senators from /Michigan/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00364@ INDI
+1 NAME 2 Senators from /Minnesota/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00476@ INDI
+1 NAME 8 Representatives from the State of /Minnesota/
+1 SEX U
+1 FAMC @F00048@
+0 @I00430@ INDI
+1 NAME Secretary for the /Minority/
+1 SEX U
+1 FAMC @F00044@
+0 @I00363@ INDI
+1 NAME 2 Senators from /Mississippi/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00475@ INDI
+1 NAME 4 Representatives from the State of /Mississippi/
+1 SEX U
+1 FAMC @F00048@
+0 @I00362@ INDI
+1 NAME 2 Senators from /Missouri/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00474@ INDI
+1 NAME 9 Representatives from the State of /Missouri/
+1 SEX U
+1 FAMC @F00048@
+0 @I00473@ INDI
+1 NAME 1 Representatives from the State of /Montana/
+1 SEX U
+1 FAMC @F00048@
+0 @I00361@ INDI
+1 NAME 2 Senators from /Montana/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00360@ INDI
+1 NAME 2 Senators from /Nebraska/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00472@ INDI
+1 NAME 3 Representatives from the State of /Nebraska/
+1 SEX U
+1 FAMC @F00048@
+0 @I00471@ INDI
+1 NAME 3 Representatives from the State of /Nevada/
+1 SEX U
+1 FAMC @F00048@
+0 @I00359@ INDI
+1 NAME 2 Senators from /Nevadav/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00288@ INDI
+1 NAME California Eastern Probation /Office/
+1 SEX U
+1 FAMC @F00029@
+0 @I00282@ INDI
+1 NAME California Southern Probation /Office/
+1 SEX U
+1 FAMC @F00029@
+0 @I00329@ INDI
+1 NAME Florida Middle Probation /Office/
+1 SEX U
+1 FAMC @F00031@
+0 @I00229@ INDI
+1 NAME Illinois Southern Probation /Office/
+1 SEX U
+1 FAMC @F00027@
+0 @I00223@ INDI
+1 NAME Indiana Southern Probation /Office/
+1 SEX U
+1 FAMC @F00027@
+0 @I00187@ INDI
+1 NAME Louisiana Eastern Pretrial Services /Office/
+1 SEX U
+1 FAMC @F00025@
+0 @I00186@ INDI
+1 NAME Louisiana Eastern Probation /Office/
+1 SEX U
+1 FAMC @F00025@
+0 @I00246@ INDI
+1 NAME Missouri Eastern Probation /Office/
+1 SEX U
+1 FAMC @F00028@
+0 @I00307@ INDI
+1 NAME New Mexico Probation /Office/
+1 SEX U
+1 FAMC @F00030@
+0 @I00117@ INDI
+1 NAME Puerto Rico Pretrial Services /Office/
+1 SEX U
+1 FAMC @F00020@
+0 @I00116@ INDI
+1 NAME Puerto Rico Probation /Office/
+1 SEX U
+1 FAMC @F00020@
+0 @I00206@ INDI
+1 NAME Tennessee Middle Probation & Pretrial Services /Office/
+1 SEX U
+1 FAMC @F00026@
+0 @I00203@ INDI
+1 NAME Tennessee Western Probation /Office/
+1 SEX U
+1 FAMC @F00026@
+0 @I00197@ INDI
+1 NAME Texas Eastern Probation /Office/
+1 SEX U
+1 FAMC @F00025@
+0 @I00163@ INDI
+1 NAME Virginia Eastern Pretrial Services /Office/
+1 SEX U
+1 FAMC @F00023@
+0 @I00156@ INDI
+1 NAME West Virginia Southern Probation /Office/
+1 SEX U
+1 FAMC @F00023@
+0 @I00191@ INDI
+1 NAME West Virginia Southern Probation /Office/
+1 SEX U
+1 FAMC @F00025@
+0 @I00218@ INDI
+1 NAME Wisconsin Western Probation /Office/
+1 SEX U
+1 FAMC @F00027@
+0 @I00464@ INDI
+1 NAME 18 Representatives from the State of /Ohio/
+1 SEX U
+1 FAMC @F00048@
+0 @I00352@ INDI
+1 NAME 2 Senators from /Ohio/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00351@ INDI
+1 NAME 2 Senators from /Oklahoma/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00463@ INDI
+1 NAME 5 Representatives from the State of /Oklahoma/
+1 SEX U
+1 FAMC @F00048@
+0 @I00401@ INDI
+1 NAME 2 Senators from /Oregon/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00462@ INDI
+1 NAME 5 Representatives from the State of /Oregon/
+1 SEX U
+1 FAMC @F00048@
+0 @I00342@ INDI
+1 NAME /Other/
+1 SEX U
+1 FAMS @F00034@
+1 FAMC @F00040@
+0 @I00461@ INDI
+1 NAME 19 Representatives from the State of /Pennsylvania/
+1 SEX U
+1 FAMC @F00048@
+0 @I00400@ INDI
+1 NAME 2 Senators from /Pennsylvania/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00326@ INDI
+1 NAME Florida Northern Probation and /Pretrial/
+1 SEX U
+1 FAMC @F00031@
+0 @I00226@ INDI
+1 NAME Indiana Northern Probation and /Pretrial/
+1 SEX U
+1 FAMC @F00027@
+0 @I00502@ INDI
+1 NAME Committee on Oversight and Government /Reform/
+1 SEX U
+1 FAMC @F00050@
+0 @I00436@ INDI
+1 NAME /Representatives/
+1 SEX U
+1 FAMS @F00048@
+1 FAMC @F00047@
+1 FAMC @F00058@
+0 @I00516@ INDI
+1 NAME Chief Administrative Officer of the US House of /Representatives/
+1 SEX U
+1 FAMS @F00053@
+1 FAMC @F00049@
+0 @I00487@ INDI
+1 NAME Officers of the House of /Representatives/
+1 SEX U
+1 ALIA House Organizations
+1 FAMS @F00049@
+1 FAMC @F00047@
+0 @I00526@ INDI
+1 NAME Speaker of the House of /Representatives/
+1 SEX U
+1 FAMC @F00051@
+0 @I00019@ INDI
+1 NAME US House of /Representatives/
+1 SEX U
+1 FAMS @F00047@
+1 FAMC @F00007@
+0 @I00503@ INDI
+1 NAME Committee on Natural /Resources/
+1 SEX U
+1 FAMC @F00050@
+0 @I00016@ INDI
+1 NAME Bill of /Rights/
+1 SEX U
+1 FAMS @F00001@
+1 FAMC @F00004@
+1 FAMC @F00005@
+0 @I00501@ INDI
+1 NAME Committee on /Rules/
+1 SEX U
+1 FAMC @F00050@
+0 @I00428@ INDI
+1 NAME Party /Secretaries/
+1 SEX U
+1 FAMS @F00044@
+1 FAMC @F00043@
+0 @I00506@ INDI
+1 NAME Committee on Homeland /Security/
+1 SEX U
+1 FAMC @F00050@
+0 @I00012@ INDI
+1 NAME Secretary of Homeland /Security/
+1 SEX U
+0 @I00402@ INDI
+1 NAME Committees of the /Senate/
+1 SEX U
+1 FAMS @F00042@
+1 FAMC @F00041@
+0 @I00421@ INDI
+1 NAME Officers of the /Senate/
+1 SEX U
+1 FAMS @F00043@
+1 FAMC @F00041@
+0 @I00349@ INDI
+1 NAME President of the /Senate/
+1 SEX U
+1 FAMC @F00039@
+1 FAMC @F00043@
+0 @I00424@ INDI
+1 NAME President Pro Tempore of the /Senate/
+1 SEX U
+1 FAMC @F00043@
+0 @I00423@ INDI
+1 NAME Secretary of the /Senate/
+1 SEX U
+1 FAMC @F00043@
+0 @I00018@ INDI
+1 NAME US /Senate/
+1 SEX U
+1 FAMS @F00041@
+1 FAMS @F000-9@
+1 FAMS @F00024@
+1 FAMC @F00007@
+0 @I00422@ INDI
+1 NAME /Senators/
+1 SEX U
+1 FAMS @F00046@
+1 FAMC @F00041@
+1 FAMC @F00013@
+0 @I00531@ INDI
+1 NAME National Commission on Restructuring the Internal Revenue /Service/
+1 SEX U
+1 FAMC @F00052@
+0 @I00283@ INDI
+1 NAME California Southern Pretrial /Services/
+1 SEX U
+1 FAMC @F00029@
+0 @I00512@ INDI
+1 NAME Committee on Armed /Services/
+1 SEX U
+1 FAMC @F00050@
+0 @I00508@ INDI
+1 NAME Committee on Financial /Services/
+1 SEX U
+1 FAMC @F00050@
+0 @I00089@ INDI
+1 NAME Department of Health and Human /Services/
+1 SEX U
+1 FAMC @F00015@
+0 @I00247@ INDI
+1 NAME Missouri Eastern Pretrial /Services/
+1 SEX U
+1 FAMC @F00028@
+0 @I00149@ INDI
+1 NAME New Jersey Pretrial /Services/
+1 SEX U
+1 FAMC @F00022@
+0 @I00308@ INDI
+1 NAME New Mexico Pretrial /Services/
+1 SEX U
+1 FAMC @F00030@
+0 @I00013@ INDI
+1 NAME Secretary of Health and Human /Services/
+1 SEX U
+0 @I00535@ INDI
+1 NAME Office of Procurement: Current /Solicitations/
+1 SEX U
+1 FAMC @F00053@
+0 @I00098@ INDI
+1 NAME Department of /State/
+1 SEX U
+1 FAMC @F00015@
+0 @I00009@ INDI
+1 NAME Secretary of /State/
+1 SEX U
+0 @I00006@ INDI
+1 NAME President of the United /States/
+1 SEX U
+1 FAMS @F00015@
+1 FAMS @F000-3@
+1 FAMS @F000-8@
+1 FAMS @F00016@
+1 FAMS @F00-36@
+1 FAMS @F00024@
+1 FAMC @F00002@
+1 FAMC @F00057@
+0 @I00007@ INDI
+1 NAME Vice President of the United /States/
+1 SEX U
+1 FAMS @F00039@
+1 FAMS @F000-6@
+1 FAMC @F00002@
+0 @I00493@ INDI
+1 NAME Joint Committee on /Taxation/
+1 SEX U
+1 FAMC @F00050@
+0 @I00500@ INDI
+1 NAME Committee on Science and /Technology/
+1 SEX U
+1 FAMC @F00050@
+0 @I00396@ INDI
+1 NAME 2 Senators from /Tennessee/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00486@ INDI
+1 NAME 9 Representatives from the State of /Tennessee/
+1 SEX U
+1 FAMC @F00048@
+0 @I00395@ INDI
+1 NAME 2 Senators from /Texas/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00485@ INDI
+1 NAME 32 Representatives from the State of /Texas/
+1 SEX U
+1 FAMC @F00048@
+0 @I00343@ INDI
+1 NAME U.S. Court of International /Trade/
+1 SEX U
+1 FAMC @F00034@
+0 @I00092@ INDI
+1 NAME Department of /Transportation/
+1 SEX U
+1 FAMC @F00015@
+0 @I00014@ INDI
+1 NAME Secretary of /Transportation/
+1 SEX U
+0 @I00099@ INDI
+1 NAME Department of the /Treasury/
+1 SEX U
+1 FAMC @F00015@
+0 @I00083@ INDI
+1 NAME Secretary of the /Treasury/
+1 SEX U
+0 @I00313@ INDI
+1 NAME Colorado Federal Courts All /Units/
+1 SEX U
+1 FAMC @F00030@
+0 @I00394@ INDI
+1 NAME 2 Senators from /Utah/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00484@ INDI
+1 NAME 3 Representatives from the State of /Utah/
+1 SEX U
+1 FAMC @F00048@
+0 @I00483@ INDI
+1 NAME 1 Representatives from the State of /Vermont/
+1 SEX U
+1 FAMC @F00048@
+0 @I00393@ INDI
+1 NAME 2 Senators from /Vermont/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00482@ INDI
+1 NAME 11 Representatives from the State of /Virginia/
+1 SEX U
+1 FAMC @F00048@
+0 @I00392@ INDI
+1 NAME 2 Senators from /Virginia/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00390@ INDI
+1 NAME 2 Senators from  West /Virginia/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00480@ INDI
+1 NAME 3 Representatives from the State of West /Virginia/
+1 SEX U
+1 FAMC @F00048@
+0 @I00025@ INDI
+1 NAME Female State /Voters/
+1 SEX F
+1 FAMS @F00013@
+0 @I00023@ INDI
+1 NAME Local Female /Voters/
+1 SEX F
+1 FAMS @F00012@
+0 @I00022@ INDI
+1 NAME Local Male /Voters/
+1 SEX M
+1 FAMS @F00011@
+0 @I00024@ INDI
+1 NAME Male State /Voters/
+1 SEX M
+1 FAMS @F00013@
+0 @I00551@ INDI
+1 NAME State Congressional District Female /Voters/
+1 SEX F
+1 FAMS @F00047@
+0 @I00550@ INDI
+1 NAME State Congressional District Male /Voters/
+1 SEX M
+1 FAMS @F00058@
+0 @I00003@ INDI
+1 NAME US Female /Voters/
+1 SEX F
+1 FAMS @F00005@
+0 @I00002@ INDI
+1 NAME US Male /Voters/
+1 SEX M
+1 FAMS @F00005@
+0 @I00491@ INDI
+1 NAME House Select Committee on Energy Independence and Global /Warming/
+1 SEX U
+1 FAMC @F00050@
+0 @I00391@ INDI
+1 NAME 2 Senators from /Washington/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00481@ INDI
+1 NAME 9 Representatives from the State of /Washington/
+1 SEX U
+1 FAMC @F00048@
+0 @I00435@ INDI
+1 NAME Democrat Party /Whip/
+1 SEX U
+1 FAMC @F00045@
+0 @I00523@ INDI
+1 NAME Democratic /Whip/
+1 SEX U
+1 FAMC @F00051@
+0 @I00522@ INDI
+1 NAME Republican /Whip/
+1 SEX U
+1 FAMC @F00051@
+0 @I00434@ INDI
+1 NAME Republican Party /Whip/
+1 SEX U
+1 FAMC @F00045@
+0 @I00389@ INDI
+1 NAME 2 Senators from /Wisconsin/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00479@ INDI
+1 NAME 8 Representatives from the State of /Wisconsin/
+1 SEX U
+1 FAMC @F00048@
+0 @I00478@ INDI
+1 NAME 1 Representatives from the State of /Wyoming/
+1 SEX U
+1 FAMC @F00048@
+0 @I00388@ INDI
+1 NAME 2 Senators from /Wyoming/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00355@ INDI
+1 NAME 2 Senators from  New /York/
+1 SEX U
+1 FAMC @F00038@
+1 FAMC @F00046@
+0 @I00467@ INDI
+1 NAME 29 Representatives from the State of New /York/
+1 SEX U
+1 FAMC @F00048@
+0 @F00001@ FAM
+1 HUSB @I00016@
+1 CHIL @I00001@
+2 _FREL Natural
+1 CHIL @I00004@
+2 _FREL Natural
+1 CHIL @I00005@
+2 _FREL Natural
+0 @F00002@ FAM
+1 HUSB @I00001@
+1 CHIL @I00006@
+2 _FREL Natural
+1 CHIL @I00007@
+2 _FREL Natural
+0 @F000-3@ FAM
+1 HUSB @I00006@
+1 CHIL @I00-80@
+2 _FREL Natural
+0 @F00004@ FAM
+1 HUSB @I00017@
+1 CHIL @I00016@
+2 _FREL Natural
+1 CHIL @I00004@
+2 _FREL Natural
+1 CHIL @I00001@
+2 _FREL Natural
+1 CHIL @I00005@
+2 _FREL Natural
+1 CHIL @I00020@
+2 _FREL Natural
+0 @F000-6@ FAM
+1 HUSB @I00007@
+0 @F00007@ FAM
+1 HUSB @I00004@
+1 CHIL @I00018@
+2 _FREL Natural
+1 CHIL @I00019@
+2 _FREL Natural
+0 @F000-8@ FAM
+1 HUSB @I00006@
+0 @F000-9@ FAM
+1 HUSB @I00018@
+0 @F00010@ FAM
+1 HUSB @I00020@
+1 CHIL @I00021@
+2 _FREL Natural
+1 CHIL @I00026@
+2 _FREL Natural
+1 CHIL @I00027@
+2 _FREL Natural
+1 CHIL @I00028@
+2 _FREL Natural
+1 CHIL @I00029@
+2 _FREL Natural
+1 CHIL @I00030@
+2 _FREL Natural
+1 CHIL @I00031@
+2 _FREL Natural
+1 CHIL @I00032@
+2 _FREL Natural
+1 CHIL @I00033@
+2 _FREL Natural
+1 CHIL @I00034@
+2 _FREL Natural
+1 CHIL @I00035@
+2 _FREL Natural
+1 CHIL @I00036@
+2 _FREL Natural
+1 CHIL @I00037@
+2 _FREL Natural
+1 CHIL @I00038@
+2 _FREL Natural
+1 CHIL @I00039@
+2 _FREL Natural
+1 CHIL @I00041@
+2 _FREL Natural
+1 CHIL @I00042@
+2 _FREL Natural
+1 CHIL @I00043@
+2 _FREL Natural
+1 CHIL @I00044@
+2 _FREL Natural
+1 CHIL @I00045@
+2 _FREL Natural
+1 CHIL @I00046@
+2 _FREL Natural
+1 CHIL @I00047@
+2 _FREL Natural
+1 CHIL @I00048@
+2 _FREL Natural
+1 CHIL @I00049@
+2 _FREL Natural
+1 CHIL @I00050@
+2 _FREL Natural
+1 CHIL @I00051@
+2 _FREL Natural
+1 CHIL @I00052@
+2 _FREL Natural
+1 CHIL @I00053@
+2 _FREL Natural
+1 CHIL @I00054@
+2 _FREL Natural
+1 CHIL @I00055@
+2 _FREL Natural
+1 CHIL @I00056@
+2 _FREL Natural
+1 CHIL @I00057@
+2 _FREL Natural
+1 CHIL @I00058@
+2 _FREL Natural
+1 CHIL @I00059@
+2 _FREL Natural
+1 CHIL @I00060@
+2 _FREL Natural
+1 CHIL @I00061@
+2 _FREL Natural
+1 CHIL @I00062@
+2 _FREL Natural
+1 CHIL @I00063@
+2 _FREL Natural
+1 CHIL @I00064@
+2 _FREL Natural
+1 CHIL @I00065@
+2 _FREL Natural
+1 CHIL @I00066@
+2 _FREL Natural
+1 CHIL @I00067@
+2 _FREL Natural
+1 CHIL @I00068@
+2 _FREL Natural
+1 CHIL @I00069@
+2 _FREL Natural
+1 CHIL @I00070@
+2 _FREL Natural
+1 CHIL @I00071@
+2 _FREL Natural
+1 CHIL @I00072@
+2 _FREL Natural
+1 CHIL @I00073@
+2 _FREL Natural
+1 CHIL @I00074@
+2 _FREL Natural
+1 CHIL @I00075@
+2 _FREL Natural
+1 CHIL @I00076@
+2 _FREL Natural
+1 CHIL @I00077@
+2 _FREL Natural
+0 @F00011@ FAM
+1 HUSB @I00022@
+1 CHIL @I00021@
+2 _FREL Natural
+0 @F00014@ FAM
+1 HUSB @I00005@
+1 CHIL @I00078@
+2 _FREL Natural
+0 @F00015@ FAM
+1 HUSB @I00006@
+1 CHIL @I00086@
+2 _FREL Natural
+1 CHIL @I00087@
+2 _FREL Natural
+1 CHIL @I00088@
+2 _FREL Natural
+1 CHIL @I00089@
+2 _FREL Natural
+1 CHIL @I00090@
+2 _FREL Natural
+1 CHIL @I00091@
+2 _FREL Natural
+1 CHIL @I00092@
+2 _FREL Natural
+1 CHIL @I00093@
+2 _FREL Natural
+1 CHIL @I00094@
+2 _FREL Natural
+1 CHIL @I00095@
+2 _FREL Natural
+1 CHIL @I00096@
+2 _FREL Natural
+1 CHIL @I00097@
+2 _FREL Natural
+1 CHIL @I00098@
+2 _FREL Natural
+1 CHIL @I00099@
+2 _FREL Natural
+0 @F00016@ FAM
+1 HUSB @I00006@
+1 CHIL @I00100@
+2 _FREL Natural
+1 CHIL @I00101@
+2 _FREL Natural
+1 CHIL @I00102@
+2 _FREL Natural
+1 CHIL @I00103@
+2 _FREL Natural
+1 CHIL @I00104@
+2 _FREL Natural
+1 CHIL @I00105@
+2 _FREL Natural
+1 CHIL @I00106@
+2 _FREL Natural
+1 CHIL @I00107@
+2 _FREL Natural
+0 @F00-17@ FAM
+1 HUSB @I00078@
+0 @F00018@ FAM
+1 HUSB @I00108@
+0 @F00-19@ FAM
+1 CHIL @I0-111@
+1 CHIL @I0-112@
+1 CHIL @I0-113@
+1 CHIL @I0-178@
+0 @F00020@ FAM
+1 HUSB @I00110@
+1 CHIL @I00114@
+2 _FREL Natural
+1 CHIL @I00115@
+2 _FREL Natural
+1 CHIL @I00116@
+2 _FREL Natural
+1 CHIL @I00117@
+2 _FREL Natural
+1 CHIL @I00118@
+2 _FREL Natural
+1 CHIL @I00119@
+2 _FREL Natural
+1 CHIL @I00120@
+2 _FREL Natural
+1 CHIL @I00121@
+2 _FREL Natural
+1 CHIL @I00122@
+2 _FREL Natural
+1 CHIL @I00123@
+2 _FREL Natural
+1 CHIL @I00124@
+2 _FREL Natural
+1 CHIL @I00125@
+2 _FREL Natural
+1 CHIL @I00126@
+2 _FREL Natural
+0 @F00021@ FAM
+1 HUSB @I00127@
+1 CHIL @I00128@
+2 _FREL Natural
+1 CHIL @I00129@
+2 _FREL Natural
+1 CHIL @I00130@
+2 _FREL Natural
+1 CHIL @I00131@
+2 _FREL Natural
+1 CHIL @I00132@
+2 _FREL Natural
+1 CHIL @I00133@
+2 _FREL Natural
+1 CHIL @I00134@
+2 _FREL Natural
+1 CHIL @I00135@
+2 _FREL Natural
+1 CHIL @I00136@
+2 _FREL Natural
+1 CHIL @I00137@
+2 _FREL Natural
+1 CHIL @I00138@
+2 _FREL Natural
+1 CHIL @I00139@
+2 _FREL Natural
+1 CHIL @I00140@
+2 _FREL Natural
+0 @F00022@ FAM
+1 HUSB @I00141@
+1 CHIL @I00142@
+2 _FREL Natural
+1 CHIL @I00143@
+2 _FREL Natural
+1 CHIL @I00144@
+2 _FREL Natural
+1 CHIL @I00145@
+2 _FREL Natural
+1 CHIL @I00146@
+2 _FREL Natural
+1 CHIL @I00147@
+2 _FREL Natural
+1 CHIL @I00148@
+2 _FREL Natural
+1 CHIL @I00149@
+2 _FREL Natural
+1 CHIL @I00150@
+2 _FREL Natural
+1 CHIL @I00151@
+2 _FREL Natural
+1 CHIL @I00152@
+2 _FREL Natural
+1 CHIL @I00153@
+2 _FREL Natural
+1 CHIL @I00154@
+2 _FREL Natural
+0 @F00023@ FAM
+1 HUSB @I00155@
+1 CHIL @I00156@
+2 _FREL Natural
+1 CHIL @I00157@
+2 _FREL Natural
+1 CHIL @I00158@
+2 _FREL Natural
+1 CHIL @I00159@
+2 _FREL Natural
+1 CHIL @I00160@
+2 _FREL Natural
+1 CHIL @I00161@
+2 _FREL Natural
+1 CHIL @I00162@
+2 _FREL Natural
+1 CHIL @I00163@
+2 _FREL Natural
+1 CHIL @I00164@
+2 _FREL Natural
+1 CHIL @I00165@
+2 _FREL Natural
+1 CHIL @I00166@
+2 _FREL Natural
+1 CHIL @I00167@
+2 _FREL Natural
+1 CHIL @I00168@
+2 _FREL Natural
+1 CHIL @I00169@
+2 _FREL Natural
+1 CHIL @I00170@
+2 _FREL Natural
+1 CHIL @I00171@
+2 _FREL Natural
+1 CHIL @I00172@
+2 _FREL Natural
+1 CHIL @I00173@
+2 _FREL Natural
+1 CHIL @I00174@
+2 _FREL Natural
+1 CHIL @I00175@
+2 _FREL Natural
+1 CHIL @I00176@
+2 _FREL Natural
+0 @F00025@ FAM
+1 HUSB @I00177@
+1 CHIL @I00179@
+2 _FREL Natural
+1 CHIL @I00180@
+2 _FREL Natural
+1 CHIL @I00181@
+2 _FREL Natural
+1 CHIL @I00182@
+2 _FREL Natural
+1 CHIL @I00183@
+2 _FREL Natural
+1 CHIL @I00184@
+2 _FREL Natural
+1 CHIL @I00185@
+2 _FREL Natural
+1 CHIL @I00186@
+2 _FREL Natural
+1 CHIL @I00187@
+2 _FREL Natural
+1 CHIL @I00188@
+2 _FREL Natural
+1 CHIL @I00189@
+2 _FREL Natural
+1 CHIL @I00190@
+2 _FREL Natural
+1 CHIL @I00191@
+2 _FREL Natural
+1 CHIL @I00192@
+2 _FREL Natural
+1 CHIL @I00193@
+2 _FREL Natural
+1 CHIL @I00194@
+2 _FREL Natural
+1 CHIL @I00195@
+2 _FREL Natural
+1 CHIL @I00196@
+2 _FREL Natural
+1 CHIL @I00197@
+2 _FREL Natural
+1 CHIL @I00198@
+2 _FREL Natural
+1 CHIL @I00199@
+2 _FREL Natural
+1 CHIL @I00200@
+2 _FREL Natural
+1 CHIL @I00201@
+2 _FREL Natural
+0 @F00026@ FAM
+1 HUSB @I00202@
+1 CHIL @I00203@
+2 _FREL Natural
+1 CHIL @I00204@
+2 _FREL Natural
+1 CHIL @I00205@
+2 _FREL Natural
+1 CHIL @I00206@
+2 _FREL Natural
+1 CHIL @I00207@
+2 _FREL Natural
+1 CHIL @I00208@
+2 _FREL Natural
+1 CHIL @I00209@
+2 _FREL Natural
+1 CHIL @I00210@
+2 _FREL Natural
+1 CHIL @I00211@
+2 _FREL Natural
+1 CHIL @I00212@
+2 _FREL Natural
+1 CHIL @I00213@
+2 _FREL Natural
+1 CHIL @I00214@
+2 _FREL Natural
+1 CHIL @I00215@
+2 _FREL Natural
+1 CHIL @I00216@
+2 _FREL Natural
+0 @F00027@ FAM
+1 HUSB @I00217@
+1 CHIL @I00218@
+2 _FREL Natural
+1 CHIL @I00219@
+2 _FREL Natural
+1 CHIL @I00220@
+2 _FREL Natural
+1 CHIL @I00221@
+2 _FREL Natural
+1 CHIL @I00222@
+2 _FREL Natural
+1 CHIL @I00223@
+2 _FREL Natural
+1 CHIL @I00224@
+2 _FREL Natural
+1 CHIL @I00225@
+2 _FREL Natural
+1 CHIL @I00226@
+2 _FREL Natural
+1 CHIL @I00227@
+2 _FREL Natural
+1 CHIL @I00228@
+2 _FREL Natural
+1 CHIL @I00229@
+2 _FREL Natural
+1 CHIL @I00230@
+2 _FREL Natural
+1 CHIL @I00231@
+2 _FREL Natural
+1 CHIL @I00232@
+2 _FREL Natural
+1 CHIL @I00233@
+2 _FREL Natural
+1 CHIL @I00234@
+2 _FREL Natural
+1 CHIL @I00235@
+2 _FREL Natural
+1 CHIL @I00236@
+2 _FREL Natural
+0 @F00028@ FAM
+1 HUSB @I00237@
+1 CHIL @I00238@
+2 _FREL Natural
+1 CHIL @I00239@
+2 _FREL Natural
+1 CHIL @I00240@
+2 _FREL Natural
+1 CHIL @I00241@
+2 _FREL Natural
+1 CHIL @I00242@
+2 _FREL Natural
+1 CHIL @I00243@
+2 _FREL Natural
+1 CHIL @I00244@
+2 _FREL Natural
+1 CHIL @I00245@
+2 _FREL Natural
+1 CHIL @I00246@
+2 _FREL Natural
+1 CHIL @I00247@
+2 _FREL Natural
+1 CHIL @I00248@
+2 _FREL Natural
+1 CHIL @I00249@
+2 _FREL Natural
+1 CHIL @I00250@
+2 _FREL Natural
+1 CHIL @I00251@
+2 _FREL Natural
+1 CHIL @I00252@
+2 _FREL Natural
+1 CHIL @I00253@
+2 _FREL Natural
+1 CHIL @I00254@
+2 _FREL Natural
+1 CHIL @I00255@
+2 _FREL Natural
+1 CHIL @I00256@
+2 _FREL Natural
+1 CHIL @I00257@
+2 _FREL Natural
+1 CHIL @I00258@
+2 _FREL Natural
+0 @F00029@ FAM
+1 HUSB @I00259@
+1 CHIL @I00263@
+2 _FREL Natural
+1 CHIL @I00267@
+2 _FREL Natural
+1 CHIL @I00268@
+2 _FREL Natural
+1 CHIL @I00269@
+2 _FREL Natural
+1 CHIL @I00270@
+2 _FREL Natural
+1 CHIL @I00271@
+2 _FREL Natural
+1 CHIL @I00272@
+2 _FREL Natural
+1 CHIL @I00273@
+2 _FREL Natural
+1 CHIL @I00274@
+2 _FREL Natural
+1 CHIL @I00275@
+2 _FREL Natural
+1 CHIL @I00276@
+2 _FREL Natural
+1 CHIL @I00277@
+2 _FREL Natural
+1 CHIL @I00278@
+2 _FREL Natural
+1 CHIL @I00279@
+2 _FREL Natural
+1 CHIL @I00280@
+2 _FREL Natural
+1 CHIL @I00281@
+2 _FREL Natural
+1 CHIL @I00282@
+2 _FREL Natural
+1 CHIL @I00283@
+2 _FREL Natural
+1 CHIL @I00284@
+2 _FREL Natural
+1 CHIL @I00285@
+2 _FREL Natural
+1 CHIL @I00286@
+2 _FREL Natural
+1 CHIL @I00287@
+2 _FREL Natural
+1 CHIL @I00288@
+2 _FREL Natural
+1 CHIL @I00289@
+2 _FREL Natural
+1 CHIL @I00290@
+2 _FREL Natural
+1 CHIL @I00291@
+2 _FREL Natural
+1 CHIL @I00292@
+2 _FREL Natural
+1 CHIL @I00293@
+2 _FREL Natural
+1 CHIL @I00294@
+2 _FREL Natural
+1 CHIL @I00295@
+2 _FREL Natural
+1 CHIL @I00296@
+2 _FREL Natural
+1 CHIL @I00297@
+2 _FREL Natural
+0 @F00030@ FAM
+1 HUSB @I00260@
+1 CHIL @I00264@
+2 _FREL Natural
+1 CHIL @I00298@
+2 _FREL Natural
+1 CHIL @I00299@
+2 _FREL Natural
+1 CHIL @I00300@
+2 _FREL Natural
+1 CHIL @I00301@
+2 _FREL Natural
+1 CHIL @I00302@
+2 _FREL Natural
+1 CHIL @I00303@
+2 _FREL Natural
+1 CHIL @I00304@
+2 _FREL Natural
+1 CHIL @I00305@
+2 _FREL Natural
+1 CHIL @I00306@
+2 _FREL Natural
+1 CHIL @I00307@
+2 _FREL Natural
+1 CHIL @I00308@
+2 _FREL Natural
+1 CHIL @I00309@
+2 _FREL Natural
+1 CHIL @I00310@
+2 _FREL Natural
+1 CHIL @I00311@
+2 _FREL Natural
+1 CHIL @I00312@
+2 _FREL Natural
+1 CHIL @I00313@
+2 _FREL Natural
+1 CHIL @I00314@
+2 _FREL Natural
+1 CHIL @I00315@
+2 _FREL Natural
+1 CHIL @I00316@
+2 _FREL Natural
+1 CHIL @I00317@
+2 _FREL Natural
+0 @F00031@ FAM
+1 HUSB @I00261@
+1 CHIL @I00265@
+2 _FREL Natural
+1 CHIL @I00318@
+2 _FREL Natural
+1 CHIL @I00319@
+2 _FREL Natural
+1 CHIL @I00320@
+2 _FREL Natural
+1 CHIL @I00321@
+2 _FREL Natural
+1 CHIL @I00322@
+2 _FREL Natural
+1 CHIL @I00323@
+2 _FREL Natural
+1 CHIL @I00324@
+2 _FREL Natural
+1 CHIL @I00325@
+2 _FREL Natural
+1 CHIL @I00326@
+2 _FREL Natural
+1 CHIL @I00327@
+2 _FREL Natural
+1 CHIL @I00328@
+2 _FREL Natural
+1 CHIL @I00329@
+2 _FREL Natural
+1 CHIL @I00330@
+2 _FREL Natural
+1 CHIL @I00331@
+2 _FREL Natural
+1 CHIL @I00332@
+2 _FREL Natural
+1 CHIL @I00333@
+2 _FREL Natural
+1 CHIL @I00334@
+2 _FREL Natural
+1 CHIL @I00335@
+2 _FREL Natural
+1 CHIL @I00336@
+2 _FREL Natural
+1 CHIL @I00337@
+2 _FREL Natural
+0 @F00032@ FAM
+1 HUSB @I00262@
+1 CHIL @I00266@
+2 _FREL Natural
+1 CHIL @I00338@
+2 _FREL Natural
+1 CHIL @I00339@
+2 _FREL Natural
+0 @F00033@ FAM
+1 HUSB @I00340@
+1 CHIL @I00341@
+2 _FREL Natural
+0 @F00034@ FAM
+1 HUSB @I00342@
+1 CHIL @I00343@
+2 _FREL Natural
+1 CHIL @I00344@
+2 _FREL Natural
+1 CHIL @I00345@
+2 _FREL Natural
+0 @F00035@ FAM
+1 HUSB @I00108@
+1 CHIL @I00126@
+2 _FREL Natural
+1 CHIL @I00138@
+2 _FREL Natural
+1 CHIL @I00154@
+2 _FREL Natural
+1 CHIL @I00176@
+2 _FREL Natural
+1 CHIL @I00190@
+2 _FREL Natural
+1 CHIL @I00215@
+2 _FREL Natural
+1 CHIL @I00236@
+2 _FREL Natural
+1 CHIL @I00256@
+2 _FREL Natural
+1 CHIL @I00263@
+2 _FREL Natural
+1 CHIL @I00264@
+2 _FREL Natural
+1 CHIL @I00265@
+2 _FREL Natural
+1 CHIL @I00266@
+2 _FREL Natural
+1 CHIL @I00341@
+2 _FREL Natural
+1 CHIL @I00541@
+2 _FREL Natural
+1 CHIL @I00542@
+2 _FREL Natural
+1 CHIL @I00543@
+2 _FREL Natural
+1 CHIL @I00544@
+2 _FREL Natural
+1 CHIL @I00545@
+2 _FREL Natural
+0 @F00-36@ FAM
+1 HUSB @I00006@
+0 @F00037@ FAM
+0 @F00038@ FAM
+1 CHIL @I00351@
+1 CHIL @I00352@
+1 CHIL @I00353@
+1 CHIL @I00354@
+1 CHIL @I00355@
+1 CHIL @I00356@
+1 CHIL @I00357@
+1 CHIL @I00358@
+1 CHIL @I00359@
+1 CHIL @I00360@
+1 CHIL @I00361@
+1 CHIL @I00362@
+1 CHIL @I00363@
+1 CHIL @I00364@
+1 CHIL @I00365@
+1 CHIL @I00366@
+1 CHIL @I00367@
+1 CHIL @I00368@
+1 CHIL @I00369@
+1 CHIL @I00370@
+1 CHIL @I00371@
+1 CHIL @I00372@
+1 CHIL @I00373@
+1 CHIL @I00374@
+1 CHIL @I00375@
+1 CHIL @I00376@
+1 CHIL @I00377@
+1 CHIL @I00378@
+1 CHIL @I00379@
+1 CHIL @I00380@
+1 CHIL @I00381@
+1 CHIL @I00382@
+1 CHIL @I00383@
+1 CHIL @I00384@
+1 CHIL @I00385@
+1 CHIL @I00386@
+1 CHIL @I00388@
+1 CHIL @I00389@
+1 CHIL @I00390@
+1 CHIL @I00391@
+1 CHIL @I00392@
+1 CHIL @I00393@
+1 CHIL @I00394@
+1 CHIL @I00395@
+1 CHIL @I00396@
+1 CHIL @I00397@
+1 CHIL @I00398@
+1 CHIL @I00399@
+1 CHIL @I00400@
+1 CHIL @I00401@
+0 @F00039@ FAM
+1 HUSB @I00007@
+1 CHIL @I00346@
+2 _FREL Natural
+1 CHIL @I00347@
+2 _FREL Natural
+1 CHIL @I00348@
+2 _FREL Natural
+1 CHIL @I00349@
+2 _FREL Natural
+0 @F00040@ FAM
+1 HUSB @I00108@
+1 CHIL @I00110@
+2 _FREL Natural
+1 CHIL @I00127@
+2 _FREL Natural
+1 CHIL @I00141@
+2 _FREL Natural
+1 CHIL @I00155@
+2 _FREL Natural
+1 CHIL @I00177@
+2 _FREL Natural
+1 CHIL @I00202@
+2 _FREL Natural
+1 CHIL @I00217@
+2 _FREL Natural
+1 CHIL @I00237@
+2 _FREL Natural
+1 CHIL @I00259@
+2 _FREL Natural
+1 CHIL @I00260@
+2 _FREL Natural
+1 CHIL @I00261@
+2 _FREL Natural
+1 CHIL @I00262@
+2 _FREL Natural
+1 CHIL @I00340@
+2 _FREL Natural
+1 CHIL @I00342@
+2 _FREL Natural
+0 @F00041@ FAM
+1 HUSB @I00018@
+1 CHIL @I00402@
+2 _FREL Natural
+1 CHIL @I00421@
+2 _FREL Natural
+1 CHIL @I00422@
+2 _FREL Natural
+1 CHIL @I00431@
+2 _FREL Natural
+0 @F00042@ FAM
+1 HUSB @I00402@
+1 CHIL @I00403@
+2 _FREL Natural
+1 CHIL @I00404@
+2 _FREL Natural
+1 CHIL @I00405@
+2 _FREL Natural
+1 CHIL @I00406@
+2 _FREL Natural
+1 CHIL @I00407@
+2 _FREL Natural
+1 CHIL @I00408@
+2 _FREL Natural
+1 CHIL @I00409@
+2 _FREL Natural
+1 CHIL @I00410@
+2 _FREL Natural
+1 CHIL @I00411@
+2 _FREL Natural
+1 CHIL @I00412@
+2 _FREL Natural
+1 CHIL @I00413@
+2 _FREL Natural
+1 CHIL @I00414@
+2 _FREL Natural
+1 CHIL @I00415@
+2 _FREL Natural
+1 CHIL @I00416@
+2 _FREL Natural
+1 CHIL @I00417@
+2 _FREL Natural
+1 CHIL @I00418@
+2 _FREL Natural
+0 @F00043@ FAM
+1 HUSB @I00421@
+1 CHIL @I00349@
+2 _FREL Natural
+1 CHIL @I00423@
+2 _FREL Natural
+1 CHIL @I00424@
+2 _FREL Natural
+1 CHIL @I00425@
+2 _FREL Natural
+1 CHIL @I00426@
+2 _FREL Natural
+1 CHIL @I00427@
+2 _FREL Natural
+1 CHIL @I00428@
+2 _FREL Natural
+0 @F00044@ FAM
+1 HUSB @I00428@
+1 CHIL @I00429@
+2 _FREL Natural
+1 CHIL @I00430@
+2 _FREL Natural
+0 @F00045@ FAM
+1 HUSB @I00431@
+1 CHIL @I00432@
+2 _FREL Natural
+1 CHIL @I00433@
+2 _FREL Natural
+1 CHIL @I00434@
+2 _FREL Natural
+1 CHIL @I00435@
+2 _FREL Natural
+0 @F00046@ FAM
+1 HUSB @I00422@
+1 CHIL @I00386@
+2 _FREL Natural
+1 CHIL @I00385@
+2 _FREL Natural
+1 CHIL @I00384@
+2 _FREL Natural
+1 CHIL @I00383@
+2 _FREL Natural
+1 CHIL @I00382@
+2 _FREL Natural
+1 CHIL @I00354@
+2 _FREL Natural
+1 CHIL @I00398@
+2 _FREL Natural
+1 CHIL @I00381@
+2 _FREL Natural
+1 CHIL @I00380@
+2 _FREL Natural
+1 CHIL @I00353@
+2 _FREL Natural
+1 CHIL @I00397@
+2 _FREL Natural
+1 CHIL @I00379@
+2 _FREL Natural
+1 CHIL @I00378@
+2 _FREL Natural
+1 CHIL @I00377@
+2 _FREL Natural
+1 CHIL @I00358@
+2 _FREL Natural
+1 CHIL @I00376@
+2 _FREL Natural
+1 CHIL @I00375@
+2 _FREL Natural
+1 CHIL @I00374@
+2 _FREL Natural
+1 CHIL @I00373@
+2 _FREL Natural
+1 CHIL @I00372@
+2 _FREL Natural
+1 CHIL @I00399@
+2 _FREL Natural
+1 CHIL @I00357@
+2 _FREL Natural
+1 CHIL @I00371@
+2 _FREL Natural
+1 CHIL @I00370@
+2 _FREL Natural
+1 CHIL @I00369@
+2 _FREL Natural
+1 CHIL @I00368@
+2 _FREL Natural
+1 CHIL @I00367@
+2 _FREL Natural
+1 CHIL @I00366@
+2 _FREL Natural
+1 CHIL @I00356@
+2 _FREL Natural
+1 CHIL @I00365@
+2 _FREL Natural
+1 CHIL @I00364@
+2 _FREL Natural
+1 CHIL @I00363@
+2 _FREL Natural
+1 CHIL @I00362@
+2 _FREL Natural
+1 CHIL @I00361@
+2 _FREL Natural
+1 CHIL @I00360@
+2 _FREL Natural
+1 CHIL @I00359@
+2 _FREL Natural
+1 CHIL @I00352@
+2 _FREL Natural
+1 CHIL @I00351@
+2 _FREL Natural
+1 CHIL @I00401@
+2 _FREL Natural
+1 CHIL @I00400@
+2 _FREL Natural
+1 CHIL @I00396@
+2 _FREL Natural
+1 CHIL @I00395@
+2 _FREL Natural
+1 CHIL @I00394@
+2 _FREL Natural
+1 CHIL @I00393@
+2 _FREL Natural
+1 CHIL @I00392@
+2 _FREL Natural
+1 CHIL @I00390@
+2 _FREL Natural
+1 CHIL @I00389@
+2 _FREL Natural
+1 CHIL @I00388@
+2 _FREL Natural
+1 CHIL @I00355@
+2 _FREL Natural
+1 CHIL @I00391@
+2 _FREL Natural
+0 @F00048@ FAM
+1 HUSB @I00436@
+1 CHIL @I00437@
+2 _FREL Natural
+1 CHIL @I00438@
+2 _FREL Natural
+1 CHIL @I00439@
+2 _FREL Natural
+1 CHIL @I00440@
+2 _FREL Natural
+1 CHIL @I00441@
+2 _FREL Natural
+1 CHIL @I00442@
+2 _FREL Natural
+1 CHIL @I00443@
+2 _FREL Natural
+1 CHIL @I00444@
+2 _FREL Natural
+1 CHIL @I00445@
+2 _FREL Natural
+1 CHIL @I00446@
+2 _FREL Natural
+1 CHIL @I00447@
+2 _FREL Natural
+1 CHIL @I00448@
+2 _FREL Natural
+1 CHIL @I00449@
+2 _FREL Natural
+1 CHIL @I00450@
+2 _FREL Natural
+1 CHIL @I00451@
+2 _FREL Natural
+1 CHIL @I00452@
+2 _FREL Natural
+1 CHIL @I00453@
+2 _FREL Natural
+1 CHIL @I00454@
+2 _FREL Natural
+1 CHIL @I00455@
+2 _FREL Natural
+1 CHIL @I00456@
+2 _FREL Natural
+1 CHIL @I00457@
+2 _FREL Natural
+1 CHIL @I00458@
+2 _FREL Natural
+1 CHIL @I00459@
+2 _FREL Natural
+1 CHIL @I00460@
+2 _FREL Natural
+1 CHIL @I00461@
+2 _FREL Natural
+1 CHIL @I00462@
+2 _FREL Natural
+1 CHIL @I00463@
+2 _FREL Natural
+1 CHIL @I00464@
+2 _FREL Natural
+1 CHIL @I00465@
+2 _FREL Natural
+1 CHIL @I00466@
+2 _FREL Natural
+1 CHIL @I00467@
+2 _FREL Natural
+1 CHIL @I00468@
+2 _FREL Natural
+1 CHIL @I00469@
+2 _FREL Natural
+1 CHIL @I00470@
+2 _FREL Natural
+1 CHIL @I00471@
+2 _FREL Natural
+1 CHIL @I00472@
+2 _FREL Natural
+1 CHIL @I00473@
+2 _FREL Natural
+1 CHIL @I00474@
+2 _FREL Natural
+1 CHIL @I00475@
+2 _FREL Natural
+1 CHIL @I00476@
+2 _FREL Natural
+1 CHIL @I00477@
+2 _FREL Natural
+1 CHIL @I00478@
+2 _FREL Natural
+1 CHIL @I00479@
+2 _FREL Natural
+1 CHIL @I00480@
+2 _FREL Natural
+1 CHIL @I00481@
+2 _FREL Natural
+1 CHIL @I00482@
+2 _FREL Natural
+1 CHIL @I00483@
+2 _FREL Natural
+1 CHIL @I00484@
+2 _FREL Natural
+1 CHIL @I00485@
+2 _FREL Natural
+1 CHIL @I00486@
+2 _FREL Natural
+0 @F00049@ FAM
+1 HUSB @I00487@
+1 CHIL @I00488@
+2 _FREL Natural
+1 CHIL @I00489@
+2 _FREL Natural
+1 CHIL @I00515@
+2 _FREL Natural
+1 CHIL @I00516@
+2 _FREL Natural
+0 @F00050@ FAM
+1 HUSB @I00490@
+1 CHIL @I00491@
+2 _FREL Natural
+1 CHIL @I00492@
+2 _FREL Natural
+1 CHIL @I00493@
+2 _FREL Natural
+1 CHIL @I00494@
+2 _FREL Natural
+1 CHIL @I00495@
+2 _FREL Natural
+1 CHIL @I00496@
+2 _FREL Natural
+1 CHIL @I00497@
+2 _FREL Natural
+1 CHIL @I00498@
+2 _FREL Natural
+1 CHIL @I00499@
+2 _FREL Natural
+1 CHIL @I00500@
+2 _FREL Natural
+1 CHIL @I00501@
+2 _FREL Natural
+1 CHIL @I00502@
+2 _FREL Natural
+1 CHIL @I00503@
+2 _FREL Natural
+1 CHIL @I00504@
+2 _FREL Natural
+1 CHIL @I00505@
+2 _FREL Natural
+1 CHIL @I00506@
+2 _FREL Natural
+1 CHIL @I00507@
+2 _FREL Natural
+1 CHIL @I00508@
+2 _FREL Natural
+1 CHIL @I00509@
+2 _FREL Natural
+1 CHIL @I00510@
+2 _FREL Natural
+1 CHIL @I00511@
+2 _FREL Natural
+1 CHIL @I00512@
+2 _FREL Natural
+1 CHIL @I00513@
+2 _FREL Natural
+1 CHIL @I00514@
+2 _FREL Natural
+0 @F00051@ FAM
+1 HUSB @I00517@
+1 CHIL @I00518@
+2 _FREL Natural
+1 CHIL @I00519@
+2 _FREL Natural
+1 CHIL @I00521@
+2 _FREL Natural
+1 CHIL @I00522@
+2 _FREL Natural
+1 CHIL @I00523@
+2 _FREL Natural
+1 CHIL @I00524@
+2 _FREL Natural
+1 CHIL @I00525@
+2 _FREL Natural
+1 CHIL @I00526@
+2 _FREL Natural
+0 @F00052@ FAM
+1 HUSB @I00527@
+1 CHIL @I00528@
+2 _FREL Natural
+1 CHIL @I00529@
+2 _FREL Natural
+1 CHIL @I00530@
+2 _FREL Natural
+1 CHIL @I00531@
+2 _FREL Natural
+1 CHIL @I00532@
+2 _FREL Natural
+1 CHIL @I00533@
+2 _FREL Natural
+1 CHIL @I00534@
+2 _FREL Natural
+0 @F00053@ FAM
+1 HUSB @I00516@
+1 CHIL @I00535@
+2 _FREL Natural
+1 CHIL @I00536@
+2 _FREL Natural
+1 CHIL @I00537@
+2 _FREL Natural
+1 CHIL @I00538@
+2 _FREL Natural
+0 @F00054@ FAM
+1 HUSB @I00078@
+1 CHIL @I00108@
+2 _FREL Natural
+0 @F00055@ FAM
+1 HUSB @I00078@
+1 CHIL @I00546@
+2 _FREL Natural
+0 @F00056@ FAM
+1 HUSB @I00546@
+1 CHIL @I00547@
+2 _FREL Natural
+1 CHIL @I00548@
+2 _FREL Natural
+0 @F00057@ FAM
+1 HUSB @I00549@
+1 CHIL @I00006@
+2 _FREL Natural
+0 @F00058@ FAM
+1 HUSB @I00550@
+1 CHIL @I00436@
+2 _FREL Natural
+0 @F00059@ FAM
+1 HUSB @I00548@
+1 CHIL @I00547@
+2 _FREL Natural
+0 @F00060@ FAM
+1 HUSB @I00552@
+1 CHIL @I00553@
+2 _FREL Natural
+1 CHIL @I00554@
+2 _FREL Natural
+1 CHIL @I00555@
+2 _FREL Natural
+1 CHIL @I00556@
+2 _FREL Natural
+1 CHIL @I00557@
+2 _FREL Natural
+1 CHIL @I00558@
+2 _FREL Natural
+1 CHIL @I00559@
+2 _FREL Natural
+1 CHIL @I00560@
+2 _FREL Natural
+1 CHIL @I00561@
+2 _FREL Natural
+1 CHIL @I00562@
+2 _FREL Natural
+1 CHIL @I00563@
+2 _FREL Natural
+1 CHIL @I00564@
+2 _FREL Natural
+1 CHIL @I00565@
+2 _FREL Natural
+1 CHIL @I00566@
+2 _FREL Natural
+0 @F00005@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 CHIL @I00017@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00016@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00549@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00024@ FAM
+1 HUSB @I00006@
+1 WIFE @I00018@
+1 CHIL @I00546@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00552@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00567@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00012@ FAM
+1 HUSB @I00021@
+1 WIFE @I00023@
+0 @F00013@ FAM
+1 HUSB @I00024@
+1 WIFE @I00025@
+1 CHIL @I00020@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00422@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00047@ FAM
+1 HUSB @I00019@
+1 WIFE @I00551@
+1 CHIL @I00436@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00487@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00490@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00517@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00527@
+2 _FREL Natural
+2 _MREL Natural
+0 TRLR

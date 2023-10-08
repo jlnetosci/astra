@@ -1,0 +1,1225 @@
+0 HEAD
+1 SOUR FTM
+2 VERS Family Tree Maker (17.0.0.965)
+2 NAME Family Tree Maker for Windows
+2 CORP The Generations Network
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTM
+1 DATE 04 SEP 2008
+1 CHAR ANSI
+1 FILE C:\Users\socrtwo\Desktop\The Christian Church.ged
+1 SUBM @SUBM@
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+0 @SUBM@ SUBM
+0 @I00001@ INDI
+1 NAME /Jesus/
+1 SEX M
+1 FAMS @F00002@
+1 FAMC @F00001@
+0 @I00002@ INDI
+1 NAME Free Presbyterian Church /(Australia)/
+1 SEX F
+1 FAMC @F00055@
+0 @I00003@ INDI
+1 NAME United Methodist Church /(England)/
+1 SEX F
+1 FAMS @F00064@
+1 FAMC @F00049@
+0 @I00004@ INDI
+1 NAME Byzantine Catholic Church in /America/
+1 SEX F
+0 @I00005@ INDI
+1 NAME Conservative Baptist Association of /America/ I
+1 SEX F
+1 FAMC @F00041@
+0 @I00006@ INDI
+1 NAME Evangelical Free Church of /America/
+1 SEX F
+1 FAMC @F00059@
+0 @I00007@ INDI
+1 NAME Evangelical Synod of North /America/
+1 SEX F
+1 FAMS @F00062@
+1 FAMS @F00063@
+1 FAMC @F00011@
+0 @I00008@ INDI
+1 NAME Inc.; National Baptist Convention of /America/
+1 SEX F
+1 ALIA NBCA
+1 FAMC @F00043@
+0 @I00009@ INDI
+1 NAME Universalist Church of /America/
+1 SEX F
+1 ALIA Universalist General Convention
+1 FAMS @F00057@
+1 FAMC @F00011@
+0 @I00010@ INDI
+1 NAME /Amish/
+1 SEX F
+1 FAMS @F00026@
+1 FAMS @F00058@
+1 FAMC @F00028@
+0 @I00011@ INDI
+1 NAME /Anglican/
+1 SEX F
+1 FAMS @F00012@
+1 FAMS @F00065@
+1 FAMC @F00007@
+0 @I00012@ INDI
+1 NAME /Anglican/
+1 SEX F
+1 FAMS @F00014@
+1 FAMC @F00012@
+0 @I00013@ INDI
+1 NAME /Anglican/
+1 SEX F
+1 FAMC @F00014@
+0 @I00014@ INDI
+1 NAME Catholic /Armenians/
+1 SEX F
+1 FAMC @F00017@
+0 @I00015@ INDI
+1 NAME Catholicos of All /Armenians/
+1 SEX F
+1 FAMC @F00016@
+0 @I00016@ INDI
+1 NAME /Arnoldleut/
+1 SEX F
+1 ALIA Bruderhof Communities
+1 FAMC @F00031@
+0 @I00017@ INDI
+1 NAME Norwegian-Danish Evangelical Free Church /Association/
+1 SEX F
+1 FAMS @F00059@
+1 FAMC @F00035@
+0 @I00018@ INDI
+1 NAME Methodist Church of /Australasia/
+1 SEX F
+1 FAMS @F00054@
+1 FAMS @F00066@
+1 FAMC @F00048@
+0 @I00019@ INDI
+1 NAME Congregational Federation of /Australia./
+1 SEX F
+1 FAMC @F00053@
+0 @I00020@ INDI
+1 NAME Congregational Union of /Australia/
+1 SEX F
+1 FAMS @F00052@
+1 FAMC @F00046@
+0 @I00021@ INDI
+1 NAME Presbyterian Church of /Australia/
+1 SEX F
+1 FAMS @F00066@
+1 FAMC @F00055@
+0 @I00022@ INDI
+1 NAME Presbyterian Church of Eastern /Australia/
+1 SEX F
+1 FAMC @F00055@
+0 @I00023@ INDI
+1 NAME Reformed Presbyterian Church of /Australia/
+1 SEX F
+1 FAMC @F00055@
+0 @I00024@ INDI
+1 NAME Uniting Church in /Australia/
+1 SEX F
+1 FAMC @F00052@
+1 FAMC @F00066@
+0 @I00025@ INDI
+1 NAME Wesleyan Methodist Church of /Australia/
+1 SEX F
+1 FAMC @F00054@
+0 @I00026@ INDI
+1 NAME Westminster Presbyterian Church of /Australia/
+1 SEX F
+1 FAMC @F00055@
+0 @I00027@ INDI
+1 NAME /Baptist/
+1 SEX F
+1 FAMS @F00039@
+1 FAMS @F00057@
+1 FAMC @F00011@
+0 @I00028@ INDI
+1 NAME Alliance of /Baptists/
+1 SEX F
+1 FAMC @F00042@
+0 @I00029@ INDI
+1 NAME /Beanites/
+1 SEX F
+1 FAMC @F00060@
+0 @I00030@ INDI
+1 NAME /Bretheran/
+1 SEX F
+1 FAMS @F00023@
+1 FAMC @F00024@
+0 @I00031@ INDI
+1 NAME The Church of the /Bretheran/
+1 SEX F
+1 FAMC @F00023@
+0 @I00032@ INDI
+1 NAME Mennonite /Brethren/
+1 SEX F
+1 FAMC @F00025@
+0 @I00033@ INDI
+1 NAME Old German Baptist /Brethren/
+1 SEX F
+1 FAMC @F00023@
+0 @I00034@ INDI
+1 NAME Methodist Church of Great /Britain/
+1 SEX F
+0 @I00035@ INDI
+1 NAME Methodist Church of Great /Britain/
+1 SEX U
+1 FAMC @F00048@
+1 FAMC @F00064@
+0 @I00036@ INDI
+1 NAME Lutheran Church - /Canada/
+1 SEX F
+1 FAMC @F00033@
+0 @I00037@ INDI
+1 NAME Mennonite Church /Canada/
+1 SEX F
+1 FAMC @F00058@
+0 @I00038@ INDI
+1 NAME Syro-Malankara /Catholic/
+1 SEX F
+1 FAMC @F00020@
+0 @I00039@ INDI
+1 NAME Abyssinian /Catholics/
+1 SEX F
+1 FAMC @F00017@
+0 @I00040@ INDI
+1 NAME Alexandrian /Catholics/
+1 SEX F
+1 ALIA Catholic Copts
+1 FAMC @F00017@
+0 @I00041@ INDI
+1 NAME Bulgarian /Catholics/
+1 SEX F
+1 FAMC @F00019@
+0 @I00042@ INDI
+1 NAME Byzantine /Catholics/
+1 SEX F
+1 FAMS @F00019@
+1 FAMC @F00017@
+0 @I00043@ INDI
+1 NAME Rumanian /Catholics/
+1 SEX F
+1 FAMC @F00019@
+0 @I00044@ INDI
+1 NAME Lutheran Church of /China/
+1 SEX F
+1 FAMC @F00032@
+0 @I00045@ INDI
+1 NAME United Church of /Christ/
+1 SEX F
+1 FAMC @F00062@
+0 @I00046@ INDI
+1 NAME Bible /Christians/
+1 SEX F
+1 FAMS @F00049@
+1 FAMC @F00047@
+0 @I00047@ INDI
+1 NAME Malabar /Christians/
+1 SEX F
+1 FAMC @F00003@
+0 @I00048@ INDI
+1 NAME Evangelical and Reformed /Church./
+1 SEX F
+1 FAMC @F00063@
+0 @I00049@ INDI
+1 NAME African Methodist Episcopal /Church/
+1 SEX F
+1 FAMC @F00065@
+0 @I00050@ INDI
+1 NAME African Methodist Episcopal Zion /Church/
+1 SEX F
+1 FAMC @F00050@
+0 @I00051@ INDI
+1 NAME Armenian Apostolic /Church/
+1 SEX F
+1 ALIA Armenian Orthodox Church Gregorian Church Armenian Orthodox and Aposto
+2 CONC lic Church
+1 FAMS @F00016@
+1 FAMC @F00003@
+0 @I00052@ INDI
+1 NAME Brethren in Christ /Church/
+1 SEX F
+1 FAMC @F00008@
+0 @I00053@ INDI
+1 NAME Brethren in Christ /Church/
+1 SEX F
+1 FAMC @F00025@
+0 @I00054@ INDI
+1 NAME Catholic /Church/
+1 SEX F
+1 ALIA East-West Schism
+1 FAMS @F00004@
+1 FAMC @F00003@
+0 @I00055@ INDI
+1 NAME Catholic /Church/
+1 SEX F
+1 FAMS @F00006@
+1 FAMC @F00004@
+0 @I00056@ INDI
+1 NAME Chaldaean /Church/
+1 SEX F
+1 FAMC @F00017@
+0 @I00057@ INDI
+1 NAME Christian Methodist Episcopal /Church/
+1 SEX F
+1 FAMC @F00047@
+0 @I00058@ INDI
+1 NAME Coptic Orthodox /Church/
+1 SEX F
+1 ALIA Egyptian Orthodox Church of Alexandria
+1 FAMS @F00015@
+1 FAMC @F00003@
+0 @I00059@ INDI
+1 NAME Eritrean Orthodox Tewahedo /Church/
+1 SEX F
+1 FAMC @F00003@
+0 @I00060@ INDI
+1 NAME Ethiopian Orthodox Tewahido /Church/
+1 SEX F
+1 ALIA Church of Abyssinia
+1 FAMC @F00003@
+0 @I00061@ INDI
+1 NAME Evangelical Covenant /Church/
+1 SEX F
+1 ALIA Swedish Mission Covenant Church Swedish Evangelical Mission Covenant o
+2 CONC f America
+1 FAMC @F00010@
+0 @I00062@ INDI
+1 NAME Evangelical Presbyterian /Church/
+1 SEX F
+1 FAMC @F00055@
+0 @I00063@ INDI
+1 NAME General Conference Mennonite /Church/
+1 SEX F
+1 FAMS @F00058@
+0 @I00064@ INDI
+1 NAME General Convention of the Christian /Church/
+1 SEX F
+1 FAMS @F00061@
+1 FAMC @F00046@
+0 @I00065@ INDI
+1 NAME Jacobite Syrian Christian /Church/
+1 SEX F
+1 ALIA Malankara Orthodox Church
+1 FAMC @F00003@
+0 @I00066@ INDI
+1 NAME Maronite /Church/
+1 SEX F
+1 FAMC @F00017@
+0 @I00067@ INDI
+1 NAME Methodist Episcopal /Church/
+1 SEX F
+1 FAMS @F00050@
+1 FAMC @F00047@
+0 @I00068@ INDI
+1 NAME Old Order Mennonite /Church/
+1 SEX F
+1 FAMS @F00029@
+1 FAMC @F00025@
+0 @I00069@ INDI
+1 NAME One Holy Catholic Apostolic /Church/
+1 SEX F
+1 FAMS @F00003@
+1 FAMC @F00002@
+0 @I00070@ INDI
+1 NAME Orthodox Reformed Mennonite /Church/
+1 SEX F
+1 FAMC @F00025@
+0 @I00071@ INDI
+1 NAME Presbyterian Reformed /Church/
+1 SEX F
+1 FAMC @F00055@
+0 @I00072@ INDI
+1 NAME Roman Catholic /Church/
+1 SEX F
+1 ALIA Western Catholic Church (s)
+1 FAMC @F00006@
+0 @I00073@ INDI
+1 NAME Romanian Byzantine Catholic /Church/
+1 SEX F
+0 @I00074@ INDI
+1 NAME Southern Presbyterian /Church/
+1 SEX F
+1 FAMC @F00055@
+0 @I00075@ INDI
+1 NAME Swedish Evangelical Free /Church/
+1 SEX F
+1 FAMS @F00059@
+1 FAMC @F00035@
+0 @I00076@ INDI
+1 NAME Syro-Malabar /Church/
+1 SEX F
+0 @I00077@ INDI
+1 NAME The Brethren /Church/
+1 SEX F
+1 FAMC @F00023@
+0 @I00078@ INDI
+1 NAME United Methodist /Church/
+1 SEX F
+1 FAMC @F00050@
+0 @I00079@ INDI
+1 NAME Wesleyan Methodist /Church/
+1 SEX F
+1 FAMS @F00048@
+1 FAMC @F00047@
+0 @I00080@ INDI
+1 NAME Congregational Christian /Churches./
+1 SEX F
+1 FAMS @F00062@
+1 FAMC @F00061@
+0 @I00081@ INDI
+1 NAME Australian Presbyterian /Churches/
+1 SEX F
+1 FAMS @F00055@
+1 FAMC @F00056@
+0 @I00082@ INDI
+1 NAME Congregational /Churches/
+1 SEX F
+1 FAMS @F00061@
+1 FAMC @F00046@
+0 @I00083@ INDI
+1 NAME Eastern Catholic /Churches/
+1 SEX F
+1 FAMS @F00017@
+1 FAMC @F00006@
+0 @I00084@ INDI
+1 NAME Fellowship of Congregational /Churches/
+1 SEX F
+1 FAMS @F00053@
+1 FAMC @F00052@
+0 @I00085@ INDI
+1 NAME General Association of Regular Baptist /Churches/
+1 SEX F
+1 FAMC @F00041@
+0 @I00086@ INDI
+1 NAME General Council of Congregational Christian /Churches/
+1 SEX U
+1 FAMC @F00046@
+0 @I00087@ INDI
+1 NAME Syrian Catholic /Churches/
+1 SEX F
+1 FAMS @F00020@
+1 FAMC @F00017@
+0 @I00088@ INDI
+1 NAME Catholicos of See of /Cilicia/
+1 SEX F
+1 FAMC @F00016@
+0 @I00089@ INDI
+1 NAME Ephrata /Cloister/
+1 SEX F
+1 FAMC @F00023@
+0 @I00090@ INDI
+1 NAME Minnesota Breakaway /Colonies/
+1 SEX F
+1 FAMC @F00031@
+0 @I00091@ INDI
+1 NAME Montana Breakawy /Colonies/
+1 SEX F
+1 FAMC @F00031@
+0 @I00092@ INDI
+1 NAME Baptist General /Conference/
+1 SEX F
+1 ALIA Swedish Baptist
+1 FAMC @F00010@
+0 @I00093@ INDI
+1 NAME Confessional Evangelical Lutheran /Conference/
+1 SEX F
+1 FAMS @F00034@
+1 FAMC @F00032@
+0 @I00094@ INDI
+1 NAME Conservative Congregational Christian /Conference/
+1 SEX U
+1 FAMC @F00046@
+0 @I00095@ INDI
+1 NAME Conservative Mennonite /Conference/
+1 SEX F
+1 FAMC @F00026@
+0 @I00096@ INDI
+1 NAME /Congregational/
+1 SEX F
+1 ALIA Independents
+1 FAMS @F00046@
+1 FAMC @F00011@
+0 @I00097@ INDI
+1 NAME Lott Carey Foreign Mission /Convention/
+1 SEX F
+1 FAMC @F00043@
+0 @I00098@ INDI
+1 NAME Progressive National Baptist /Convention/
+1 SEX F
+1 FAMC @F00043@
+0 @I00099@ INDI
+1 NAME Southern Baptist /Convention/
+1 SEX F
+1 ALIA SBC
+1 FAMS @F00042@
+1 FAMC @F00039@
+0 @I00100@ INDI
+1 NAME USA  Inc. National Baptist /Convention/
+1 SEX F
+1 ALIA NBC
+1 FAMS @F00043@
+1 FAMC @F00039@
+0 @I00101@ INDI
+1 NAME International Lutheran /Council/
+1 SEX F
+1 FAMS @F00033@
+1 FAMC @F00032@
+0 @I00102@ INDI
+1 NAME World Methodist /Council/
+1 SEX F
+1 FAMC @F00048@
+0 @I00103@ INDI
+1 NAME /Dariusleut/
+1 SEX F
+1 FAMC @F00031@
+0 @I00104@ INDI
+1 NAME Ancient Church of the /East/
+1 SEX F
+1 FAMC @F00018@
+0 @I00105@ INDI
+1 NAME Assyrian Church of the /East/
+1 SEX F
+1 ALIA Nestorian Church the Syrian Church the Persian Church Assyrian Orthodo
+2 CONC x Church Chaldean Syrian Church. The Holy Apostolic Catholic Assyrian 
+2 CONC Church of the East
+1 FAMS @F00018@
+1 FAMC @F00003@
+0 @I00106@ INDI
+1 NAME Lutheran World /Federation/
+1 SEX F
+1 ALIA LWF
+1 FAMC @F00032@
+0 @I00107@ INDI
+1 NAME Cooperative Baptist /Fellowship/
+1 SEX F
+1 FAMC @F00042@
+0 @I00108@ INDI
+1 NAME Full Gospel Baptist Church /Fellowship/
+1 SEX F
+1 FAMC @F00043@
+0 @I00109@ INDI
+1 NAME World Baptist /Fellowship/
+1 SEX F
+1 FAMS @F00045@
+1 FAMC @F00044@
+0 @I00110@ INDI
+1 NAME World Fundamental Baptist Missionary /Fellowship/
+1 SEX U
+1 ALIA Premillennial Missionary Baptist Fellowship
+1 FAMS @F00044@
+1 FAMC @F00039@
+0 @I00111@ INDI
+1 NAME /Free/
+1 SEX F
+1 FAMS @F00035@
+1 FAMC @F00010@
+0 @I00112@ INDI
+1 NAME Assemblies of /God/
+1 SEX F
+1 FAMC @F00013@
+0 @I00113@ INDI
+1 NAME /Gurneyite/
+1 SEX F
+1 FAMC @F00037@
+0 @I00114@ INDI
+1 NAME /Hicksite/
+1 SEX F
+1 FAMS @F00060@
+1 FAMC @F00036@
+0 @I00115@ INDI
+1 NAME /Holiness/
+1 SEX F
+1 FAMC @F00013@
+0 @I00116@ INDI
+1 NAME /Hutterite/
+1 SEX F
+1 FAMS @F00031@
+1 FAMC @F00024@
+0 @I00117@ INDI
+1 NAME Baptist Bible Fellowship /International/
+1 SEX F
+1 FAMC @F00044@
+0 @I00118@ INDI
+1 NAME Independent Baptist Fellowship /International/
+1 SEX F
+1 FAMC @F00045@
+0 @I00119@ INDI
+1 NAME /Italo-Greeks/
+1 SEX F
+1 FAMC @F00019@
+0 @I00120@ INDI
+1 NAME /Judaism/
+1 SEX F
+1 FAMS @F00001@
+0 @I00121@ INDI
+1 NAME /Lehrerleut/
+1 SEX F
+1 FAMC @F00031@
+0 @I00122@ INDI
+1 NAME Martin /Luther/
+1 SEX F
+1 FAMS @F00007@
+1 FAMC @F00006@
+0 @I00123@ INDI
+1 NAME /Lutheran/
+1 SEX F
+1 FAMS @F00009@
+1 FAMC @F00007@
+0 @I00124@ INDI
+1 NAME /Lutheran/
+1 SEX F
+1 FAMS @F00032@
+1 FAMC @F00009@
+0 @I00125@ INDI
+1 NAME Uniat Church of /Malabar/
+1 SEX F
+1 FAMC @F00017@
+0 @I00126@ INDI
+1 NAME /Melkites/
+1 SEX F
+1 FAMC @F00019@
+0 @I00127@ INDI
+1 NAME /Mennonite/
+1 SEX F
+1 FAMS @F00025@
+1 FAMS @F00028@
+1 FAMC @F00024@
+0 @I00128@ INDI
+1 NAME Progressive /Mennonite/
+1 SEX F
+1 FAMC @F00025@
+0 @I00129@ INDI
+1 NAME Automobile Old Order /Mennonites/
+1 SEX F
+1 ALIA Black Bumper' Mennonites
+1 FAMC @F00029@
+0 @I00130@ INDI
+1 NAME Holdeman /Mennonites/
+1 SEX U
+1 FAMC @F00025@
+0 @I00131@ INDI
+1 NAME Horse and Buggy Old Order /Mennonites/
+1 SEX F
+1 FAMS @F00030@
+1 FAMC @F00029@
+0 @I00132@ INDI
+1 NAME Stauffer /Mennonites/
+1 SEX F
+1 ALIA Pike Mennonites
+1 FAMC @F00030@
+0 @I00133@ INDI
+1 NAME /Methodist/
+1 SEX F
+1 FAMS @F00047@
+1 FAMC @F00011@
+0 @I00134@ INDI
+1 NAME /Methodist/
+1 SEX F
+1 FAMS @F00013@
+1 FAMC @F00012@
+0 @I00135@ INDI
+1 NAME /Methodist/
+1 SEX F
+1 FAMS @F00065@
+1 FAMC @F00047@
+0 @I00136@ INDI
+1 NAME Primitive /Methodist/
+1 SEX F
+1 FAMS @F00064@
+1 FAMC @F00047@
+0 @I00137@ INDI
+1 NAME /Moravian/
+1 SEX F
+1 ALIA Unity of the Brethren Bohemian Brethren Unitas Fratrum
+1 FAMC @F00010@
+0 @I00138@ INDI
+1 NAME Church of the /Nazarene/
+1 SEX F
+1 FAMS @F00051@
+1 FAMC @F00048@
+0 @I00139@ INDI
+1 NAME /Orthodox/
+1 SEX F
+1 FAMS @F00037@
+1 FAMC @F00036@
+0 @I00140@ INDI
+1 NAME Eastern /Orthodox/
+1 SEX F
+1 FAMS @F00005@
+1 FAMC @F00004@
+0 @I00141@ INDI
+1 NAME Greek /Orthodox/
+1 SEX F
+1 FAMC @F00005@
+0 @I00142@ INDI
+1 NAME Russan /Orthodox/
+1 SEX F
+1 FAMC @F00005@
+0 @I00143@ INDI
+1 NAME /Pietist/
+1 SEX F
+1 FAMS @F00010@
+1 FAMC @F00009@
+0 @I00144@ INDI
+1 NAME Byzantine Catholic Archeparchy of /Pittsburgh/
+1 SEX F
+0 @I00145@ INDI
+1 NAME /Presbyterian/
+1 SEX F
+1 FAMS @F00056@
+1 FAMC @F00011@
+0 @I00146@ INDI
+1 NAME /Quaker/
+1 SEX F
+1 ALIA Friends Friends Among Friends Friends of theTruth Publishers of Truth 
+2 CONC Quiet Helpers Religious Society of Friends Saints Seekers of Truth Soc
+2 CONC iety of Friends Children of the Light
+1 FAMS @F00036@
+1 FAMC @F00011@
+0 @I00147@ INDI
+1 NAME /Reformed/
+1 SEX F
+1 FAMS @F00011@
+1 FAMC @F00007@
+0 @I00148@ INDI
+1 NAME Christian /Reformed/
+1 SEX F
+1 FAMC @F00011@
+0 @I00149@ INDI
+1 NAME Radical /Reformers/
+1 SEX F
+1 ALIA Anabaptist
+1 FAMS @F00024@
+1 FAMC @F00007@
+0 @I00150@ INDI
+1 NAME /Ruthenians/
+1 SEX F
+1 FAMC @F00019@
+0 @I00151@ INDI
+1 NAME /Schmiedeleu/
+1 SEX F
+1 FAMC @F00031@
+0 @I00152@ INDI
+1 NAME Reformed Church in the United /States/
+1 SEX F
+1 FAMS @F00063@
+1 FAMC @F00011@
+0 @I00153@ INDI
+1 NAME Evangelical Lutheran /Synod/
+1 SEX F
+1 ALIA ELS
+1 FAMC @F00034@
+0 @I00154@ INDI
+1 NAME Lutheran Church - Missouri /Synod/
+1 SEX F
+1 FAMC @F00033@
+0 @I00155@ INDI
+1 NAME Wisconsin Evangelical Lutheran /Synod/
+1 SEX F
+1 ALIA WELS
+1 FAMC @F00034@
+0 @I00156@ INDI
+1 NAME /Unitarian/
+1 SEX F
+1 FAMC @F00011@
+0 @I00157@ INDI
+1 NAME Primitive Baptist /Universalists/
+1 SEX F
+1 ALIA No Hellers
+1 FAMC @F00057@
+0 @I00158@ INDI
+1 NAME American Baptist Churches in the /USA/
+1 SEX F
+1 ALIA American Baptist Convention Northern Baptist Convention ABC
+1 FAMS @F00041@
+1 FAMC @F00039@
+0 @I00159@ INDI
+1 NAME Episcopal /USA/
+1 SEX F
+1 FAMC @F00014@
+0 @I00160@ INDI
+1 NAME Mennonite Church /USA/
+1 SEX F
+1 FAMC @F00058@
+0 @I00161@ INDI
+1 NAME /Wilburite/
+1 SEX F
+1 ALIA Conservative Yearly Meetings
+1 FAMS @F00060@
+1 FAMC @F00037@
+0 @F00001@ FAM
+1 HUSB @I00120@
+1 CHIL @I00001@
+2 _FREL Natural
+0 @F00002@ FAM
+1 HUSB @I00001@
+1 CHIL @I00069@
+2 _FREL Natural
+0 @F00003@ FAM
+1 HUSB @I00069@
+1 CHIL @I00051@
+2 _FREL Natural
+1 CHIL @I00058@
+2 _FREL Natural
+1 CHIL @I00054@
+2 _FREL Natural
+1 CHIL @I00105@
+2 _FREL Natural
+1 CHIL @I00065@
+2 _FREL Natural
+1 CHIL @I00060@
+2 _FREL Natural
+1 CHIL @I00059@
+2 _FREL Natural
+1 CHIL @I00047@
+2 _FREL Natural
+0 @F00004@ FAM
+1 HUSB @I00054@
+1 CHIL @I00055@
+2 _FREL Natural
+1 CHIL @I00140@
+2 _FREL Natural
+0 @F00005@ FAM
+1 HUSB @I00140@
+1 CHIL @I00142@
+2 _FREL Natural
+1 CHIL @I00141@
+2 _FREL Natural
+0 @F00006@ FAM
+1 HUSB @I00055@
+1 CHIL @I00122@
+2 _FREL Natural
+1 CHIL @I00072@
+2 _FREL Natural
+1 CHIL @I00083@
+2 _FREL Natural
+0 @F00007@ FAM
+1 HUSB @I00122@
+1 CHIL @I00149@
+2 _FREL Natural
+1 CHIL @I00123@
+2 _FREL Natural
+1 CHIL @I00147@
+2 _FREL Natural
+1 CHIL @I00011@
+2 _FREL Natural
+0 @F00008@ FAM
+1 CHIL @I00052@
+0 @F00009@ FAM
+1 HUSB @I00123@
+1 CHIL @I00124@
+2 _FREL Natural
+1 CHIL @I00143@
+2 _FREL Natural
+0 @F00010@ FAM
+1 HUSB @I00143@
+1 CHIL @I00137@
+2 _FREL Natural
+1 CHIL @I00061@
+2 _FREL Natural
+1 CHIL @I00111@
+2 _FREL Natural
+1 CHIL @I00092@
+2 _FREL Natural
+0 @F00011@ FAM
+1 HUSB @I00147@
+1 CHIL @I00146@
+2 _FREL Natural
+1 CHIL @I00027@
+2 _FREL Natural
+1 CHIL @I00096@
+2 _FREL Natural
+1 CHIL @I00133@
+2 _FREL Natural
+1 CHIL @I00009@
+2 _FREL Natural
+1 CHIL @I00156@
+2 _FREL Natural
+1 CHIL @I00145@
+2 _FREL Natural
+1 CHIL @I00148@
+2 _FREL Natural
+1 CHIL @I00007@
+2 _FREL Natural
+1 CHIL @I00152@
+2 _FREL Natural
+0 @F00012@ FAM
+1 HUSB @I00011@
+1 CHIL @I00012@
+2 _FREL Natural
+1 CHIL @I00134@
+2 _FREL Natural
+0 @F00013@ FAM
+1 HUSB @I00134@
+1 CHIL @I00112@
+2 _FREL Natural
+1 CHIL @I00115@
+2 _FREL Natural
+0 @F00014@ FAM
+1 HUSB @I00012@
+1 CHIL @I00159@
+2 _FREL Natural
+1 CHIL @I00013@
+2 _FREL Natural
+0 @F00015@ FAM
+1 HUSB @I00058@
+0 @F00016@ FAM
+1 HUSB @I00051@
+1 CHIL @I00015@
+2 _FREL Natural
+1 CHIL @I00088@
+2 _FREL Natural
+0 @F00017@ FAM
+1 HUSB @I00083@
+1 CHIL @I00066@
+2 _FREL Natural
+1 CHIL @I00056@
+2 _FREL Natural
+1 CHIL @I00042@
+2 _FREL Natural
+1 CHIL @I00040@
+2 _FREL Natural
+1 CHIL @I00039@
+2 _FREL Natural
+1 CHIL @I00087@
+2 _FREL Natural
+1 CHIL @I00125@
+2 _FREL Natural
+1 CHIL @I00014@
+2 _FREL Natural
+0 @F00018@ FAM
+1 HUSB @I00105@
+1 CHIL @I00104@
+2 _FREL Natural
+0 @F00019@ FAM
+1 HUSB @I00042@
+1 CHIL @I00126@
+2 _FREL Natural
+1 CHIL @I00150@
+2 _FREL Natural
+1 CHIL @I00041@
+2 _FREL Natural
+1 CHIL @I00043@
+2 _FREL Natural
+1 CHIL @I00119@
+2 _FREL Natural
+0 @F00020@ FAM
+1 HUSB @I00087@
+1 CHIL @I00038@
+2 _FREL Natural
+0 @F00021@ FAM
+0 @F00022@ FAM
+0 @F00023@ FAM
+1 HUSB @I00030@
+1 CHIL @I00033@
+2 _FREL Natural
+1 CHIL @I00031@
+2 _FREL Natural
+1 CHIL @I00077@
+2 _FREL Natural
+1 CHIL @I00089@
+2 _FREL Natural
+0 @F00024@ FAM
+1 HUSB @I00149@
+1 CHIL @I00030@
+2 _FREL Natural
+1 CHIL @I00116@
+2 _FREL Natural
+1 CHIL @I00127@
+2 _FREL Natural
+0 @F00025@ FAM
+1 HUSB @I00127@
+1 CHIL @I00053@
+2 _FREL Natural
+1 CHIL @I00068@
+2 _FREL Natural
+1 CHIL @I00070@
+2 _FREL Natural
+1 CHIL @I00032@
+2 _FREL Natural
+1 CHIL @I00130@
+2 _FREL Natural
+1 CHIL @I00128@
+2 _FREL Natural
+0 @F00026@ FAM
+1 HUSB @I00010@
+1 CHIL @I00095@
+2 _FREL Natural
+0 @F00027@ FAM
+0 @F00028@ FAM
+1 HUSB @I00127@
+1 CHIL @I00010@
+2 _FREL Natural
+0 @F00029@ FAM
+1 HUSB @I00068@
+1 CHIL @I00131@
+2 _FREL Natural
+1 CHIL @I00129@
+2 _FREL Natural
+0 @F00030@ FAM
+1 HUSB @I00131@
+1 CHIL @I00132@
+2 _FREL Natural
+0 @F00031@ FAM
+1 HUSB @I00116@
+1 CHIL @I00151@
+2 _FREL Natural
+1 CHIL @I00103@
+2 _FREL Natural
+1 CHIL @I00121@
+2 _FREL Natural
+1 CHIL @I00091@
+2 _FREL Natural
+1 CHIL @I00090@
+2 _FREL Natural
+1 CHIL @I00016@
+2 _FREL Natural
+0 @F00032@ FAM
+1 HUSB @I00124@
+1 CHIL @I00106@
+2 _FREL Natural
+1 CHIL @I00101@
+2 _FREL Natural
+1 CHIL @I00093@
+2 _FREL Natural
+1 CHIL @I00044@
+2 _FREL Natural
+0 @F00033@ FAM
+1 HUSB @I00101@
+1 CHIL @I00154@
+2 _FREL Natural
+1 CHIL @I00036@
+2 _FREL Natural
+0 @F00034@ FAM
+1 HUSB @I00093@
+1 CHIL @I00155@
+2 _FREL Natural
+1 CHIL @I00153@
+2 _FREL Natural
+0 @F00035@ FAM
+1 HUSB @I00111@
+1 CHIL @I00075@
+2 _FREL Natural
+1 CHIL @I00017@
+2 _FREL Natural
+0 @F00036@ FAM
+1 HUSB @I00146@
+1 CHIL @I00114@
+2 _FREL Natural
+1 CHIL @I00139@
+2 _FREL Natural
+0 @F00037@ FAM
+1 HUSB @I00139@
+1 CHIL @I00113@
+2 _FREL Natural
+1 CHIL @I00161@
+2 _FREL Natural
+0 @F00038@ FAM
+0 @F00039@ FAM
+1 HUSB @I00027@
+1 CHIL @I00099@
+2 _FREL Natural
+1 CHIL @I00100@
+2 _FREL Natural
+1 CHIL @I00158@
+2 _FREL Natural
+1 CHIL @I00110@
+2 _FREL Natural
+0 @F00040@ FAM
+0 @F00041@ FAM
+1 HUSB @I00158@
+1 CHIL @I00005@
+2 _FREL Natural
+1 CHIL @I00085@
+2 _FREL Natural
+0 @F00042@ FAM
+1 HUSB @I00099@
+1 CHIL @I00028@
+2 _FREL Natural
+1 CHIL @I00107@
+2 _FREL Natural
+0 @F00043@ FAM
+1 HUSB @I00100@
+1 CHIL @I00008@
+2 _FREL Natural
+1 CHIL @I00098@
+2 _FREL Natural
+1 CHIL @I00097@
+2 _FREL Natural
+1 CHIL @I00108@
+2 _FREL Natural
+0 @F00044@ FAM
+1 HUSB @I00110@
+1 CHIL @I00109@
+2 _FREL Natural
+1 CHIL @I00117@
+2 _FREL Natural
+0 @F00045@ FAM
+1 HUSB @I00109@
+1 CHIL @I00118@
+2 _FREL Natural
+0 @F00046@ FAM
+1 HUSB @I00096@
+1 CHIL @I00082@
+2 _FREL Natural
+1 CHIL @I00064@
+2 _FREL Natural
+1 CHIL @I00094@
+2 _FREL Natural
+1 CHIL @I00086@
+2 _FREL Natural
+1 CHIL @I00020@
+2 _FREL Natural
+0 @F00047@ FAM
+1 HUSB @I00133@
+1 CHIL @I00136@
+2 _FREL Natural
+1 CHIL @I00046@
+2 _FREL Natural
+1 CHIL @I00079@
+2 _FREL Natural
+1 CHIL @I00135@
+2 _FREL Natural
+1 CHIL @I00067@
+2 _FREL Natural
+1 CHIL @I00057@
+2 _FREL Natural
+0 @F00048@ FAM
+1 HUSB @I00079@
+1 CHIL @I00035@
+2 _FREL Natural
+1 CHIL @I00102@
+2 _FREL Natural
+1 CHIL @I00138@
+2 _FREL Natural
+1 CHIL @I00018@
+2 _FREL Natural
+0 @F00049@ FAM
+1 HUSB @I00046@
+1 CHIL @I00003@
+2 _FREL Natural
+0 @F00050@ FAM
+1 HUSB @I00067@
+1 CHIL @I00078@
+2 _FREL Natural
+1 CHIL @I00050@
+2 _FREL Natural
+0 @F00051@ FAM
+1 HUSB @I00138@
+0 @F00052@ FAM
+1 HUSB @I00020@
+1 CHIL @I00024@
+2 _FREL Natural
+1 CHIL @I00084@
+2 _FREL Natural
+0 @F00053@ FAM
+1 HUSB @I00084@
+1 CHIL @I00019@
+2 _FREL Natural
+0 @F00054@ FAM
+1 HUSB @I00018@
+1 CHIL @I00025@
+2 _FREL Natural
+0 @F00055@ FAM
+1 HUSB @I00081@
+1 CHIL @I00062@
+2 _FREL Natural
+1 CHIL @I00026@
+2 _FREL Natural
+1 CHIL @I00074@
+2 _FREL Natural
+1 CHIL @I00023@
+2 _FREL Natural
+1 CHIL @I00071@
+2 _FREL Natural
+1 CHIL @I00022@
+2 _FREL Natural
+1 CHIL @I00021@
+2 _FREL Natural
+1 CHIL @I00002@
+2 _FREL Natural
+0 @F00056@ FAM
+1 HUSB @I00145@
+1 CHIL @I00081@
+2 _FREL Natural
+0 @F00064@ FAM
+1 HUSB @I00136@
+1 WIFE @I00003@
+1 CHIL @I00035@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00057@ FAM
+1 HUSB @I00027@
+1 WIFE @I00009@
+1 CHIL @I00157@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00058@ FAM
+1 HUSB @I00063@
+1 WIFE @I00010@
+1 CHIL @I00037@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00160@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00059@ FAM
+1 HUSB @I00075@
+1 WIFE @I00017@
+1 CHIL @I00006@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00066@ FAM
+1 HUSB @I00018@
+1 WIFE @I00021@
+1 CHIL @I00024@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00061@ FAM
+1 HUSB @I00082@
+1 WIFE @I00064@
+1 CHIL @I00080@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00062@ FAM
+1 HUSB @I00007@
+1 WIFE @I00080@
+1 CHIL @I00045@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00060@ FAM
+1 HUSB @I00161@
+1 WIFE @I00114@
+1 CHIL @I00029@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00065@ FAM
+1 HUSB @I00011@
+1 WIFE @I00135@
+1 CHIL @I00049@
+2 _FREL Natural
+2 _MREL Natural
+0 @F00063@ FAM
+1 HUSB @I00007@
+1 WIFE @I00152@
+1 CHIL @I00048@
+2 _FREL Natural
+2 _MREL Natural
+0 @S00001@ SOUR
+1 TITL Original Source for Tree
+0 @S00002@ SOUR
+1 TITL Catholic EEncyclopedia
+0 @S00003@ SOUR
+1 TITL Catholic Encyclopedia
+0 TRLR

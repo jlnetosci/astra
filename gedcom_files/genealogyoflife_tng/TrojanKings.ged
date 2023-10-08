@@ -1,0 +1,696 @@
+0 HEAD
+1 SOUR FTM
+2 VERS Family Tree Maker (17.0.0.440)
+2 NAME Family Tree Maker for Windows
+2 CORP The Generations Network
+3 ADDR 360 W 4800 N
+4 CONT Provo, UT 84604
+3 PHON (801) 705-7000
+1 DEST FTM
+1 DATE 17 November 2007
+1 CHAR ANSI
+1 FILE C:\Documents and Settings\socrtwo\Desktop\Kings and Queens of Troy.ged
+1 SUBM @SUBM@
+1 GEDC
+2 VERS 5.5
+2 FORM LINEAGE-LINKED
+0 @SUBM@ SUBM
+0 @I00034@ INDI
+1 NAME /Chaos/
+2 SOUR @S00002@
+1 SEX M
+1 ALIA Ibn Achlys
+1 TITL Ibn Achlys
+1 REFN 38768
+1 FAMS @F00005@
+0 @I00036@ INDI
+1 NAME Antenor //, " II"Sicambrian King
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC Before 0386 BC
+1 REFN 38733
+1 DEAT
+2 PLAC 0358 BC
+1 FAMS @F00024@
+1 FAMC @F00009@
+0 @I00021@ INDI
+1 NAME Antenor // King of Cimmerians
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC BC
+1 REFN 38736
+1 DEAT
+2 PLAC 0430 BC
+1 FAMS @F00001@
+1 FAMC @F00002@
+0 @I00010@ INDI
+1 NAME Callirhoe // Queen of Troy
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37361
+1 FAMS @F00018@
+1 FAMC @F00013@
+0 @I00037@ INDI
+1 NAME Camera //
+2 SOUR @S00002@
+1 SEX F
+1 REFN 38734
+1 FAMS @F00024@
+0 @I00019@ INDI
+1 NAME Cassandra // of Troy
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37574
+1 FAMC @F00027@
+0 @I00018@ INDI
+1 NAME Creusa // of Troy
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37573
+1 FAMC @F00027@
+0 @I00038@ INDI
+1 NAME Diocles // King of Sicambrian
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC Before 0339 BC
+1 REFN 38730
+1 DEAT
+2 PLAC 0300 BC
+1 FAMC @F00029@
+0 @I00039@ INDI
+1 NAME Einridi //
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt. 655 B.C.
+1 REFN 37347
+1 FAMS @F00025@
+1 FAMC @F00017@
+0 @I00027@ INDI
+1 NAME Eurydice // of Troy
+2 SOUR @S00001@
+1 SEX F
+1 REFN 38745
+1 FAMS @F00008@
+0 @I00024@ INDI
+1 NAME Hecuba //
+2 SOUR @S00002@
+1 SEX F
+1 BIRT
+2 PLAC About 1230 BC in Troy, Asia Minor
+1 REFN 38739
+1 NOTE @N00003@
+1 NOTE @N00009@
+1 FAMS @F00003@
+1 FAMC @F00004@
+0 @I00041@ INDI
+1 NAME Hecubah // of Phrygia
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37354
+1 FAMS @F00027@
+1 FAMC @F00023@
+0 @I00022@ INDI
+1 NAME Helenus // King of Epirus
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC BC
+1 REFN 38737
+1 DEAT
+2 PLAC BC
+1 FAMS @F00002@
+1 FAMC @F00003@
+0 @I00043@ INDI
+1 NAME Helenus // King of Sicambrian
+1 SEX M
+1 BIRT
+2 PLAC Before 0358 BC
+1 REFN 38731
+1 DEAT
+2 PLAC 0339 BC
+1 FAMS @F00029@
+1 FAMC @F00030@
+0 @I00044@ INDI
+1 NAME Helenus // of Troy King of the Sythians
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC 1225 BC - Troy, Troad, Phrygia, Asia Minor
+1 REFN 37572
+1 DEAT
+2 PLAC Southern Russia
+1 FAMC @F00027@
+0 @I00026@ INDI
+1 NAME Ilus // King of Troy
+2 SOUR @S00002@
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC 1315 BC - Dardania, Troad, Phrygia, Asia Minor
+1 REFN 38744
+1 DEAT 1279 BC - Ilium
+2 PLAC Troy, Troad, Phrygia, Asia Minor
+1 FAMS @F00008@
+1 FAMC @F00018@
+0 @I00025@ INDI
+1 NAME Laomedon // King of Troy
+2 SOUR @S00002@
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC 1285 BC - Troy, Troad, Phrygia, Asia Minor
+1 REFN 38741
+1 DEAT
+2 PLAC 1235 BC - Troy, Troad, Phrygia, Asia Minor
+1 NOTE @N00004@
+1 NOTE @N00006@
+1 FAMS @F00006@
+1 FAMC @F00008@
+0 @I00001@ INDI
+1 NAME Loridi // of Thrace
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt 695 B.C.  Ancient Greece
+1 REFN 37348
+1 FAMS @F00017@
+1 FAMC @F00020@
+0 @I00020@ INDI
+1 NAME Marcomir //
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC Before 0430 BC
+1 REFN 38735
+1 DEAT
+2 PLAC 0412 BC
+1 FAMS @F00009@
+1 FAMC @F00001@
+0 @I00004@ INDI
+1 NAME Memnon // of Troy King of Ethiopia
+2 SOUR @S00001@
+1 SEX M
+1 REFN 37351
+1 DEAT
+2 PLAC Abt. 1183 BC
+1 FAMS @F00021@
+1 FAMC @F00012@
+0 @I00045@ INDI
+1 NAME Moda //
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt 535 B.C.
+1 REFN 37344
+1 FAMC @F00032@
+0 @I00008@ INDI
+1 NAME Placia // (Strymo) of Troy
+2 SOUR @S00001@
+2 SOUR @S00002@
+1 SEX F
+1 BIRT
+2 PLAC BC
+1 REFN 37357
+1 DEAT
+2 PLAC BC
+1 FAMS @F00006@
+1 FAMC @F00007@
+0 @I00046@ INDI
+1 NAME Priam // King of Sicambrian
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC Before 0386 BC
+1 REFN 38732
+1 DEAT
+2 PLAC 0358 BC
+1 FAMS @F00030@
+1 FAMC @F00024@
+0 @I00006@ INDI
+1 NAME Priam // of Troy High King of the Sythians
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC 1255 BC - Troy, Troad, Phrygia, Asia Minor
+1 REFN 37353
+1 DEAT
+2 PLAC 1183 BC - Troy, Troad, Phrygia, Asia Minor
+1 NOTE @N00001@
+1 NOTE @N00007@
+1 FAMS @F00027@
+1 FAMC @F00006@
+0 @I00023@ INDI
+1 NAME Priamos // King of Troy
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC About 1230 BC in Troy, Dardania, Phrygia, Turkey
+1 REFN 38738
+1 DEAT
+2 PLAC After 1185 BC
+1 FAMS @F00003@
+1 FAMC @F00006@
+0 @I00003@ INDI
+1 NAME Sibil //
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37350
+1 FAMS @F00020@
+0 @I00002@ INDI
+1 NAME Thor // King of Thrace
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt. 735 B.C.Ancient Greece
+1 REFN 37349
+1 FAMS @F00020@
+1 FAMC @F00021@
+0 @I00005@ INDI
+1 NAME Troana // of Troy
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37352
+1 FAMS @F00021@
+1 FAMC @F00027@
+0 @I00047@ INDI
+1 NAME Vingethor //
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt 615 B.C.
+1 REFN 37346
+1 FAMS @F00031@
+1 FAMC @F00025@
+0 @I00048@ INDI
+1 NAME Vinginer //
+2 SOUR @S00001@
+1 SEX M
+1 BIRT
+2 PLAC Abt 575 B.C.
+1 REFN 37345
+1 FAMS @F00032@
+1 FAMC @F00031@
+0 @I00011@ INDI
+1 NAME /Assaracus/
+2 SOUR @S00001@
+1 SEX M
+1 ALIA of Troy
+1 TITL of Troy
+1 REFN 37440
+1 FAMS @F00010@
+1 FAMC @F00018@
+0 @I00013@ INDI
+1 NAME /Aurora/
+2 SOUR @S00001@
+1 SEX F
+1 REFN 37454
+1 FAMS @F00012@
+0 @I00015@ INDI
+1 NAME /Capys/
+2 SOUR @S00001@
+1 SEX M
+1 ALIA of Troy
+1 TITL of Troy
+1 REFN 37479
+1 FAMC @F00010@
+0 @I00014@ INDI
+1 NAME Memnon /Ethiopia/
+1 SEX M
+1 BIRT
+2 PLAC Abt 1302 B.C.
+1 REFN 37455
+1 FAMC @F00006@
+0 @I00033@ INDI
+1 NAME /Gaea/
+2 SOUR @S00002@
+1 SEX F
+1 ALIA bint Chaos
+1 TITL bint Chaos
+1 REFN 38767
+1 FAMS @F00016@
+1 FAMC @F00005@
+0 @I00029@ INDI
+1 NAME /Idea/
+2 SOUR @S00002@
+1 SEX F
+1 REFN 38761
+1 FAMS @F00013@
+0 @I00035@ INDI
+1 NAME /Nyx/
+2 SOUR @S00002@
+1 SEX F
+1 REFN 38769
+1 FAMS @F00005@
+1 FAMC @F00011@
+0 @I00028@ INDI
+1 NAME Scamander Teucri Ibn /Oceanus/
+2 SOUR @S00002@
+1 SEX M
+1 REFN 38760
+1 FAMS @F00013@
+1 FAMC @F00014@
+0 @I00031@ INDI
+1 NAME /Tethys/
+2 SOUR @S00002@
+1 SEX F
+1 ALIA bint Uranus
+1 TITL bint Uranus
+1 REFN 38763
+1 FAMS @F00014@
+1 FAMC @F00015@
+0 @I00016@ INDI
+1 NAME /Themiste/
+1 SEX M
+1 ALIA of Troy
+1 TITL of Troy
+1 REFN 37571
+1 FAMC @F00008@
+0 @I00012@ INDI
+1 NAME /Tithonius/
+2 SOUR @S00001@
+1 SEX M
+1 ALIA of Troy
+1 TITL of Troy
+1 BIRT
+2 PLAC Abt 1303 B.C.
+1 REFN 37448
+1 DEAT
+2 PLAC Aft 1237 BC
+1 FAMS @F00012@
+1 FAMC @F00006@
+0 @I00009@ INDI
+1 NAME \\ of Acadia /Tros/, "King of Troy"
+2 SOUR @S00001@
+2 SOUR @S00002@
+1 SEX M
+1 BIRT
+2 PLAC 1344 BC - Dardania, Phrygia, Asia Minor
+1 REFN 37360
+1 DEAT
+2 PLAC 1328 BC - Dardania, Troad, Phrygia, Asia Minor
+1 NOTE @N00002@
+1 NOTE @N00008@
+1 FAMS @F00018@
+1 FAMC @F00019@
+0 @I00032@ INDI
+1 NAME /Uranus/
+2 SOUR @S00002@
+1 SEX M
+1 ALIA Ibn Chaos
+1 TITL Ibn Chaos
+1 REFN 38766
+1 FAMS @F00016@
+0 @I00030@ INDI
+1 NAME Oceanus Ibn /Uranus/
+2 SOUR @S00002@
+1 SEX M
+1 REFN 38762
+1 FAMS @F00014@
+1 FAMC @F00016@
+0 @F00001@ FAM
+1 HUSB @I00021@
+1 CHIL @I00020@
+2 _FREL Natural
+1 REFN 220561
+0 @F00002@ FAM
+1 HUSB @I00022@
+1 CHIL @I00021@
+2 _FREL Natural
+1 REFN 220588
+0 @F00003@ FAM
+1 HUSB @I00023@
+1 WIFE @I00024@
+1 CHIL @I00022@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 249543
+0 @F00004@ FAM
+1 CHIL @I00024@
+1 REFN 249568
+0 @F00005@ FAM
+1 HUSB @I00034@
+1 WIFE @I00035@
+1 CHIL @I00033@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 262789
+0 @F00006@ FAM
+1 HUSB @I00025@
+1 WIFE @I00008@
+1 CHIL @I00023@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00006@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00014@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00012@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 272394
+0 @F00007@ FAM
+1 CHIL @I00008@
+1 REFN 272409
+0 @F00008@ FAM
+1 HUSB @I00026@
+1 WIFE @I00027@
+1 CHIL @I00025@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00016@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 272412
+0 @F00009@ FAM
+1 HUSB @I00020@
+1 CHIL @I00036@
+2 _FREL Natural
+1 REFN 367152
+0 @F00010@ FAM
+1 HUSB @I00011@
+1 CHIL @I00015@
+2 _FREL Natural
+1 REFN 426396
+0 @F00011@ FAM
+1 CHIL @I00035@
+1 REFN 454491
+0 @F00012@ FAM
+1 HUSB @I00012@
+1 WIFE @I00013@
+1 CHIL @I00004@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 492775
+0 @F00013@ FAM
+1 HUSB @I00028@
+1 WIFE @I00029@
+1 CHIL @I00010@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 581973
+0 @F00014@ FAM
+1 HUSB @I00030@
+1 WIFE @I00031@
+1 CHIL @I00028@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 581982
+0 @F00015@ FAM
+1 CHIL @I00031@
+1 REFN 581989
+0 @F00016@ FAM
+1 HUSB @I00032@
+1 WIFE @I00033@
+1 CHIL @I00030@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 581993
+0 @F00017@ FAM
+1 HUSB @I00001@
+1 CHIL @I00039@
+2 _FREL Natural
+1 REFN 597630
+0 @F00018@ FAM
+1 HUSB @I00009@
+1 WIFE @I00010@
+1 CHIL @I00011@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00026@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 710686
+0 @F00019@ FAM
+1 CHIL @I00009@
+1 REFN 710695
+0 @F00020@ FAM
+1 HUSB @I00002@
+1 WIFE @I00003@
+1 CHIL @I00001@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 710721
+0 @F00021@ FAM
+1 HUSB @I00004@
+1 WIFE @I00005@
+1 CHIL @I00002@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 710727
+0 @F00022@ FAM
+1 REFN 710731
+0 @F00023@ FAM
+1 CHIL @I00041@
+1 REFN 710738
+0 @F00024@ FAM
+1 HUSB @I00036@
+1 WIFE @I00037@
+1 CHIL @I00046@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 367128
+0 @F00025@ FAM
+1 HUSB @I00039@
+1 CHIL @I00047@
+2 _FREL Natural
+1 REFN 597629
+0 @F00026@ FAM
+1 REFN 249543
+0 @F00027@ FAM
+1 HUSB @I00006@
+1 WIFE @I00041@
+1 CHIL @I00005@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00044@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00018@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I00019@
+2 _FREL Natural
+2 _MREL Natural
+1 REFN 710731
+0 @F00029@ FAM
+1 HUSB @I00043@
+1 CHIL @I00038@
+2 _FREL Natural
+1 REFN 367118
+0 @F00030@ FAM
+1 HUSB @I00046@
+1 CHIL @I00043@
+2 _FREL Natural
+1 REFN 367122
+0 @F00031@ FAM
+1 HUSB @I00047@
+1 CHIL @I00048@
+2 _FREL Natural
+1 REFN 597628
+0 @F00032@ FAM
+1 HUSB @I00048@
+1 CHIL @I00045@
+2 _FREL Natural
+1 REFN 597627
+0 @N00001@ NOTE
+1 CONC Lineage based on the Icelandic prose Edda.
+1 CONT Priam was the last King of Troy. He was the father of many sons and da
+1 CONC ughters (50 of each according to Homer), by his wife or his concubines
+1 CONC . His name became a symbol for one who has suffered extremes of fortun
+1 CONC e.
+1 CONT Political Events, 1193 B.C.
+1 CONT King Priam's city of Troy at the gateway to the Hellespont in Asia Min
+1 CONC or falls to Greek forces under Agamemnon after a 10-year siege in the 
+1 CONC Trojan War (see HOMER, 850 B.C.; BYZANTIUM, 658 B.C.).
+0 @N00002@ NOTE
+1 CONC Tros succeeded his father Erichthonius to the throne. He gave his nam
+1 CONC e to the land (Troad) and to the people living in the Troad (Trojans)
+1 CONC . His son, Ganymede was so beautiful, that Zeus in the form of an eagl
+1 CONC e, abducted the youth. Ganymede became the cupbearer in Olympus. Zeus 
+1 CONC gave Tros a couple of immortal horses and a vine made of gold, to comp
+1 CONC ensate for abducting the king's son.
+0 @N00003@ NOTE
+1 CONC Children:
+1 CONT Creusa of Troy
+1 CONT Queen Troan of Troy
+1 CONT Troilus of Troy
+1 CONT Polydorus of Troy
+1 CONT Hipponous of Troy
+1 CONT Antphus of Troy
+1 CONT Polites of Troy
+1 CONT Pammon of Troy
+1 CONT Deiphobus of Troy
+1 CONT Hector of Troy
+1 CONT Cassandra of Troy
+1 CONT Polyxena Troy
+1 CONT Laodice of Troy
+1 CONT Alexander or Paris of Troy
+1 CONT Helenus, King of Epirus
+0 @N00004@ NOTE
+1 CONC Laomedon was known for his arrogance and impiety and as one who refuse
+1 CONC d to honor his promises. Poseidon and Apollo, possibly punished for re
+1 CONC belling against Zeus, had to work for one year for a mortal. The two g
+1 CONC ods disguised as builders, were hired to work alongside with a mortal
+1 CONC , Aeacus, son of Zeus and Aegina, (father of Peleus and Telamon), to b
+1 CONC uild the walls of Troy. Poseidon and Apollo wanted the vine of gold a
+1 CONC s payment for their work. Laomedon agreed. After the gods finished bui
+1 CONC lding the wall, Laomedon refused to pay their wages for their services
+1 CONC . Apollo caused the plague within the city, while Poseidon send a sea-
+1 CONC monster to ravage the Trojan countryside.
+0 @N00006@ NOTE
+1 CONC Laomedon was known for his arrogance and impiety and as one who refuse
+1 CONC d to honor his promises. Poseidon and Apollo, possibly punished for re
+1 CONC belling against Zeus, had to work for one year for a mortal. The two g
+1 CONC ods disguised as builders, were hired to work alongside with a mortal
+1 CONC , Aeacus, son of Zeus and Aegina, (father of Peleus and Telamon), to b
+1 CONC uild the walls of Troy. Poseidon and Apollo wanted the vine of gold a
+1 CONC s payment for their work. Laomedon agreed. After the gods finished bui
+1 CONC lding the wall, Laomedon refused to pay their wages for their services
+1 CONC . Apollo caused the plague within the city, while Poseidon send a sea-
+1 CONC monster to ravage the Trojan countryside.
+0 @N00007@ NOTE
+1 CONC Lineage based on the Icelandic prose Edda.
+1 CONT Priam was the last King of Troy. He was the father of many sons and da
+1 CONC ughters (50 of each according to Homer), by his wife or his concubines
+1 CONC . His name became a symbol for one who has suffered extremes of fortun
+1 CONC e.
+1 CONT Political Events, 1193 B.C.
+1 CONT King Priam's city of Troy at the gateway to the Hellespont in Asia Min
+1 CONC or falls to Greek forces under Agamemnon after a 10-year siege in the 
+1 CONC Trojan War (see HOMER, 850 B.C.; BYZANTIUM, 658 B.C.).
+0 @N00008@ NOTE
+1 CONC Tros succeeded his father Erichthonius to the throne. He gave his nam
+1 CONC e to the land (Troad) and to the people living in the Troad (Trojans)
+1 CONC . His son, Ganymede was so beautiful, that Zeus in the form of an eagl
+1 CONC e, abducted the youth. Ganymede became the cupbearer in Olympus. Zeus 
+1 CONC gave Tros a couple of immortal horses and a vine made of gold, to comp
+1 CONC ensate for abducting the king's son.
+0 @N00009@ NOTE
+1 CONC Children:
+1 CONT Creusa of Troy
+1 CONT Queen Troan of Troy
+1 CONT Troilus of Troy
+1 CONT Polydorus of Troy
+1 CONT Hipponous of Troy
+1 CONT Antphus of Troy
+1 CONT Polites of Troy
+1 CONT Pammon of Troy
+1 CONT Deiphobus of Troy
+1 CONT Hector of Troy
+1 CONT Cassandra of Troy
+1 CONT Polyxena Troy
+1 CONT Laodice of Troy
+1 CONT Alexander or Paris of Troy
+1 CONT Helenus, King of Epirus
+0 @S00001@ SOUR
+1 TITL Susan Hill Shannon GenCircles  susanshannon@@cfl.rr.com
+0 @S00002@ SOUR
+1 TITL The Cochran and French families of West GenCircles - Emily Cochran- em
+2 CONC ileecochran@@hotmail.com
+0 TRLR
