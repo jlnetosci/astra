@@ -5,7 +5,6 @@
 </p>
 
 ## About
-<p align="justify">
 [ASTRA](https://astraviz.streamlit.app/) is a web app that displays a "star map" like network visualization of the individuals in a GEDCOM file. Powered by [python-gedcom](https://github.com/nickreynke/python-gedcom), [pyvis](https://pyvis.readthedocs.io/) and [streamlit](https://streamlit.io/).
 
 **Instructions:** \n 
@@ -16,22 +15,21 @@
 Please be patient while the network loads – time increases with the number of individuals and connections.  
 After generation the network goes through a physics simulation.  
 Nodes can also be moved to wield better separations. \n 
-</p>
 
 # Examples
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 10px;">
-    <img src="img/starmap.jpg" style="width: 400px;">
+    <img src="https://raw.githubusercontent.com/jlnetosci/astra/main/img/starmap.png" style="width: 100%;">
   </div>
   <div style="flex: 50%; padding: 10px;">
-    <img src="img/light.jpg" style="width: 400px;">
+    <img src="https://raw.githubusercontent.com/jlnetosci/astra/main/img/light.png" style="width: 100%;">
   </div>
   <div style="flex: 50%; padding: 10px;">
-    <img src="img/soft.jpg" style="width: 400px;">
+    <img src="https://raw.githubusercontent.com/jlnetosci/astra/main/img/soft.png" style="width: 100%;">
   </div>
   <div style="flex: 50%; padding: 10px;">
-    <img src="img/zoom.jpg" style="width: 400px;">
+    <img src="https://raw.githubusercontent.com/jlnetosci/astra/main/img/zoom.png" style="width: 100%;">
   </div>
 </div>
 
