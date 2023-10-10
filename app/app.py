@@ -246,3 +246,5 @@ Please be patient while the network loads – time increases with the number of 
 After generation the network goes through a physics simulation to better distribute nodes.  
 Nodes can also be moved to wield better separations. </div> \n 
 **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
+
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.0b</b></div>""", unsafe_allow_html=True)
