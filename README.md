@@ -7,14 +7,15 @@
 ## About
 [ASTRA](https://astraviz.streamlit.app/) is a web app that displays a "star map" like network visualization of the individuals in a GEDCOM file. Powered by [python-gedcom](https://github.com/nickreynke/python-gedcom), [pyvis](https://pyvis.readthedocs.io/) and [streamlit](https://streamlit.io/).
 
-**Instructions:** \n 
+**Instructions:** 
 1. Upload a GEDCOM file (example [here](https://github.com/jlnetosci/astra/gedcom_files/genealogyoflife_tng/RomanGods.ged)).  
 2. Select your root individual.  
 3. Choose the colors of your preference.  
-4. Click 'Generate Network'. \n 
+4. Click 'Generate Network'.
+
 Please be patient while the network loads – time increases with the number of individuals and connections.  
 After generation the network goes through a physics simulation.  
-Nodes can also be moved to wield better separations. \n 
+Nodes can also be moved to wield better separations. 
 
 # Examples
 
@@ -39,7 +40,7 @@ A local instance of this app can be run using Docker ([download](https://docs.do
 
 Usage example:
 
-1.  Pull the image from dockerhub, with `docker pull jlnetosci/astra:v0.1.0b`.
+1.  Pull the image from dockerhub, with `docker pull jlnetosci/astra:0.1.0b`.
 2.  Run `docker run -p 8501:8501 jlnetosci/astra:0.1.0b` to start the application.
 3.  Open `http://localhost:8501/` in your browser.
 
