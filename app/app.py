@@ -3,8 +3,8 @@ ASTRA: GECOM VISUALIZATION
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
-Version: 0.1.0b
-Last Updated: October 7, 2023
+Version: 0.1.1b
+Last Updated: October 11, 2023
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -23,28 +23,28 @@ from pyvis.network import Network
 def parse_gedcom(uploaded_file):
     """
     Creates a temporary file and parses it. 
-    
+
     input:
     :uploaded_file: GEDCOM file to be parsed.
-    
+
     return: 
     :gedcom_parser: Parsed file.
     """
 
-    # Save the uploaded file temporarily
+    # Save the uploaded file temporarily with UTF-8 encoding
     temp_file_path = "temp_gedcom_file.ged"
-    with open(temp_file_path, "wb") as temp_file:
-        temp_file.write(uploaded_file.read())
+    with open(temp_file_path, "w", encoding='utf-8') as temp_file:
+        temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
 
     # Initialize parser
     gedcom_parser = Parser()
-    gedcom_parser.parse_file(temp_file_path, False)  # Disable strict parsing
+    gedcom_parser.parse_file(temp_file_path, False)  # Use the default encoding
 
     # Remove the temporary GEDCOM file
     os.remove(temp_file_path)
     
     return gedcom_parser
-
+    
 def process_gedcom(gedcom_parser):
     """
     Creates a ID to name translator (dictionary). Processes the parsed GEDCOM into nodes their label and edges.
@@ -247,4 +247,4 @@ After generation the network goes through a physics simulation to better distrib
 Nodes can also be moved to wield better separations. </div> \n 
 **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
-st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.0b</b></div>""", unsafe_allow_html=True)
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.1b</b></div>""", unsafe_allow_html=True)
