@@ -17,7 +17,7 @@ Please be patient while the network loads – time increases with the number of 
 After generation the network goes through a physics simulation.  
 Nodes can also be moved to wield better separations. 
 
-# Examples
+## Examples
 
 <div style="display: flex; flex-wrap: wrap;">
   <div style="flex: 50%; padding: 10px;">
@@ -34,14 +34,14 @@ Nodes can also be moved to wield better separations.
   </div>
 </div>
 
-# 🐳 Dockerfile
+## 🐳 Dockerfile
 
 A local instance of this app can be run using Docker ([download](https://docs.docker.com/get-docker/), [installation](https://docs.docker.com/engine/install/)).
 
 Usage example:
 
-1.  Pull the image from dockerhub, with `docker pull jlnetosci/astra:0.1.0b`.
-2.  Run `docker run -p 8501:8501 jlnetosci/astra:0.1.0b` to start the application.
+1.  Pull the image from dockerhub, with `docker pull jlnetosci/astra:0.1.1b`.
+2.  Run `docker run -p 8501:8501 jlnetosci/astra:0.1.1b` to start the application.
 3.  Open `http://localhost:8501/` in your browser.
 
 The fully functional app should be available in your local machine.
