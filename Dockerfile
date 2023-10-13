@@ -1,6 +1,6 @@
-#########################################
-# Dockerfile for jlnetosci/astra:0.1.0b #
-#########################################
+##################################
+# Dockerfile for jlnetosci/astra #
+##################################
 
 FROM python:3.11.4-slim-bookworm
 LABEL maintainer="João L. Neto (https://github.com/jlnetosci/)"
