@@ -4,7 +4,7 @@ ASTRA: GECOM VISUALIZATION
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
 Version: 0.1.2b
-Last Updated: October 14, 2023
+Last Updated: October 15, 2023
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -15,6 +15,7 @@ import os
 import re
 import gedcom
 from gedcom.parser import Parser
+from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
 from gedcom.element.family import FamilyElement
 from iteration_utilities import duplicates, unique_everseen
@@ -109,7 +110,7 @@ def process_gedcom(gedcom_parser):
         check_duplicates(elements)
 
     except ValueError as e:
-        st.error(f'Error: {str(e)}')
+        st.error(f'**Error:** {str(e)}')
         st.stop()
 
     # Create edges
@@ -227,39 +228,45 @@ button_generate_network = None  # Initialize the button variable
 
 # Dropdown menu for selecting an individual
 if uploaded_file is not None:
-    parser = parse_gedcom(uploaded_file)
+    try:
+        parser = parse_gedcom(uploaded_file)
 
-    translator, nodes, labels, edges = process_gedcom(parser)
+        translator, nodes, labels, edges = process_gedcom(parser)
 
-    #st.sidebar.header("Select an Individual")
-    nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
-    
-    #display first individual (regardless of the number of 0s between I and 1)
-    selected_individual = st.sidebar.selectbox(
-        "Select an Individual as root",
-        nodes_sorted,
-        index=next(
-            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
-            0,
-        ),
-    )
+        #st.sidebar.header("Select an Individual")
+        nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
+        
+        #display first individual (regardless of the number of 0s between I and 1)
+        selected_individual = st.sidebar.selectbox(
+            "Select an Individual as root",
+            nodes_sorted,
+            index=next(
+                (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
+                0,
+            ),
+        )
 
-    if selected_individual:
-        ancestors = get_ancestors(parser, translator, selected_individual)    
-        button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
+        if selected_individual:
+            ancestors = get_ancestors(parser, translator, selected_individual)    
+            button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
+
+    except GedcomFormatViolationError:
+        st.error("**Error:** The parser cannot process the GEDCOM file, possibly because of custom or unrecognized tags. This can probably be solved by using [Gramps](https://gramps-project.org/blog/download/) and re-exporting the file." )
+        st.stop()
 
 # Handle button click to generate network
 if button_generate_network and selected_individual:
     print("Button pressed to generate network!")
 
-    # Create the network visualization with selected colors
-    node_color = color_ancestors(nodes, selected_base_node_color, ancestors, selected_ancestor_color, selected_individual, selected_root_color)
+    with st.spinner('Processing data'):
+        # Create the network visualization with selected colors
+        node_color = color_ancestors(nodes, selected_base_node_color, ancestors, selected_ancestor_color, selected_individual, selected_root_color)
 
-    adjusted_labels = {node: labels[node] for node in nodes if node in labels}
+        adjusted_labels = {node: labels[node] for node in nodes if node in labels}
 
-    network = create_network(
-        nodes, adjusted_labels, node_color, edges, selected_bg_color,
-    )
+        network = create_network(
+            nodes, adjusted_labels, node_color, edges, selected_bg_color,
+        )
 
     # Display the network HTML
     with open("gedcom.html", "r") as file:
@@ -268,7 +275,7 @@ if button_generate_network and selected_individual:
     st.components.v1.html(network_html, height=800)
 
 st.sidebar.markdown(""" **Instructions:** <div style="text-align: justify;"> \n 
-1. Upload a GEDCOM file (example [here](https://github.com/jlnetosci/astra/blob/main/gedcom_files/genealogyoflife_tng/RomanGods.ged)).  
+1. Upload a GEDCOM file (example [here](https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkeinFamily.ged)).  
 2. Select your root individual.  
 3. Choose the colors of your preference.  
 4. Click 'Generate Network'. \n 
