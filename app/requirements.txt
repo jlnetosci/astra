@@ -1,3 +1,4 @@
 streamlit==1.27.1 
 python-gedcom==1.0.0 
 pyvis==0.3.2
+iteration_utilities==0.12.0
