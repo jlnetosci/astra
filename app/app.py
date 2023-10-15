@@ -3,8 +3,8 @@ ASTRA: GECOM VISUALIZATION
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
-Version: 0.1.1b
-Last Updated: October 11, 2023
+Version: 0.1.2b
+Last Updated: October 14, 2023
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -17,6 +17,7 @@ import gedcom
 from gedcom.parser import Parser
 from gedcom.element.individual import IndividualElement
 from gedcom.element.family import FamilyElement
+from iteration_utilities import duplicates, unique_everseen
 from itertools import combinations, product
 from pyvis.network import Network
 
@@ -36,6 +37,11 @@ def parse_gedcom(uploaded_file):
     with open(temp_file_path, "w", encoding='utf-8') as temp_file:
         temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
 
+    # Check if the file path does not end with a newline and add one
+    if not temp_file_path.endswith('\n'):
+        with open(temp_file_path, "a", encoding='utf-8') as temp_file:
+            temp_file.write('\n')
+
     # Initialize parser
     gedcom_parser = Parser()
     gedcom_parser.parse_file(temp_file_path, False)  # Use the default encoding
@@ -44,6 +50,13 @@ def parse_gedcom(uploaded_file):
     os.remove(temp_file_path)
     
     return gedcom_parser
+
+def check_duplicates(lst):
+    dups = list(unique_everseen(duplicates(lst)))
+    if dups == []:
+        pass
+    else:
+        raise ValueError(" ".join(dups) + " duplicated. GEDCOM files should not have duplicate IDs. Please check your file.")
     
 def process_gedcom(gedcom_parser):
     """
@@ -67,9 +80,12 @@ def process_gedcom(gedcom_parser):
     
     fams = {} #collect spouses per family for pair edges
     famc = {} #collect per family for children edges
+
+    elements = []
     
     for element in root_child_elements: #elements that are individual of family
         if isinstance(element, IndividualElement): #in elements that are individuals
+            elements.append(element.get_pointer())
             name = " ".join(element.get_name())
             id = str(element.get_pointer()).replace("@", "")
             bp = element.get_birth_data()[1] #birth place
@@ -88,6 +104,13 @@ def process_gedcom(gedcom_parser):
                 key = str(family.get_pointer())
                 value = str(translator[element.get_pointer()])
                 famc.setdefault(key, []).append(value)
+
+    try:
+        check_duplicates(elements)
+
+    except ValueError as e:
+        st.error(f'Error: {str(e)}')
+        st.stop()
 
     # Create edges
     pairs = [] #edges for couples
@@ -187,10 +210,9 @@ def create_network(nodes, labels, base_node_color, edges, bg_color):
 # Streamlit app
 st.set_page_config(layout="wide")
 
-# Sidebar to upload GEDCOM file and select colors
+# Sidebar top
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
-
 st.sidebar.image(IMAGE_PATH, use_column_width=True)
 
 uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "gedcom"])
@@ -211,17 +233,25 @@ if uploaded_file is not None:
 
     #st.sidebar.header("Select an Individual")
     nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
+    
+    #display first individual (regardless of the number of 0s between I and 1)
     selected_individual = st.sidebar.selectbox(
-        "Select an Individual as root", nodes_sorted, index=next((i for i, node in enumerate(nodes_sorted) if "(I1)" in node), 0)
+        "Select an Individual as root",
+        nodes_sorted,
+        index=next(
+            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
+            0,
+        ),
     )
 
-    ancestors = get_ancestors(parser, translator, selected_individual)    
-
     if selected_individual:
+        ancestors = get_ancestors(parser, translator, selected_individual)    
         button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
 
 # Handle button click to generate network
 if button_generate_network and selected_individual:
+    print("Button pressed to generate network!")
+
     # Create the network visualization with selected colors
     node_color = color_ancestors(nodes, selected_base_node_color, ancestors, selected_ancestor_color, selected_individual, selected_root_color)
 
@@ -247,4 +277,4 @@ After generation the network goes through a physics simulation to better distrib
 Nodes can also be moved to wield better separations. </div> \n 
 **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
-st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.1b</b></div>""", unsafe_allow_html=True)
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.2b</b></div>""", unsafe_allow_html=True)
