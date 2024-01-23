@@ -1,5 +1,5 @@
 """
-ASTRA: GECOM VISUALIZATION
+ASTRA: GEDCOM VISUALIZATION
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
@@ -13,7 +13,9 @@ Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like n
 import streamlit as st
 import os
 import re
-import gedcom
+#import gedcom
+import base64
+import requests
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -84,7 +86,7 @@ def process_gedcom(gedcom_parser):
 
     elements = []
     
-    for element in root_child_elements: #elements that are individual of family
+    for element in root_child_elements: #elements that are individuals or family
         if isinstance(element, IndividualElement): #in elements that are individuals
             elements.append(element.get_pointer())
             name = " ".join(element.get_name())
@@ -274,8 +276,15 @@ if button_generate_network and selected_individual:
 
     st.components.v1.html(network_html, height=800)
 
-st.sidebar.markdown(""" **Instructions:** <div style="text-align: justify;"> \n 
-1. Upload a GEDCOM file (example [here](https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkeinFamily.ged)).  
+# Pre-process file github raw url for direct download
+gedcom_file_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
+gedcom_file_content = requests.get(gedcom_file_url).content
+gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
+
+#download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkeinFamily.ged">here</a>'
+
+st.sidebar.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n 
+1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
 2. Select your root individual.  
 3. Choose the colors of your preference.  
 4. Click 'Generate Network'. \n 
