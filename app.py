@@ -3,8 +3,8 @@ ASTRA: GEDCOM VISUALIZATION
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
-Version: 0.1.2b
-Last Updated: October 15, 2023
+Version: 0.2.0dev
+Last Updated: January 28, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -13,7 +13,6 @@ Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like n
 import streamlit as st
 import os
 import re
-#import gedcom
 import base64
 import requests
 from gedcom.parser import Parser
@@ -23,6 +22,32 @@ from gedcom.element.family import FamilyElement
 from iteration_utilities import duplicates, unique_everseen
 from itertools import combinations, product
 from pyvis.network import Network
+from st_pages import Page, show_pages, add_page_title
+
+## Functions as a "hacky" way get logo above the multipage navigation bar. 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+
+def get_base64_of_image(image_path):
+    with open(image_path, 'rb') as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+def add_logo():
+    image_base64 = get_base64_of_image(IMAGE_PATH)
+    st.markdown(
+        f"""
+        <style>
+            [data-testid="stSidebarNav"] {{
+                background-image: url('data:image/png;base64,{image_base64}');
+                background-repeat: no-repeat;
+                padding-top: 120px;
+                background-position: 20px 20px;
+                background-size:  90%;  /* Adjust this value to control the size */
+            }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 def parse_gedcom(uploaded_file):
     """
@@ -213,10 +238,33 @@ def create_network(nodes, labels, base_node_color, edges, bg_color):
 # Streamlit app
 st.set_page_config(layout="wide")
 
+# Show logo above navigation bar
+add_logo()
+
+# Customize navigation bar
+show_pages([Page("app.py", "ASTRA", "🎇"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/contact-form.py", "Contact me", "✉️")])
+
 # Sidebar top
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
-st.sidebar.image(IMAGE_PATH, use_column_width=True)
+#st.sidebar.image(IMAGE_PATH, use_column_width=True)
+
+# Pre-process file github raw url for direct download
+gedcom_file_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
+gedcom_file_content = requests.get(gedcom_file_url).content
+gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
+
+#download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>'
+
+instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Show instructions}}$")
+instructions.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n 
+1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
+2. Select your root individual.  
+3. Choose the colors of your preference.  
+4. Click 'Generate Network'. \n 
+Please be patient while the network loads – time increases with the number of individuals and connections.  
+After generation the network goes through a physics simulation to better distribute nodes.  
+Nodes can also be moved to wield better separations. </div> """, unsafe_allow_html=True)
 
 uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "gedcom"])
 
@@ -276,21 +324,6 @@ if button_generate_network and selected_individual:
 
     st.components.v1.html(network_html, height=800)
 
-# Pre-process file github raw url for direct download
-gedcom_file_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
-gedcom_file_content = requests.get(gedcom_file_url).content
-gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
+st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
-#download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkeinFamily.ged">here</a>'
-
-st.sidebar.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n 
-1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
-2. Select your root individual.  
-3. Choose the colors of your preference.  
-4. Click 'Generate Network'. \n 
-Please be patient while the network loads – time increases with the number of individuals and connections.  
-After generation the network goes through a physics simulation to better distribute nodes.  
-Nodes can also be moved to wield better separations. </div> \n 
-**Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
-
-st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.1.2b</b></div>""", unsafe_allow_html=True)
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0dev</b></div>""", unsafe_allow_html=True)
