@@ -242,7 +242,7 @@ st.set_page_config(layout="wide")
 add_logo()
 
 # Customize navigation bar
-show_pages([Page("app.py", "ASTRA", "🎇"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/contact-form.py", "Contact me", "✉️")])
+show_pages([Page("app.py", "ASTRA", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/contact-form.py", "Contact me", "✉️")])
 
 # Sidebar top
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -306,7 +306,7 @@ if uploaded_file is not None:
 
 # Handle button click to generate network
 if button_generate_network and selected_individual:
-    print("Button pressed to generate network!")
+    #print("Button pressed to generate network!")
 
     with st.spinner('Processing data'):
         # Create the network visualization with selected colors
@@ -323,6 +323,17 @@ if button_generate_network and selected_individual:
         network_html = file.read()
 
     st.components.v1.html(network_html, height=800)
+
+    # Centered download button with dynamic styles
+    st.markdown(
+        """<div style="display: flex; justify-content: center;">
+           <button onclick="location.href='data:text/html;base64,{}'" 
+                   style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 4px; cursor: pointer;">
+                   Download HTML
+           </button>
+        </div>""".format(base64.b64encode(network_html.encode()).decode(), selected_bg_color, selected_base_node_color),
+        unsafe_allow_html=True
+    )
 
 st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
