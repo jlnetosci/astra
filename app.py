@@ -268,12 +268,6 @@ Nodes can also be moved to wield better separations. </div> """, unsafe_allow_ht
 
 uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "gedcom"])
 
-# Color pickers for customization
-selected_bg_color = st.sidebar.color_picker("Select Background Color", "#222222")
-selected_base_node_color = st.sidebar.color_picker("Select general node color", "#FFFFFF")
-selected_ancestor_color = st.sidebar.color_picker("Select ancestor node color", "#ffa500")
-selected_root_color = st.sidebar.color_picker("Select root node color", "#FF0051")
-
 button_generate_network = None  # Initialize the button variable
 
 # Dropdown menu for selecting an individual
@@ -299,6 +293,12 @@ if uploaded_file is not None:
         if selected_individual:
             ancestors = get_ancestors(parser, translator, selected_individual)    
             button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
+
+            # Color pickers for customization
+            selected_bg_color = st.sidebar.color_picker("Select Background Color", "#222222")
+            selected_base_node_color = st.sidebar.color_picker("Select general node color", "#FFFFFF")
+            selected_ancestor_color = st.sidebar.color_picker("Select ancestor node color", "#ffa500")
+            selected_root_color = st.sidebar.color_picker("Select root node color", "#FF0051")
 
     except GedcomFormatViolationError:
         st.error("**Error:** The parser cannot process the GEDCOM file, possibly because of custom or unrecognized tags. This can probably be solved by using [Gramps](https://gramps-project.org/blog/download/) and re-exporting the file." )
