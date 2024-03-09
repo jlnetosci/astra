@@ -4,7 +4,7 @@ ASTRA: GEDCOM VISUALIZATION
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
 Version: 0.2.0dev
-Last Updated: January 28, 2024
+Last Updated: March 8, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -15,6 +15,7 @@ import os
 import re
 import base64
 import requests
+import threading
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -23,6 +24,8 @@ from iteration_utilities import duplicates, unique_everseen
 from itertools import combinations, product
 from pyvis.network import Network
 from st_pages import Page, show_pages, add_page_title
+from streamlit_js_eval import streamlit_js_eval
+from time import sleep
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -270,6 +273,10 @@ uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "g
 
 button_generate_network = None  # Initialize the button variable
 
+def add_selectbox(options):
+    new_option = st.selectbox("+", options)
+    return new_option
+
 # Dropdown menu for selecting an individual
 if uploaded_file is not None:
     try:
@@ -291,14 +298,31 @@ if uploaded_file is not None:
         )
 
         if selected_individual:
+            colors_expander = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Pick colors}}$")
+            # Color pickers for customization
+            selected_bg_color = colors_expander.color_picker("Background", "#222222")
+            selected_root_color = colors_expander.color_picker("Root individual", "#FF0051")
+            selected_ancestor_color = colors_expander.color_picker("Root individual's direct ancestors", "#ffa500")
+            selected_base_node_color = colors_expander.color_picker("Other nodes", "#FFFFFF")
+
+            #hightlight_more_individuals = st.sidebar.checkbox("Hightlight other individuals", key="highlight_individuals_checkbox")
+
+            #if hightlight_more_individuals:
+            #    hightlight_individuals_list = []
+            #    selected_individual = st.sidebar.selectbox(
+            #        "Highlight individual",
+            #        nodes_sorted,
+            #        index=next(
+            #            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*2\)", node)),
+            #            0,
+            #        ),
+            #    )
+
+
+
+
             ancestors = get_ancestors(parser, translator, selected_individual)    
             button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
-
-            # Color pickers for customization
-            selected_bg_color = st.sidebar.color_picker("Select Background Color", "#222222")
-            selected_base_node_color = st.sidebar.color_picker("Select general node color", "#FFFFFF")
-            selected_ancestor_color = st.sidebar.color_picker("Select ancestor node color", "#ffa500")
-            selected_root_color = st.sidebar.color_picker("Select root node color", "#FF0051")
 
     except GedcomFormatViolationError:
         st.error("**Error:** The parser cannot process the GEDCOM file, possibly because of custom or unrecognized tags. This can probably be solved by using [Gramps](https://gramps-project.org/blog/download/) and re-exporting the file." )
@@ -325,15 +349,27 @@ if button_generate_network and selected_individual:
     st.components.v1.html(network_html, height=800)
 
     # Centered download button with dynamic styles
-    st.markdown(
-        """<div style="display: flex; justify-content: center;">
-           <button onclick="location.href='data:text/html;base64,{}'" 
-                   style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 4px; cursor: pointer;">
-                   Download HTML
-           </button>
-        </div>""".format(base64.b64encode(network_html.encode()).decode(), selected_bg_color, selected_base_node_color),
-        unsafe_allow_html=True
-    )
+    #st.markdown(
+    #    """<div style="display: flex; justify-content: center;">
+    #       <button onclick="location.href='data:text/html;base64,{}'" 
+    #               style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 4px; cursor: pointer;">
+    #               Download HTML
+    #       </button>
+    #    </div>""".format(base64.b64encode(network_html.encode()).decode(), selected_bg_color, selected_base_node_color),
+    #    unsafe_allow_html=True
+    #)
+
+# Define your javascript
+#my_js = """
+#alert("Hola mundo");
+#"""
+
+# Wrapt the javascript as html code
+#my_html = f"<script>{my_js}</script>"
+
+# Execute your app
+#st.title("Javascript example")
+#st.components.v1.html(my_html)
 
 st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
