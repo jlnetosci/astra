@@ -259,7 +259,7 @@ gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
 
 #download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>'
 
-instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Show instructions}}$")
+instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Instructions}}$")
 instructions.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n 
 1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
 2. Select your root individual.  
@@ -269,13 +269,11 @@ Please be patient while the network loads – time increases with the number of 
 After generation the network goes through a physics simulation to better distribute nodes.  
 Nodes can also be moved to wield better separations. </div> """, unsafe_allow_html=True)
 
-uploaded_file = st.sidebar.file_uploader("Upload a GEDCOM file", type=["ged", "gedcom"])
+upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GEDCOM}}$")
+
+uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
 
 button_generate_network = None  # Initialize the button variable
-
-def add_selectbox(options):
-    new_option = st.selectbox("+", options)
-    return new_option
 
 # Dropdown menu for selecting an individual
 if uploaded_file is not None:
@@ -284,44 +282,72 @@ if uploaded_file is not None:
 
         translator, nodes, labels, edges = process_gedcom(parser)
 
+        success = upload_gedcom.success("✅ Processing successful.")
+        #sleep(1) # Wait for 1 seconds
+        #success.empty() # Clear the alert
+
+        views = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Views}}$", expanded=True)
+        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", "3D", "Map"], index=None)
+
         #st.sidebar.header("Select an Individual")
         nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
         
-        #display first individual (regardless of the number of 0s between I and 1)
-        selected_individual = st.sidebar.selectbox(
-            "Select an Individual as root",
-            nodes_sorted,
-            index=next(
-                (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
-                0,
-            ),
-        )
+        if views_sb == "Classic (2D)":
+            formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
+            
+            formating.markdown("**Background<br>**", unsafe_allow_html=True)
 
-        if selected_individual:
-            colors_expander = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Pick colors}}$")
-            # Color pickers for customization
-            selected_bg_color = colors_expander.color_picker("Background", "#222222")
-            selected_root_color = colors_expander.color_picker("Root individual", "#FF0051")
-            selected_ancestor_color = colors_expander.color_picker("Root individual's direct ancestors", "#ffa500")
-            selected_base_node_color = colors_expander.color_picker("Other nodes", "#FFFFFF")
+            selected_bg_color = formating.color_picker("Select color", "#222222")
 
-            #hightlight_more_individuals = st.sidebar.checkbox("Hightlight other individuals", key="highlight_individuals_checkbox")
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
 
-            #if hightlight_more_individuals:
-            #    hightlight_individuals_list = []
-            #    selected_individual = st.sidebar.selectbox(
-            #        "Highlight individual",
-            #        nodes_sorted,
-            #        index=next(
-            #            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*2\)", node)),
-            #            0,
-            #        ),
-            #    )
+            formating.markdown("**Individuals**")
 
+            selected_base_node_color = formating.color_picker("Select color", "#FFFFFF")
+            
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
 
+            formating.markdown("**Highlight individual**")
+            
+            neg_root = formating.checkbox("I do not want to select a root")
+            if neg_root:
+                st.empty()
+            else:
+                selected_individual = formating.selectbox(
+                "Select an Individual as root",
+                nodes_sorted,
+                index=next(
+                    (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
+                    0,
+                ),
+            )
+                selected_root_color = formating.color_picker("Select color", "#FF0051", key="selected_root_color")
+                
+                highlight_another_individual = formating.checkbox("Highlight another individual")
 
+                if highlight_another_individual:
+                    highlight_individual = formating.selectbox(
+                        "Highlight individual",
+                        nodes_sorted,
+                        index=next(
+                            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*2\)", node)),
+                            0,
+                        ),
+                    )
 
-            ancestors = get_ancestors(parser, translator, selected_individual)    
+                    selected_highlight_color = formating.color_picker("Select color", "#FF0051", key="selected_highlight_color")
+                
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
+
+                formating.markdown("**Ancestors**")
+
+                neg_ancestors = formating.checkbox("I do not want to highlight the root's direct ancestors")
+                if neg_ancestors:
+                    st.empty()
+                else:
+                    ancestors = get_ancestors(parser, translator, selected_individual)    
+                    selected_ancestor_color = formating.color_picker("Select color", "#ffa500")
+
             button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
 
     except GedcomFormatViolationError:
