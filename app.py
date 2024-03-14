@@ -317,9 +317,9 @@ if uploaded_file is not None:
                 },
                 "Pastel": {
                     "default_background_color": "#fff0db",
-                    "default_individual_color": "#d9b99b",
+                    "default_individual_color": "#eed9c4",
                     "default_root_color": "#f6a192",
-                    "default_ancestor_color": "#A7C7E7",
+                    "default_ancestor_color": "#C2DCF7",
                     "default_hightlight_color": "#B19CD8"
                 },
                 "Grayscale": {
@@ -365,14 +365,14 @@ if uploaded_file is not None:
                 st.empty()
                 selected_individual = None
             else:
+                default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
+
                 selected_individual = formating.selectbox(
                 "Select an Individual as root",
                 nodes_sorted,
-                index=next(
-                    (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)),
-                    0,
-                ),
-            )
+                index=default_index
+                )
+
                 selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
                 
                 highlight_another_individual = formating.checkbox("Highlight another individual")
@@ -380,13 +380,9 @@ if uploaded_file is not None:
                 if highlight_another_individual:
                     highlight_individual = formating.selectbox(
                         "Highlight individual",
-                        nodes_sorted,
-                        index=next(
-                            (i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*2\)", node)),
-                            0,
-                        ),
-                    )
-
+                        [node for node in nodes_sorted if node != selected_individual],
+                        index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
+                        )
                     selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
                 
                 else:
