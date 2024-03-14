@@ -4,7 +4,7 @@ ASTRA: GEDCOM VISUALIZATION
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
 Version: 0.2.0dev
-Last Updated: March 8, 2024
+Last Updated: March 14, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -190,24 +190,32 @@ def get_ancestors(gedcom_parser, translator, individual):
     ancestors.insert(0, individual)
     return ancestors
 
-def color_ancestors(nodes, node_color, ancestors, ancestors_color, individual, individual_color):
+def color_nodes(nodes, node_color, ancestors=None, ancestors_color=None, individual=None, individual_color=None, highlight_individual=None, highlight_individual_color=None):
     """
-    Defines colors for general nodes, ancestor nodes and the selected individual node.
+    Defines colors for general nodes, ancestor nodes, and the selected individual node.
 
     input:
     :node: list of long IDs of all individuals
     :node_color: color for general nodes.
-    :ancestors: list of long IDs of ancestors
-    :ancestors_color: color for ancestor nodes.
-    :individual: list of long IDs of all individuals
-    :individual_color: color for the selected individual nodes.
+    :ancestors: list of long IDs of ancestors (optional)
+    :ancestors_color: color for ancestor nodes (optional).
+    :individual: list of long IDs of the selected individual (optional)
+    :individual_color: color for the selected individual nodes (optional).
 
     return:
     :node_color: dictionary of all individuals and their respective color.
     """
     node_color = dict.fromkeys(nodes, node_color)
-    node_color.update({ancestor: ancestors_color for ancestor in ancestors if ancestor in node_color})
-    node_color[individual] = individual_color
+
+    if ancestors and ancestors_color:
+        node_color.update({ancestor: ancestors_color for ancestor in ancestors if ancestor in node_color})
+    
+    if individual and individual_color:
+        node_color[individual] = individual_color
+
+    if highlight_individual and highlight_individual_color:
+        node_color[highlight_individual] = highlight_individual_color
+    
     return node_color
 
 def create_network(nodes, labels, base_node_color, edges, bg_color):
@@ -312,6 +320,7 @@ if uploaded_file is not None:
             neg_root = formating.checkbox("I do not want to select a root")
             if neg_root:
                 st.empty()
+                selected_individual = None
             else:
                 selected_individual = formating.selectbox(
                 "Select an Individual as root",
@@ -337,6 +346,9 @@ if uploaded_file is not None:
 
                     selected_highlight_color = formating.color_picker("Select color", "#FF0051", key="selected_highlight_color")
                 
+                else:
+                    highlight_individual = None
+
                 formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
 
                 formating.markdown("**Ancestors**")
@@ -344,6 +356,7 @@ if uploaded_file is not None:
                 neg_ancestors = formating.checkbox("I do not want to highlight the root's direct ancestors")
                 if neg_ancestors:
                     st.empty()
+                    ancestors = None
                 else:
                     ancestors = get_ancestors(parser, translator, selected_individual)    
                     selected_ancestor_color = formating.color_picker("Select color", "#ffa500")
@@ -355,12 +368,37 @@ if uploaded_file is not None:
         st.stop()
 
 # Handle button click to generate network
-if button_generate_network and selected_individual:
+if button_generate_network:
     #print("Button pressed to generate network!")
 
     with st.spinner('Processing data'):
         # Create the network visualization with selected colors
-        node_color = color_ancestors(nodes, selected_base_node_color, ancestors, selected_ancestor_color, selected_individual, selected_root_color)
+        if selected_individual is not None:
+            args = {
+                'individual': selected_individual,
+                'individual_color': selected_root_color
+            }
+            
+            if ancestors is not None:
+                args['ancestors'] = ancestors
+                args['ancestors_color'] = selected_ancestor_color
+                
+                node_color = color_nodes(nodes, selected_base_node_color, **args)
+
+                if highlight_individual is not None:
+                    args['highlight_individual'] = highlight_individual
+                    args['highlight_individual_color'] = selected_highlight_color
+                    node_color = color_nodes(nodes, selected_base_node_color, **args)
+
+            if highlight_individual is not None:
+                args['highlight_individual'] = highlight_individual
+                args['highlight_individual_color'] = selected_highlight_color
+                node_color = color_nodes(nodes, selected_base_node_color, **args)
+
+            node_color = color_nodes(nodes, selected_base_node_color, **args)
+        
+        else:
+            node_color = color_nodes(nodes, selected_base_node_color)
 
         adjusted_labels = {node: labels[node] for node in nodes if node in labels}
 
