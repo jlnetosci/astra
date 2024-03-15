@@ -4,7 +4,7 @@ ASTRA: GEDCOM VISUALIZATION
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
 Version: 0.2.0dev
-Last Updated: March 14, 2024
+Last Updated: March 15, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -246,8 +246,8 @@ def create_network(nodes, labels, base_node_color, edges, bg_color):
     network = net.show("gedcom.html")
     return network
 
-# Streamlit app
-st.set_page_config(layout="wide")
+#### Streamlit app ####
+st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 # Show logo above navigation bar
 add_logo()
