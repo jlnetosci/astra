@@ -253,7 +253,7 @@ st.set_page_config(layout="wide")
 add_logo()
 
 # Customize navigation bar
-show_pages([Page("app.py", "ASTRA", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/contact-form.py", "Contact me", "✉️")])
+show_pages([Page("app.py", "ASTRA", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/instructions.py", "Instructions", "📋"), Page("pages/contact-form.py", "Contact me", "✉️")])
 
 # Sidebar top
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -267,19 +267,13 @@ gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
 
 #download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>'
 
-instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Instructions}}$")
-instructions.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n 
-1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
-2. Select your root individual.  
-3. Choose the colors of your preference.  
-4. Click 'Generate Network'. \n 
-Please be patient while the network loads – time increases with the number of individuals and connections.  
-After generation the network goes through a physics simulation to better distribute nodes.  
-Nodes can also be moved to wield better separations. </div> """, unsafe_allow_html=True)
+#instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Instructions}}$")
 
 upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GEDCOM}}$")
 
 uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
+
+upload_gedcom.markdown(f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">Download example</a>', unsafe_allow_html=True)
 
 button_generate_network = None  # Initialize the button variable
 
