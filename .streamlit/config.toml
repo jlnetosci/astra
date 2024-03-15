@@ -1,0 +1,8 @@
+[theme]
+base = "light"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "viewer"
