@@ -27,6 +27,9 @@ from st_pages import Page, show_pages, add_page_title
 from streamlit_js_eval import streamlit_js_eval
 from time import sleep
 
+import networkx as nx
+import numpy as np
+
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
@@ -157,7 +160,7 @@ def process_gedcom(gedcom_parser):
     # Create and filter nodes
     nodes = list(translator.values())
     nodes = [node for node in nodes if any(node in pair for sublist in [pairs, children] for pair in sublist)] #delete nodes with no edges
-
+    
     # Filter label dictionary for nodes with edges
     keys_to_delete = [key for key in labels if key not in nodes]
     for key in keys_to_delete:
@@ -218,7 +221,7 @@ def color_nodes(nodes, node_color, ancestors=None, ancestors_color=None, individ
     
     return node_color
 
-def create_network(nodes, labels, base_node_color, edges, bg_color):
+def create_network(nodes, labels, base_node_color, edges, bg_color, center_node):
     """
     Creates network visualization.
 
@@ -228,18 +231,38 @@ def create_network(nodes, labels, base_node_color, edges, bg_color):
     :base_node_color: color for nodes.
     :edges: list of connections (pairs and parent-child).
     :bg_color: color for the background.
+    :center_node: node from which the concentric circles start.
 
     return:
     :network: network with the data of interest
     """
 
+    #### This function is somehow working even when the center_node is None. 
+    #### which is weird but it keeps giving consistent results with and without selecting a root (which should be the selected_individual).
+    #### attempts to change the behaviour have broken it, therefore it stays as is, until a new review.
+
     net = Network(
         notebook=True, height="800px", width="100%", bgcolor=bg_color, cdn_resources="in_line"
     )
 
-    # Add nodes with color and labels
+    net.set_options('{"physics": {"solver": "force_atlas_2based"}}')
+
+    # Create a dictionary for the positions
+    pos = {}
+
+    # Set the position for the center node
+    pos[center_node] = (0, 0)
+
+    # Set the positions for the other nodes
+    for i, node in enumerate(nodes):
+        if node == center_node:
+            continue
+        angle = 2 * np.pi * i / len(nodes)
+        pos[node] = (np.cos(angle), np.sin(angle))
+
+    # Add nodes with color, labels, and positions
     for node in nodes:
-        net.add_node(node, label=labels[node], color=base_node_color[node], font={"color": base_node_color[node]})
+        net.add_node(node, label=labels[node], color=base_node_color[node], font={"color": base_node_color[node]}, x=pos[node][0]*1000, y=pos[node][1]*1000)
 
     net.add_edges(edges)
     #net.show_buttons()
@@ -436,7 +459,7 @@ if button_generate_network:
         adjusted_labels = {node: labels[node] for node in nodes if node in labels}
 
         network = create_network(
-            nodes, adjusted_labels, node_color, edges, selected_bg_color,
+            nodes, adjusted_labels, node_color, edges, selected_bg_color, selected_individual
         )
 
     # Display the network HTML
