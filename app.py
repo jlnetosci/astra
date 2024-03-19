@@ -160,7 +160,7 @@ def process_gedcom(gedcom_parser):
     # Create and filter nodes
     nodes = list(translator.values())
     nodes = [node for node in nodes if any(node in pair for sublist in [pairs, children] for pair in sublist)] #delete nodes with no edges
-    
+
     # Filter label dictionary for nodes with edges
     keys_to_delete = [key for key in labels if key not in nodes]
     for key in keys_to_delete:
@@ -312,7 +312,7 @@ if uploaded_file is not None:
         #success.empty() # Clear the alert
 
         views = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Views}}$", expanded=True)
-        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", "3D", "Map"], index=None)
+        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", "3D", "Map"], index=0)
 
         #st.sidebar.header("Select an Individual")
         nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
