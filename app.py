@@ -367,13 +367,13 @@ if uploaded_file is not None:
 
             selected_bg_color = formating.color_picker("Select color", default_background_color)
 
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
 
             formating.markdown("**Individuals**")
 
             selected_base_node_color = formating.color_picker("Select color", default_individual_color)
             
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
 
             formating.markdown("**Highlight individual**")
             
@@ -405,7 +405,7 @@ if uploaded_file is not None:
                 else:
                     highlight_individual = None
 
-                formating.markdown("""<hr style='margin-top:0em; margin-bottom:0em' /> """, unsafe_allow_html=True)
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
 
                 formating.markdown("**Ancestors**")
 
