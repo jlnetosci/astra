@@ -377,11 +377,8 @@ if uploaded_file is not None:
 
             formating.markdown("**Highlight individual**")
             
-            neg_root = formating.checkbox("I do not want to select a root")
-            if neg_root:
-                st.empty()
-                selected_individual = None
-            else:
+            root_sel = formating.checkbox(label="I want to select a root", value=True)
+            if root_sel:
                 default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
 
                 selected_individual = formating.selectbox(
@@ -409,13 +406,18 @@ if uploaded_file is not None:
 
                 formating.markdown("**Ancestors**")
 
-                neg_ancestors = formating.checkbox("I do not want to highlight the root's direct ancestors")
-                if neg_ancestors:
-                    st.empty()
-                    ancestors = None
-                else:
+                ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
+                if ancestors_sel:
                     ancestors = get_ancestors(parser, translator, selected_individual)    
                     selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
+                else:
+                    st.empty()
+                    ancestors = None
+           
+            else:
+                st.empty()
+                selected_individual = None
+
 
             button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
 
