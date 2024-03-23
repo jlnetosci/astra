@@ -16,6 +16,7 @@ import re
 import base64
 import requests
 import threading
+import numpy as np
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -26,9 +27,6 @@ from pyvis.network import Network
 from st_pages import Page, show_pages, add_page_title
 from streamlit_js_eval import streamlit_js_eval
 from time import sleep
-
-import networkx as nx
-import numpy as np
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -70,6 +68,12 @@ def parse_gedcom(uploaded_file):
     temp_file_path = "temp_gedcom_file.ged"
     with open(temp_file_path, "w", encoding='utf-8') as temp_file:
         temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
+
+    # Additional check for GEDCOM file integrity.
+    with open("temp_gedcom_file.ged") as temp_file:
+        first_line = temp_file.readline()
+        if not first_line.startswith("0 HEAD"):
+            raise ValueError("The uploaded file does not appear to be a valid GEDCOM file.")
 
     # Check if the file path does not end with a newline and add one
     if not temp_file_path.endswith('\n'):
@@ -420,6 +424,10 @@ if uploaded_file is not None:
 
 
             button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
+
+    except ValueError as e:
+        st.error(f'**Error:** {str(e)}')
+        st.stop()
 
     except GedcomFormatViolationError:
         st.error("**Error:** The parser cannot process the GEDCOM file, possibly because of custom or unrecognized tags. This can probably be solved by using [Gramps](https://gramps-project.org/blog/download/) and re-exporting the file." )
