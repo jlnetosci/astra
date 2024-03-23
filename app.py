@@ -367,17 +367,19 @@ if uploaded_file is not None:
                 default_ancestor_color = selected_palette["default_ancestor_color"]
                 default_highlight_color = selected_palette["default_hightlight_color"]
 
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
             formating.markdown("**Background**")
 
             selected_bg_color = formating.color_picker("Select color", default_background_color)
 
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
             formating.markdown("**Individuals**")
 
             selected_base_node_color = formating.color_picker("Select color", default_individual_color)
             
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
             formating.markdown("**Highlight individual**")
             
@@ -406,7 +408,7 @@ if uploaded_file is not None:
                 else:
                     highlight_individual = None
 
-                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 4px' /> """, unsafe_allow_html=True)
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
                 formating.markdown("**Ancestors**")
 
@@ -482,7 +484,7 @@ if button_generate_network:
     #st.markdown(
     #    """<div style="display: flex; justify-content: center;">
     #       <button onclick="location.href='data:text/html;base64,{}'" 
-    #               style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 4px; cursor: pointer;">
+    #               style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 3px; cursor: pointer;">
     #               Download HTML
     #       </button>
     #    </div>""".format(base64.b64encode(network_html.encode()).decode(), selected_bg_color, selected_base_node_color),
