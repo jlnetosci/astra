@@ -424,8 +424,7 @@ if uploaded_file is not None:
                 st.empty()
                 selected_individual = None
 
-
-            button_generate_network = st.sidebar.button("Generate Network", key="generate_network_button")
+            button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
 
     except ValueError as e:
         st.error(f'**Error:** {str(e)}')
@@ -438,6 +437,13 @@ if uploaded_file is not None:
 # Handle button click to generate network
 if button_generate_network:
     #print("Button pressed to generate network!")
+
+    info_ = st.sidebar.expander(label=r"$\\textbf{\textsf{\normalsize ⓘ Info}}$", expanded=True)
+
+    info_.markdown(""" <div style="text-align: justify;"> \n 
+    <p> Please be patient while the network loads – time increases with the number of individuals and connections. </p>
+    <p> After generation the network goes through a physics simulation to better distribute individuals. </p>
+    <p> Individual nodes can also be moved to wield better separations. </p></div> """, unsafe_allow_html=True)
 
     with st.spinner('Processing data'):
         # Create the network visualization with selected colors
