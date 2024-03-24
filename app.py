@@ -251,6 +251,12 @@ def create_network(nodes, labels, base_node_color, edges, bg_color, center_node)
 
     net.set_options('{"physics": {"solver": "force_atlas_2based"}}')
 
+    net.options['nodes'] = {
+        'font': {
+            'face': 'sans-serif'  # Set font family to sans-serif
+        }
+    }
+
     # Create a dictionary for the positions
     pos = {}
 
@@ -326,8 +332,6 @@ if uploaded_file is not None:
 
             formating.markdown("**Color palette**")
 
-            palette = formating.selectbox(label="Select a color palette", options=["Classic", "Pastel", "Grayscale", "Colorblind-friendly (Tol light)"], index=0, key="palette")
-
             palettes = {
                 "Classic": {
                     "default_background_color": "#222222",
@@ -358,6 +362,8 @@ if uploaded_file is not None:
                     "default_hightlight_color": "#FFAABB"
                 }
             }
+
+            palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
 
             selected_palette = palettes.get(palette)
             if selected_palette:
@@ -438,7 +444,7 @@ if uploaded_file is not None:
 if button_generate_network:
     #print("Button pressed to generate network!")
 
-    info_ = st.sidebar.expander(label=r"$\\textbf{\textsf{\normalsize ⓘ Info}}$", expanded=True)
+    info_ = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize ⓘ Info}}$", expanded=True)
 
     info_.markdown(""" <div style="text-align: justify;"> \n 
     <p> Please be patient while the network loads – time increases with the number of individuals and connections. </p>
