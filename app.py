@@ -17,6 +17,8 @@ import base64
 import requests
 import threading
 import numpy as np
+import plotly.graph_objects as go
+import networkx as nx
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -70,10 +72,10 @@ def parse_gedcom(uploaded_file):
         temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
 
     # Additional check for GEDCOM file integrity.
-    with open("temp_gedcom_file.ged") as temp_file:
-        first_line = temp_file.readline()
-        if not first_line.startswith("0 HEAD"):
-            raise ValueError("The uploaded file does not appear to be a valid GEDCOM file.")
+    #with open("temp_gedcom_file.ged") as temp_file:
+    #    first_line = temp_file.readline()
+    #    if not first_line.startswith("0 HEAD"):
+    #        raise ValueError("The uploaded file does not appear to be a valid GEDCOM file.")
 
     # Check if the file path does not end with a newline and add one
     if not temp_file_path.endswith('\n'):
@@ -279,6 +281,77 @@ def create_network(nodes, labels, base_node_color, edges, bg_color, center_node)
     network = net.show("gedcom.html")
     return network
 
+def plot_3d_network(nodes, edges, labels):
+    adjusted_labels = {node: labels[node] for node in nodes if node in labels}
+
+    # Create a networkx graph
+    G = nx.Graph()
+    G.add_edges_from(edges)
+
+    # Compute Kamada-Kawai layout for 3D graphs
+    pos = nx.fruchterman_reingold_layout(G, dim=3)
+
+    # Extract node positions
+    node_x = [pos[node][0] for node in nodes]
+    node_y = [pos[node][1] for node in nodes]
+    node_z = [pos[node][2] for node in nodes]
+
+    # Create edges trace
+    edge_x = []
+    edge_y = []
+    edge_z = []
+
+    for edge in edges:
+        x0, y0, z0 = pos[edge[0]]
+        x1, y1, z1 = pos[edge[1]]
+        edge_x += [x0, x1, None]
+        edge_y += [y0, y1, None]
+        edge_z += [z0, z1, None]
+
+    # Create figure
+    fig = go.Figure()
+
+    # Add edges trace
+    fig.add_trace(go.Scatter3d(
+        x=edge_x,
+        y=edge_y,
+        z=edge_z,
+        mode='lines',
+        line=dict(width=2, color='blue'),
+        hoverinfo='none'
+    ))
+
+    # Add nodes trace
+    fig.add_trace(go.Scatter3d(
+        x=node_x,
+        y=node_y,
+        z=node_z,
+        mode='markers',
+        marker=dict(symbol='circle',
+                    size=5,
+                    color='red',
+                    line=dict(color='black', width=0.5)),
+        hovertext=list(adjusted_labels.values()),
+        hoverinfo='text'
+    ))
+
+    # Update layout
+    fig.update_layout(
+        #title='3D Network Plot',
+        #titlefont_size=16,
+        showlegend=False,
+        hovermode='closest',
+        scene=dict(
+            xaxis_visible=False,  # Hide x-axis
+            yaxis_visible=False,  # Hide y-axis
+            zaxis_visible=False,  # Hide z-axis
+            bgcolor='rgba(0,0,0,0)'  # Setting background color to transparent
+        ),
+        height=800,  # Customize height
+    )
+
+    return fig
+
 #### Streamlit app ####
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
@@ -322,7 +395,10 @@ if uploaded_file is not None:
         #success.empty() # Clear the alert
 
         views = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Views}}$", expanded=True)
-        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", "3D", "Map"], index=0)
+        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", 
+            "3D", 
+            #"Map"
+            ], index=0)
 
         #st.sidebar.header("Select an Individual")
         nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
@@ -432,9 +508,14 @@ if uploaded_file is not None:
 
             button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
 
-    except ValueError as e:
-        st.error(f'**Error:** {str(e)}')
-        st.stop()
+        if views_sb == "3D":
+            # Plot the 3D network
+            fig = plot_3d_network(nodes, edges, labels)
+            st.plotly_chart(fig, use_container_width=True, height=800)
+
+    #except ValueError as e:
+    #    st.error(f'**Error:** {str(e)}')
+    #    st.stop()
 
     except GedcomFormatViolationError:
         st.error("**Error:** The parser cannot process the GEDCOM file, possibly because of custom or unrecognized tags. This can probably be solved by using [Gramps](https://gramps-project.org/blog/download/) and re-exporting the file." )
