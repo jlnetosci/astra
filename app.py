@@ -456,114 +456,114 @@ if uploaded_file is not None:
         views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", 
             "3D", 
             #"Map"
-            ], index=0)
+            ], index=None)
+        if views_sb is not None:
+            #st.sidebar.header("Select an Individual")
+            nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
+            
+            formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
 
-        #st.sidebar.header("Select an Individual")
-        nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
-        
-        formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
+            formating.markdown("**Color palette**")
 
-        formating.markdown("**Color palette**")
-
-        palettes = {
-            "Classic": {
-                "default_background_color": "#222222",
-                "default_individual_color": "#FFFFFF",
-                "default_root_color": "#FF0051",
-                "default_ancestor_color": "#ffa500",
-                "default_hightlight_color": "#A679FF"
-            },
-            "Pastel": {
-                "default_background_color": "#fff0db",
-                "default_individual_color": "#eed9c4",
-                "default_root_color": "#f6a192",
-                "default_ancestor_color": "#C2DCF7",
-                "default_hightlight_color": "#B19CD8"
-            },
-            "Grayscale": {
-                "default_background_color": "#ffffff",
-                "default_individual_color": "#eeeeee",
-                "default_root_color": "#a3a3a3",
-                "default_ancestor_color": "#cccccc",
-                "default_hightlight_color": "#bbbbbb"
-            },
-            "Colorblind-friendly (Tol light)": {
-                "default_background_color": "#DDDDDD",
-                "default_individual_color": "#EEDD88",
-                "default_root_color": "#EE8866",
-                "default_ancestor_color": "#99DDFF",
-                "default_hightlight_color": "#FFAABB"
+            palettes = {
+                "Classic": {
+                    "default_background_color": "#222222",
+                    "default_individual_color": "#FFFFFF",
+                    "default_root_color": "#FF0051",
+                    "default_ancestor_color": "#ffa500",
+                    "default_hightlight_color": "#A679FF"
+                },
+                "Pastel": {
+                    "default_background_color": "#fff0db",
+                    "default_individual_color": "#eed9c4",
+                    "default_root_color": "#f6a192",
+                    "default_ancestor_color": "#C2DCF7",
+                    "default_hightlight_color": "#B19CD8"
+                },
+                "Grayscale": {
+                    "default_background_color": "#ffffff",
+                    "default_individual_color": "#eeeeee",
+                    "default_root_color": "#a3a3a3",
+                    "default_ancestor_color": "#cccccc",
+                    "default_hightlight_color": "#bbbbbb"
+                },
+                "Colorblind-friendly (Tol light)": {
+                    "default_background_color": "#DDDDDD",
+                    "default_individual_color": "#EEDD88",
+                    "default_root_color": "#EE8866",
+                    "default_ancestor_color": "#99DDFF",
+                    "default_hightlight_color": "#FFAABB"
+                }
             }
-        }
 
-        palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
+            palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
 
-        selected_palette = palettes.get(palette)
-        if selected_palette:
-            default_background_color = selected_palette["default_background_color"]
-            default_individual_color = selected_palette["default_individual_color"]
-            default_root_color = selected_palette["default_root_color"]
-            default_ancestor_color = selected_palette["default_ancestor_color"]
-            default_highlight_color = selected_palette["default_hightlight_color"]
-
-        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-        formating.markdown("**Background**")
-
-        selected_bg_color = formating.color_picker("Select color", default_background_color)
-
-        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-        formating.markdown("**Individuals**")
-
-        selected_base_node_color = formating.color_picker("Select color", default_individual_color)
-        
-        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-        formating.markdown("**Highlight individual**")
-        
-        root_sel = formating.checkbox(label="I want to select a root", value=True)
-        if root_sel:
-            default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
-
-            selected_individual = formating.selectbox(
-            "Select an Individual as root",
-            nodes_sorted,
-            index=default_index
-            )
-
-            selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
-            
-            highlight_another_individual = formating.checkbox("Highlight another individual")
-
-            if highlight_another_individual:
-                highlight_individual = formating.selectbox(
-                    "Highlight individual",
-                    [node for node in nodes_sorted if node != selected_individual],
-                    index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
-                    )
-                selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
-            
-            else:
-                highlight_individual = None
+            selected_palette = palettes.get(palette)
+            if selected_palette:
+                default_background_color = selected_palette["default_background_color"]
+                default_individual_color = selected_palette["default_individual_color"]
+                default_root_color = selected_palette["default_root_color"]
+                default_ancestor_color = selected_palette["default_ancestor_color"]
+                default_highlight_color = selected_palette["default_hightlight_color"]
 
             formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
-            formating.markdown("**Ancestors**")
+            formating.markdown("**Background**")
 
-            ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
-            if ancestors_sel:
-                ancestors = get_ancestors(parser, translator, selected_individual)    
-                selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
+            selected_bg_color = formating.color_picker("Select color", default_background_color)
+
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+            formating.markdown("**Individuals**")
+
+            selected_base_node_color = formating.color_picker("Select color", default_individual_color)
+            
+            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+            formating.markdown("**Highlight individual**")
+            
+            root_sel = formating.checkbox(label="I want to select a root", value=True)
+            if root_sel:
+                default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
+
+                selected_individual = formating.selectbox(
+                "Select an Individual as root",
+                nodes_sorted,
+                index=default_index
+                )
+
+                selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
+                
+                highlight_another_individual = formating.checkbox("Highlight another individual")
+
+                if highlight_another_individual:
+                    highlight_individual = formating.selectbox(
+                        "Highlight individual",
+                        [node for node in nodes_sorted if node != selected_individual],
+                        index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
+                        )
+                    selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
+                
+                else:
+                    highlight_individual = None
+
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+                formating.markdown("**Ancestors**")
+
+                ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
+                if ancestors_sel:
+                    ancestors = get_ancestors(parser, translator, selected_individual)    
+                    selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
+                else:
+                    st.empty()
+                    ancestors = None
+           
             else:
                 st.empty()
-                ancestors = None
-       
-        else:
-            st.empty()
-            selected_individual = None
+                selected_individual = None
 
-        button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
+            button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
 
     #except ValueError as e:
     #    st.error(f'**Error:** {str(e)}')
