@@ -19,6 +19,8 @@ import threading
 import numpy as np
 import plotly.graph_objects as go
 import networkx as nx
+import matplotlib.colors as mcolors
+import hashlib
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -29,6 +31,7 @@ from pyvis.network import Network
 from st_pages import Page, show_pages, add_page_title
 from streamlit_js_eval import streamlit_js_eval
 from time import sleep
+from random import seed
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -281,32 +284,70 @@ def create_network(nodes, labels, base_node_color, edges, bg_color, center_node)
     network = net.show("gedcom.html")
     return network
 
-def plot_3d_network(nodes, edges, labels):
-    adjusted_labels = {node: labels[node] for node in nodes if node in labels}
+def darken_color(color, amount=0.5):
+    """
+    Darkens the given color by multiplying the luminosity by the given amount.
+    """
+    try:
+        c = mcolors.cnames[color]
+    except:
+        c = color
+    c = mcolors.to_rgba(c)
+    return tuple((c[0] * (1 - amount),
+                  c[1] * (1 - amount),
+                  c[2] * (1 - amount),
+                  c[3]))
 
+def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
     # Create a networkx graph
     G = nx.Graph()
     G.add_edges_from(edges)
 
     # Compute Kamada-Kawai layout for 3D graphs
-    pos = nx.fruchterman_reingold_layout(G, dim=3)
+    seed(22)
+    if 'pos3d' not in st.session_state:
+        st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3)
+    else:
+        pass
 
     # Extract node positions
-    node_x = [pos[node][0] for node in nodes]
-    node_y = [pos[node][1] for node in nodes]
-    node_z = [pos[node][2] for node in nodes]
+    node_x = [st.session_state['pos3d'][node][0] for node in nodes]
+    node_y = [st.session_state['pos3d'][node][1] for node in nodes]
+    node_z = [st.session_state['pos3d'][node][2] for node in nodes]
+
+    labels = {key: value.replace(" \n ", "<br>") for key, value in labels.items()}
 
     # Create edges trace
     edge_x = []
     edge_y = []
     edge_z = []
 
+    #edge_colors = [[('red', 'blue'), ('yellow', 'green')], ['black']*(len(edges)-2)]
+    #edge_colors = [item for sublist in edge_colors for item in sublist]
+
+    edge_colors = []
     for edge in edges:
-        x0, y0, z0 = pos[edge[0]]
-        x1, y1, z1 = pos[edge[1]]
+        for ind in edge:
+            if ind in base_node_color:
+                edge_colors.append(base_node_color[ind])
+            #else:
+            #    result_list.append('')
+        edge_colors.append(bg_color)  # Append an empty string after each tuple
+
+    for edge in edges:
+        x0, y0, z0 = st.session_state['pos3d'][edge[0]]
+        x1, y1, z1 = st.session_state['pos3d'][edge[1]]
         edge_x += [x0, x1, None]
         edge_y += [y0, y1, None]
         edge_z += [z0, z1, None]
+        #edge_colors.append(base_node_color[edge[0]])
+
+    #print(edges)
+    #print(edge_colors)
+
+    line_color = []
+    for color in list(base_node_color.values()):
+        line_color.append(darken_color(color, 0.2))
 
     # Create figure
     fig = go.Figure()
@@ -317,7 +358,7 @@ def plot_3d_network(nodes, edges, labels):
         y=edge_y,
         z=edge_z,
         mode='lines',
-        line=dict(width=2, color='blue'),
+        line=dict(width=7, color=edge_colors),
         hoverinfo='none'
     ))
 
@@ -329,9 +370,9 @@ def plot_3d_network(nodes, edges, labels):
         mode='markers',
         marker=dict(symbol='circle',
                     size=5,
-                    color='red',
-                    line=dict(color='black', width=0.5)),
-        hovertext=list(adjusted_labels.values()),
+                    color=list(base_node_color.values()),
+                    line=dict(color=line_color, width=2)),
+        hovertext=list(labels.values()),
         hoverinfo='text'
     ))
 
@@ -345,7 +386,7 @@ def plot_3d_network(nodes, edges, labels):
             xaxis_visible=False,  # Hide x-axis
             yaxis_visible=False,  # Hide y-axis
             zaxis_visible=False,  # Hide z-axis
-            bgcolor='rgba(0,0,0,0)'  # Setting background color to transparent
+            bgcolor=bg_color  # Setting background color
         ),
         height=800,  # Customize height
     )
@@ -383,8 +424,24 @@ upload_gedcom.markdown(f'<a href="data:text/plain;base64,{gedcom_file_base64}" d
 
 button_generate_network = None  # Initialize the button variable
 
-# Dropdown menu for selecting an individual
+# Track the hash of the previously uploaded file content
+if 'previous_file_hash' not in st.session_state:
+    st.session_state['previous_file_hash'] = None
+
+# Handle file upload
 if uploaded_file is not None:
+    # Calculate the hash of the newly uploaded file content
+    st.session_state['new_file_hash'] = hashlib.sha256(uploaded_file.getvalue()[:]).hexdigest()
+
+    # Compare the hash of the newly uploaded file content with the hash of the previous file content
+    if st.session_state['new_file_hash'] != st.session_state['previous_file_hash']:
+        # Reset pos3d session state if the contents of the new file are different from the previous file
+        if 'pos3d' in st.session_state:
+            del st.session_state['pos3d']
+        
+        # Update the hash of the previous file content
+        st.session_state['previous_file_hash'] = st.session_state['new_file_hash']
+
     try:
         parser = parse_gedcom(uploaded_file)
 
@@ -403,115 +460,109 @@ if uploaded_file is not None:
         #st.sidebar.header("Select an Individual")
         nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
         
-        if views_sb == "Classic (2D)":
-            formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
+        formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
 
-            formating.markdown("**Color palette**")
+        formating.markdown("**Color palette**")
 
-            palettes = {
-                "Classic": {
-                    "default_background_color": "#222222",
-                    "default_individual_color": "#FFFFFF",
-                    "default_root_color": "#FF0051",
-                    "default_ancestor_color": "#ffa500",
-                    "default_hightlight_color": "#A679FF"
-                },
-                "Pastel": {
-                    "default_background_color": "#fff0db",
-                    "default_individual_color": "#eed9c4",
-                    "default_root_color": "#f6a192",
-                    "default_ancestor_color": "#C2DCF7",
-                    "default_hightlight_color": "#B19CD8"
-                },
-                "Grayscale": {
-                    "default_background_color": "#ffffff",
-                    "default_individual_color": "#eeeeee",
-                    "default_root_color": "#a3a3a3",
-                    "default_ancestor_color": "#cccccc",
-                    "default_hightlight_color": "#bbbbbb"
-                },
-                "Colorblind-friendly (Tol light)": {
-                    "default_background_color": "#DDDDDD",
-                    "default_individual_color": "#EEDD88",
-                    "default_root_color": "#EE8866",
-                    "default_ancestor_color": "#99DDFF",
-                    "default_hightlight_color": "#FFAABB"
-                }
+        palettes = {
+            "Classic": {
+                "default_background_color": "#222222",
+                "default_individual_color": "#FFFFFF",
+                "default_root_color": "#FF0051",
+                "default_ancestor_color": "#ffa500",
+                "default_hightlight_color": "#A679FF"
+            },
+            "Pastel": {
+                "default_background_color": "#fff0db",
+                "default_individual_color": "#eed9c4",
+                "default_root_color": "#f6a192",
+                "default_ancestor_color": "#C2DCF7",
+                "default_hightlight_color": "#B19CD8"
+            },
+            "Grayscale": {
+                "default_background_color": "#ffffff",
+                "default_individual_color": "#eeeeee",
+                "default_root_color": "#a3a3a3",
+                "default_ancestor_color": "#cccccc",
+                "default_hightlight_color": "#bbbbbb"
+            },
+            "Colorblind-friendly (Tol light)": {
+                "default_background_color": "#DDDDDD",
+                "default_individual_color": "#EEDD88",
+                "default_root_color": "#EE8866",
+                "default_ancestor_color": "#99DDFF",
+                "default_hightlight_color": "#FFAABB"
             }
+        }
 
-            palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
+        palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
 
-            selected_palette = palettes.get(palette)
-            if selected_palette:
-                default_background_color = selected_palette["default_background_color"]
-                default_individual_color = selected_palette["default_individual_color"]
-                default_root_color = selected_palette["default_root_color"]
-                default_ancestor_color = selected_palette["default_ancestor_color"]
-                default_highlight_color = selected_palette["default_hightlight_color"]
+        selected_palette = palettes.get(palette)
+        if selected_palette:
+            default_background_color = selected_palette["default_background_color"]
+            default_individual_color = selected_palette["default_individual_color"]
+            default_root_color = selected_palette["default_root_color"]
+            default_ancestor_color = selected_palette["default_ancestor_color"]
+            default_highlight_color = selected_palette["default_hightlight_color"]
 
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
-            formating.markdown("**Background**")
+        formating.markdown("**Background**")
 
-            selected_bg_color = formating.color_picker("Select color", default_background_color)
+        selected_bg_color = formating.color_picker("Select color", default_background_color)
 
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
-            formating.markdown("**Individuals**")
+        formating.markdown("**Individuals**")
 
-            selected_base_node_color = formating.color_picker("Select color", default_individual_color)
+        selected_base_node_color = formating.color_picker("Select color", default_individual_color)
+        
+        formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+        formating.markdown("**Highlight individual**")
+        
+        root_sel = formating.checkbox(label="I want to select a root", value=True)
+        if root_sel:
+            default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
+
+            selected_individual = formating.selectbox(
+            "Select an Individual as root",
+            nodes_sorted,
+            index=default_index
+            )
+
+            selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
             
+            highlight_another_individual = formating.checkbox("Highlight another individual")
+
+            if highlight_another_individual:
+                highlight_individual = formating.selectbox(
+                    "Highlight individual",
+                    [node for node in nodes_sorted if node != selected_individual],
+                    index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
+                    )
+                selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
+            
+            else:
+                highlight_individual = None
+
             formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
-            formating.markdown("**Highlight individual**")
-            
-            root_sel = formating.checkbox(label="I want to select a root", value=True)
-            if root_sel:
-                default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
+            formating.markdown("**Ancestors**")
 
-                selected_individual = formating.selectbox(
-                "Select an Individual as root",
-                nodes_sorted,
-                index=default_index
-                )
-
-                selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
-                
-                highlight_another_individual = formating.checkbox("Highlight another individual")
-
-                if highlight_another_individual:
-                    highlight_individual = formating.selectbox(
-                        "Highlight individual",
-                        [node for node in nodes_sorted if node != selected_individual],
-                        index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
-                        )
-                    selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
-                
-                else:
-                    highlight_individual = None
-
-                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-                formating.markdown("**Ancestors**")
-
-                ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
-                if ancestors_sel:
-                    ancestors = get_ancestors(parser, translator, selected_individual)    
-                    selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
-                else:
-                    st.empty()
-                    ancestors = None
-           
+            ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
+            if ancestors_sel:
+                ancestors = get_ancestors(parser, translator, selected_individual)    
+                selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
             else:
                 st.empty()
-                selected_individual = None
+                ancestors = None
+       
+        else:
+            st.empty()
+            selected_individual = None
 
-            button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
-
-        if views_sb == "3D":
-            # Plot the 3D network
-            fig = plot_3d_network(nodes, edges, labels)
-            st.plotly_chart(fig, use_container_width=True, height=800)
+        button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
 
     #except ValueError as e:
     #    st.error(f'**Error:** {str(e)}')
@@ -561,17 +612,26 @@ if button_generate_network:
         else:
             node_color = color_nodes(nodes, selected_base_node_color)
 
-        adjusted_labels = {node: labels[node] for node in nodes if node in labels}
+        #adjusted_labels = {node: labels[node] for node in nodes if node in labels}
+        
+        #print(adjusted_labels == labels)
 
-        network = create_network(
-            nodes, adjusted_labels, node_color, edges, selected_bg_color, selected_individual
-        )
+        if views_sb == "Classic (2D)":
+            network = create_network(
+                nodes, labels, node_color, edges, selected_bg_color, selected_individual
+            )
 
-    # Display the network HTML
-    with open("gedcom.html", "r") as file:
-        network_html = file.read()
+            # Display the network HTML
+            with open("gedcom.html", "r") as file:
+                network_html = file.read()
 
-    st.components.v1.html(network_html, height=800)
+            st.components.v1.html(network_html, height=800)
+
+        if views_sb == "3D":
+            # Plot the 3D network
+            fig = plot_3d_network(nodes, edges, labels, node_color, selected_bg_color)
+            st.plotly_chart(fig, use_container_width=True, height=800)
+
 
     # Centered download button with dynamic styles
     #st.markdown(
