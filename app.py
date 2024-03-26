@@ -389,6 +389,7 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
             bgcolor=bg_color  # Setting background color
         ),
         height=800,  # Customize height
+        margin = {'l':0,'r':0,'t':0,'b':0}
     )
 
     return fig
@@ -630,7 +631,7 @@ if button_generate_network:
         if views_sb == "3D":
             # Plot the 3D network
             fig = plot_3d_network(nodes, edges, labels, node_color, selected_bg_color)
-            st.plotly_chart(fig, use_container_width=True, height=800)
+            st.plotly_chart(fig, use_container_width=True, height=800, config={'modeBarButtonsToRemove': ['toImage']})
 
 
     # Centered download button with dynamic styles
