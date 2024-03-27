@@ -100,7 +100,39 @@ def check_duplicates(lst):
         pass
     else:
         raise ValueError(" ".join(dups) + " duplicated. GEDCOM files should not have duplicate IDs. Please check your file.")
-    
+
+def process_edges(lst):
+    """
+    Processes a list of tuples. If the item is a tuple with more than two elements,
+    it removes any repeated elements and forms a new tuple with just those two distinct elements.
+    If the item is a tuple with exactly three elements:
+        - If at least one element is repeated, it keeps only the distinct elements and forms a new tuple.
+        - If no element is repeated, it excludes the tuple from the result.
+
+    input:
+    :lst: list containing tuples.
+
+    returns:
+    :result: list containing tuples with two distinct elements.
+    """
+    result = []
+    for item in lst:
+        if isinstance(item, tuple):
+            if len(item) == 2:
+                result.append(item)
+            elif len(item) == 3:
+                if len(set(item)) == len(item):
+                    # Exclude the tuple if all elements are distinct
+                    continue
+                else:
+                    # Keep only distinct elements if there's a repetition
+                    result.append(tuple(set(item)))
+        else:
+            # Include non-tuple items in the result
+            result.append(item)
+    return result
+ 
+
 def process_gedcom(gedcom_parser):
     """
     Creates a ID to name translator (dictionary). Processes the parsed GEDCOM into nodes their label and edges.
@@ -165,7 +197,8 @@ def process_gedcom(gedcom_parser):
     children = sum(children, [])
     
     edges = pairs + children #merge lists
-    
+    edges = process_edges(edges)
+
     # Create and filter nodes
     nodes = list(translator.values())
     nodes = [node for node in nodes if any(node in pair for sublist in [pairs, children] for pair in sublist)] #delete nodes with no edges
@@ -303,10 +336,9 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
     G = nx.Graph()
     G.add_edges_from(edges)
 
-    # Compute Kamada-Kawai layout for 3D graphs
-    seed(22)
+    # Compute Fruchterman-Reingold layout for 3D graphs
     if 'pos3d' not in st.session_state:
-        st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3)
+        st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3, seed=9)
     else:
         pass
 
