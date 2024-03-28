@@ -440,10 +440,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
 #st.sidebar.image(IMAGE_PATH, use_column_width=True)
 
-# Pre-process file github raw url for direct download
-gedcom_file_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
-gedcom_file_content = requests.get(gedcom_file_url).content
-gedcom_file_base64 = base64.b64encode(gedcom_file_content).decode("utf-8")
+# Pre-process file github raw urls for direct download
+example1_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
+example1_content = requests.get(example1_url).content
+example1_base64 = base64.b64encode(example1_content).decode("utf-8")
+
+example2_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/Royal92.ged"
+example2_content = requests.get(example2_url).content
+example2_base64 = base64.b64encode(example2_content).decode("utf-8")
 
 #download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>'
 
@@ -453,7 +457,8 @@ upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GED
 
 uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
 
-upload_gedcom.markdown(f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">Download example</a>', unsafe_allow_html=True)
+examples = upload_gedcom.markdown(f'Download examples: <br><b><a href="data:text/plain;base64,{example1_base64}" download="TolkienFamily.ged">Example 1</a></b> (67 individuals)<br> \
+    <b><a href="data:text/plain;base64,{example2_base64}" download="Royal92.ged">Example 2</a></b> (3007 individuals)', unsafe_allow_html=True)
 
 button_generate_network = None  # Initialize the button variable
 
@@ -463,6 +468,7 @@ if 'previous_file_hash' not in st.session_state:
 
 # Handle file upload
 if uploaded_file is not None:
+    examples.empty()
     # Calculate the hash of the newly uploaded file content
     st.session_state['new_file_hash'] = hashlib.sha256(uploaded_file.getvalue()[:]).hexdigest()
 
