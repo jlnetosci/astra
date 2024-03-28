@@ -14,7 +14,6 @@ import streamlit as st
 import os
 import re
 import base64
-import requests
 import threading
 import numpy as np
 import plotly.graph_objects as go
@@ -440,25 +439,31 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
 #st.sidebar.image(IMAGE_PATH, use_column_width=True)
 
-# Pre-process file github raw urls for direct download
-example1_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/TolkienFamily.ged"
-example1_content = requests.get(example1_url).content
-example1_base64 = base64.b64encode(example1_content).decode("utf-8")
+example1 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/TolkienFamily.ged')
+with open(example1, 'rb') as file:
+    example1_content = file.read()
 
-example2_url = "https://raw.githubusercontent.com/jlnetosci/astra/main/gedcom_files/genealogyoflife_tng/Royal92.ged"
-example2_content = requests.get(example2_url).content
-example2_base64 = base64.b64encode(example2_content).decode("utf-8")
-
-#download_link = f'<a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>'
-
-#instructions = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Instructions}}$")
+example2 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/Royal92.ged')
+with open(example2, 'rb') as file:
+    example2_content = file.read()
 
 upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GEDCOM}}$")
 
 uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
 
-examples = upload_gedcom.markdown(f'Download examples: <br><b><a href="data:text/plain;base64,{example1_base64}" download="TolkienFamily.ged">Example 1</a></b> (67 individuals)<br> \
-    <b><a href="data:text/plain;base64,{example2_base64}" download="Royal92.ged">Example 2</a></b> (3007 individuals)', unsafe_allow_html=True)
+if uploaded_file is None:
+    upload_gedcom.markdown("**Download examples:**")
+    upload_gedcom.download_button(label="Example 1 (67 individuals)",
+        data=example1_content,
+        file_name="TolkienFamily.ged",
+        mime="text/plain", use_container_width=True, key="example1_button")
+    upload_gedcom.download_button(label="Example 2 (3007 individuals)",
+        data=example2_content,
+        file_name="TolkienFamily.ged",
+        mime="text/plain", use_container_width=True, key="example2_button")
+
+#examples = upload_gedcom.markdown(f'Download examples: <br><b><a href="data:text/plain;base64,{example1_base64}" download="TolkienFamily.ged">Example 1</a></b> (67 individuals)<br> \
+#    <b><a href="data:text/plain;base64,{example2_base64}" download="Royal92.ged">Example 2</a></b> (3007 individuals)', unsafe_allow_html=True)
 
 button_generate_network = None  # Initialize the button variable
 
@@ -468,7 +473,6 @@ if 'previous_file_hash' not in st.session_state:
 
 # Handle file upload
 if uploaded_file is not None:
-    examples.empty()
     # Calculate the hash of the newly uploaded file content
     st.session_state['new_file_hash'] = hashlib.sha256(uploaded_file.getvalue()[:]).hexdigest()
 
