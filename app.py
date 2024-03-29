@@ -14,7 +14,6 @@ import streamlit as st
 import os
 import re
 import base64
-import threading
 import numpy as np
 import plotly.graph_objects as go
 import networkx as nx
@@ -452,14 +451,14 @@ upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GED
 uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
 
 if uploaded_file is None:
-    upload_gedcom.markdown("**Download examples:**")
+    upload_gedcom.markdown("**Download example file:**")
     upload_gedcom.download_button(label="Example 1 (67 individuals)",
         data=example1_content,
         file_name="TolkienFamily.ged",
         mime="text/plain", use_container_width=True, key="example1_button")
     upload_gedcom.download_button(label="Example 2 (3007 individuals)",
         data=example2_content,
-        file_name="TolkienFamily.ged",
+        file_name="Royal92.ged",
         mime="text/plain", use_container_width=True, key="example2_button")
 
 #examples = upload_gedcom.markdown(f'Download examples: <br><b><a href="data:text/plain;base64,{example1_base64}" download="TolkienFamily.ged">Example 1</a></b> (67 individuals)<br> \
