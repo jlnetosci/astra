@@ -36,13 +36,41 @@ add_logo()
 # Instructions
 st.title("Instructions")
 
-#tmp
-st.markdown(f""" **Instructions:** <div style="text-align: justify;"> \n """
-#1. Upload a GEDCOM file (example <a href="data:text/plain;base64,{gedcom_file_base64}" download="TolkienFamily.ged">here</a>).
-#"""2. Select your root individual.  
-#3. Choose the colors of your preference.  
-#4. Click 'Generate Network'. \n 
-#Please be patient while the network loads – time increases with the number of individuals and connections.  
-#After generation the network goes through a physics simulation to better distribute nodes.  
-#Nodes can also be moved to wield better separations. </div> """, unsafe_allow_html=True
+st.header("Quickstart")
+st.write( 
+"""
+1. Click the "__Add GEDCOM__" section in the sidebar menu and __upload a GEDCOM__ file (if you do not have one, you can use one of the provided examples).\n
+2. Select a type of __view__ (__2D__ or __3D__) from the dropdown menu.\n
+3. Press the "__Generate Network__" button. \n 
+
+Upon data processing and network generation you will be able to interact with the visualization.
+"""
+)
+
+st.divider()
+
+st.header("In-depth Guide:")
+
+st.write( 
+"""
+1. Click the "__Add GEDCOM__" section in the sidebar menu.\n 
+2. __Upload a GEDCOM__ file (or one of the provided examples).\n
+3. If the file was parsed correctly a success message will appear. \n
+4. Select a type of __view__ (the classic __2D__ or the new __3D__ visualization) from the dropdown menu.\n
+5. Customize the network at your own will:
+    - __Highlights__
+        - Consider if you want to __highlight a specific individual__ as your __root/reference__ and select them from the menu. Deselect option in case you do not.
+        - If you want to __call attention to one additional person__, press "__Highlight another individual__" and select them from the dropdown list.        
+        - You can also emphasize the __acenstors__ of your selected reference in a different color (this option will not be available if you do not want a reference).
+
+    - __Colors__:
+        - Choose a preset __color palette__ (between __Classic, Pastel, Greyscale, or Colorblind-friendly__) or
+        - You can __pick a color__ that bests suits your taste __for each of the highlighted__ options mentioned previously. 
+
+6. Press the "__Generate Network__" button. \n 
+
+With the completion of data processing and network generation, users will have the capability to engage with the visualization interface. \\
+For 2D networks a physics simulation will be performed in order to yield better separations, the user is also able to manually displace nodes. \\
+3D networks are positionally static (defined by a layout algorithm), the user is able to zoom in and out at will and rotate it in any direction.
+"""
 )
