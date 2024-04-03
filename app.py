@@ -3,8 +3,8 @@ ASTRA: GEDCOM VISUALIZATION
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
-Version: 0.2.0dev
-Last Updated: March 15, 2024
+Version: 0.2.0b
+Last Updated: April 3, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -373,9 +373,6 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
         edge_z += [z0, z1, None]
         #edge_colors.append(base_node_color[edge[0]])
 
-    #print(edges)
-    #print(edge_colors)
-
     line_color = []
     for color in list(base_node_color.values()):
         line_color.append(darken_color(color, 0.2))
@@ -617,7 +614,6 @@ if uploaded_file is not None:
 
 # Handle button click to generate network
 if button_generate_network:
-    #print("Button pressed to generate network!")
 
     info_ = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize ⓘ Info}}$", expanded=True)
 
@@ -655,10 +651,6 @@ if button_generate_network:
         else:
             node_color = color_nodes(nodes, selected_base_node_color)
 
-        #adjusted_labels = {node: labels[node] for node in nodes if node in labels}
-        
-        #print(adjusted_labels == labels)
-
         if views_sb == "Classic (2D)":
             network = create_network(
                 nodes, labels, node_color, edges, selected_bg_color, selected_individual
@@ -675,37 +667,14 @@ if button_generate_network:
             fig = plot_3d_network(nodes, edges, labels, node_color, selected_bg_color)
             st.plotly_chart(fig, use_container_width=True, height=800, config={'modeBarButtonsToRemove': ['toImage']})
 
-
-    # Centered download button with dynamic styles
-    #st.markdown(
-    #    """<div style="display: flex; justify-content: center;">
-    #       <button onclick="location.href='data:text/html;base64,{}'" 
-    #               style="padding: 10px; background-color: {}; color: {}; border: none; border-radius: 3px; cursor: pointer;">
-    #               Download HTML
-    #       </button>
-    #    </div>""".format(base64.b64encode(network_html.encode()).decode(), selected_bg_color, selected_base_node_color),
-    #    unsafe_allow_html=True
-    #)
-
-# Define your javascript
-#my_js = """
-#alert("Hola mundo");
-#"""
-
-# Wrapt the javascript as html code
-#my_html = f"<script>{my_js}</script>"
-
-# Execute your app
-#st.title("Javascript example")
-#st.components.v1.html(my_html)
-
 st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
-st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0dev</b></div>""", unsafe_allow_html=True)
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0b</b></div>""", unsafe_allow_html=True)
 
 
 social_media_links = ["https://www.youtube.com/ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
 link_colors = ["#ff6665", "#81c7dc", None]
+#link_colors = ["#ff6665", "#81c7dc", "#b685ff"]
 
 social_media_icons = SocialMediaIcons(social_media_links, link_colors)
 social_media_icons.render(sidebar=True, justify_content="start")
