@@ -30,6 +30,7 @@ from st_pages import Page, show_pages, add_page_title
 from streamlit_js_eval import streamlit_js_eval
 from time import sleep
 from random import seed
+from st_social_media_links import SocialMediaIcons
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -701,3 +702,10 @@ if button_generate_network:
 st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
 st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0dev</b></div>""", unsafe_allow_html=True)
+
+
+social_media_links = ["https://www.youtube.com/ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
+link_colors = ["#ff6665", "#81c7dc", None]
+
+social_media_icons = SocialMediaIcons(social_media_links, link_colors)
+social_media_icons.render(sidebar=True, justify_content="start")
