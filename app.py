@@ -440,7 +440,7 @@ example1 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/TolkienFamil
 with open(example1, 'rb') as file:
     example1_content = file.read()
 
-example2 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/Royal92.ged')
+example2 = os.path.join(BASE_DIR, 'gedcom_files/asoiaf/ASOIAF.ged')
 with open(example2, 'rb') as file:
     example2_content = file.read()
 
@@ -454,13 +454,10 @@ if uploaded_file is None:
         data=example1_content,
         file_name="TolkienFamily.ged",
         mime="text/plain", use_container_width=True, key="example1_button")
-    upload_gedcom.download_button(label="Example 2 (3007 individuals)",
+    upload_gedcom.download_button(label="Example 2 (501 individuals)",
         data=example2_content,
         file_name="Royal92.ged",
         mime="text/plain", use_container_width=True, key="example2_button")
-
-#examples = upload_gedcom.markdown(f'Download examples: <br><b><a href="data:text/plain;base64,{example1_base64}" download="TolkienFamily.ged">Example 1</a></b> (67 individuals)<br> \
-#    <b><a href="data:text/plain;base64,{example2_base64}" download="Royal92.ged">Example 2</a></b> (3007 individuals)', unsafe_allow_html=True)
 
 button_generate_network = None  # Initialize the button variable
 
@@ -487,7 +484,7 @@ if uploaded_file is not None:
 
         translator, nodes, labels, edges = process_gedcom(parser)
 
-        success = upload_gedcom.success("✅ Processing successful.")
+        success = upload_gedcom.success("✅ Parsing successful.")
         #sleep(1) # Wait for 1 seconds
         #success.empty() # Clear the alert
 
@@ -672,7 +669,7 @@ st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci
 st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0b</b></div>""", unsafe_allow_html=True)
 
 
-social_media_links = ["https://www.youtube.com/ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
+social_media_links = ["https://www.youtube.com/@ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
 link_colors = ["#ff6665", "#81c7dc", None]
 #link_colors = ["#ff6665", "#81c7dc", "#b685ff"]
 
