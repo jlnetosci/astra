@@ -41,7 +41,7 @@ def add_logo():
             [data-testid="stSidebarNav"] {{
                 background-image: url('data:image/png;base64,{image_base64}');
                 background-repeat: no-repeat;
-                padding-top: 120px;
+                padding-top: 40px;
                 background-position: 20px 20px;
                 background-size:  90%;  /* Adjust this value to control the size */
             }}
@@ -78,6 +78,15 @@ st.set_page_config(layout="wide") # column widths set below are dependent on the
 
 # Show logo above navigation bar
 add_logo()
+
+# Customize stDecoration colors
+st.markdown("""
+<style>
+    [data-testid="stDecoration"] {
+        background-image: linear-gradient(90deg, #213b52ff, #40556Bff);
+    }
+</style>""",
+unsafe_allow_html=True)
 
 st.header("📫 Contact Form")
 

@@ -48,7 +48,7 @@ def add_logo():
             [data-testid="stSidebarNav"] {{
                 background-image: url('data:image/png;base64,{image_base64}');
                 background-repeat: no-repeat;
-                padding-top: 120px;
+                padding-top: 40px;
                 background-position: 20px 20px;
                 background-size:  90%;  /* Adjust this value to control the size */
             }}
@@ -428,8 +428,17 @@ st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 # Show logo above navigation bar
 add_logo()
 
+# Customize stDecoration colors
+st.markdown("""
+<style>
+    [data-testid="stDecoration"] {
+        background-image: linear-gradient(90deg, #213b52ff, #40556Bff);
+    }
+</style>""",
+unsafe_allow_html=True)
+
 # Customize navigation bar
-show_pages([Page("app.py", "ASTRA", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/instructions.py", "Instructions", "📋"), Page("pages/contact-form.py", "Contact me", "✉️")])
+show_pages([Page("app.py", "ASTRAviewer", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/instructions.py", "Instructions", "📋"), Page("pages/contact-form.py", "Contact me", "✉️")])
 
 # Sidebar top
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -653,7 +662,19 @@ if button_generate_network:
                 nodes, labels, node_color, edges, selected_bg_color, selected_individual
             )
 
+            # By default the network is embeded within a html page with a white background and has a 1 pixel odd border, these alterations brute-force fix this. 
+            with open("gedcom.html", "r") as file:
+                network_html = file.read()
+
+                # Perform replacements using regex
+                network_html = re.sub(r'<body>', '<body style="background-color: {}">'.format(selected_bg_color), network_html)
+                network_html = re.sub(r'<div class="card" style="width: 100%">', '<div class="card" style="width: 100%; border: none !important;">', network_html)
+                network_html = re.sub(r'border: 1px solid lightgray;', 'border: 1px solid {};'.format(selected_bg_color), network_html)
+
             # Display the network HTML
+            with open("gedcom.html", "w") as file:
+                file.write(network_html)
+
             with open("gedcom.html", "r") as file:
                 network_html = file.read()
 

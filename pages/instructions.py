@@ -18,7 +18,7 @@ def add_logo():
             [data-testid="stSidebarNav"] {{
                 background-image: url('data:image/png;base64,{image_base64}');
                 background-repeat: no-repeat;
-                padding-top: 120px;
+                padding-top: 40px;
                 background-position: 20px 20px;
                 background-size:  90%;  /* Adjust this value to control the size */
             }}
@@ -32,6 +32,15 @@ st.set_page_config(layout="centered")
 
 # Show logo above navigation bar
 add_logo()
+
+# Customize stDecoration colors
+st.markdown("""
+<style>
+    [data-testid="stDecoration"] {
+        background-image: linear-gradient(90deg, #213b52ff, #40556Bff);
+    }
+</style>""",
+unsafe_allow_html=True)
 
 # Instructions
 st.title("Instructions")
@@ -64,7 +73,7 @@ st.write(
         - You can also emphasize the __acenstors__ of your selected reference in a different color (this option will not be available if you do not want a reference).
 
     - __Colors__:
-        - Choose a preset __color palette__ (between __Classic, Pastel, Greyscale, or Colorblind-friendly__) or
+        - Choose a preset __color palette__ (between __Classic, Pastel, Greyscale, or Colorblind-friendly__), or
         - You can __pick a color__ that bests suits your taste __for each of the highlighted__ options mentioned previously. 
 
 6. Press the "__Generate Network__" button. \n 
