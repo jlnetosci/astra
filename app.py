@@ -525,6 +525,13 @@ if uploaded_file is not None:
                     "default_ancestor_color": "#C2DCF7",
                     "default_hightlight_color": "#B19CD8"
                 },
+                "Nightly": {
+                    "default_background_color": "#213b52",
+                    "default_individual_color": "#FFFFFF",
+                    "default_root_color": "#fdc134",
+                    "default_ancestor_color": "#fdc134",
+                    "default_hightlight_color": "#fdc134"
+                },
                 "Grayscale": {
                     "default_background_color": "#ffffff",
                     "default_individual_color": "#eeeeee",
