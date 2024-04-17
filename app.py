@@ -19,6 +19,7 @@ import plotly.graph_objects as go
 import networkx as nx
 import matplotlib.colors as mcolors
 import hashlib
+from PIL import Image
 from gedcom.parser import Parser
 from gedcom.parser import GedcomFormatViolationError
 from gedcom.element.individual import IndividualElement
@@ -422,8 +423,11 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
 
     return fig
 
+favicon = os.path.join(BASE_DIR, 'favicon.png')
+favicon = Image.open(favicon)
+
 #### Streamlit app ####
-st.set_page_config(layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(layout="wide", page_icon=favicon, initial_sidebar_state="expanded")
 
 # Show logo above navigation bar
 add_logo()
