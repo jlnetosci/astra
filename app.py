@@ -36,6 +36,8 @@ from st_social_media_links import SocialMediaIcons
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+favicon = os.path.join(BASE_DIR, 'favicon.png')
+favicon = Image.open(favicon)
 
 def get_base64_of_image(image_path):
     with open(image_path, 'rb') as img_file:
@@ -422,9 +424,6 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
     )
 
     return fig
-
-favicon = os.path.join(BASE_DIR, 'favicon.png')
-favicon = Image.open(favicon)
 
 #### Streamlit app ####
 st.set_page_config(layout="wide", page_icon=favicon, initial_sidebar_state="expanded")

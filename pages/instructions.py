@@ -1,10 +1,13 @@
 import streamlit as st
 import os
 import base64
+from PIL import Image
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+favicon = os.path.join(BASE_DIR, 'favicon.png')
+favicon = Image.open(favicon)
 
 def get_base64_of_image(image_path):
     with open(image_path, 'rb') as img_file:
@@ -28,7 +31,7 @@ def add_logo():
     )
 
 # Streamlit configuration
-st.set_page_config(layout="centered")
+st.set_page_config(layout="centered", page_icon=favicon, initial_sidebar_state="expanded")
 
 # Show logo above navigation bar
 add_logo()

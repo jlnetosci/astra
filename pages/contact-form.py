@@ -28,6 +28,9 @@ from streamlit_js_eval import streamlit_js_eval
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+favicon = os.path.join(BASE_DIR, 'favicon.png')
+favicon = Image.open(favicon)
+
 
 def get_base64_of_image(image_path):
     with open(image_path, 'rb') as img_file:
@@ -74,7 +77,7 @@ captcha_text, captcha_image = st.session_state.captcha_text
 ## Contact Form
 
 ## Page configuration options
-st.set_page_config(layout="wide") # column widths set below are dependent on the layout being set to wide
+st.set_page_config(layout="wide", page_icon=favicon, initial_sidebar_state="expanded") # column widths set below are dependent on the layout being set to wide
 
 # Show logo above navigation bar
 add_logo()

@@ -1,10 +1,13 @@
 import streamlit as st
 import os
 import base64
+from PIL import Image
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
+favicon = os.path.join(BASE_DIR, 'favicon.png')
+favicon = Image.open(favicon)
 
 def get_base64_of_image(image_path):
     with open(image_path, 'rb') as img_file:
@@ -35,7 +38,7 @@ def faq():
 
     # FAQ data
     faq_data = {
-        'What is ASTRA GEDCOM Viewer?': 'ASTRA is a web app that displays a "star map" like network visualization of a family tree organized as GEDCOM file.',
+        'What is ASTRAviewer?': 'ASTRAviewer is a web app that displays a "star map" like network visualization of a family tree organized as GEDCOM file.',
 
         'What is a GEDCOM?': 'GEDCOM is the shorthand for <b><u>Ge</b></u>nealogical <b><u>D</b></u>ata <b><u>Com</b></u>munication. GEDCOM files are the standard to store and share genealogical data. While the format was developed by the Church of Jesus Christ of Latter-day Saints, it is an open standard used by most genealogical software. <p> \
         More information on GEDCOM: <a href="https://en.wikipedia.org/wiki/GEDCOM" target="_blank" rel="noopener noreferrer">Wikipedia</a>; <a href="https://www.familysearch.org/en/wiki/GEDCOM" target="_blank" rel="noopener noreferrer">Familysearch</a>.',
@@ -46,7 +49,7 @@ def faq():
         
         'Can I export a GEDCOM file from FamilySearch?': 'As of the date of writing this FAQ (March 2024), FamilySearch’s documentation states: “Currently, a GEDCOM file cannot be exported directly from FamilySearch Family Tree.”',
 
-        'Will I be able to upload my family tree in other formats into ASTRA?': 'Currently, ASTRA solely parses GEDCOM files, if you have any suggestions regarding other formats please contact me with your suggestion.',
+        'Will I be able to upload my family tree in other formats into ASTRAviewer?': 'Currently, ASTRAviewer solely parses GEDCOM files, if you have any suggestions regarding other formats please contact me with your suggestion.',
 
         'What should I do if I encounter an error?': 'Please contact me.'
 
@@ -58,7 +61,7 @@ def faq():
             st.markdown(f'<div style="text-align: justify;"> {answer} </div>', unsafe_allow_html=True)
 
 # Streamlit configuration
-st.set_page_config(layout="centered")
+st.set_page_config(layout="centered", page_icon=favicon, initial_sidebar_state="expanded")
 
 # Show logo above navigation bar
 add_logo()
