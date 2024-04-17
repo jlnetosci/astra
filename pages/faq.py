@@ -48,9 +48,6 @@ def faq():
 
         'Will I be able to upload my family tree in other formats into ASTRA?': 'Currently, ASTRA solely parses GEDCOM files, if you have any suggestions regarding other formats please contact me with your suggestion.',
 
-        'Does ASTRA keep my GEDCOM data?': 'Short answer: No. <p>\
-        Longer answer: The GEDCOM file is read into a temporary file and deleted immediately after its parsing. Furthermore, the app is deployed on the Streamlit Cloud where data is ephemeral and files are removed upon changing the state of the app (i.e. refreshing) or closing the browser tab.',
-
         'What should I do if I encounter an error?': 'Please contact me.'
 
     }
