@@ -54,13 +54,13 @@ def add_logo():
     )
 
 ## Load secrets.toml variables
-#options = os.getenv("OPTIONS")
-options = "ABCDEF"
-server = os.getenv("SERVER")
-port = os.getenv("PORT")
-u = os.getenv("U")
-secret = os.getenv("SECRET")
-recipient = os.getenv("RECIPIENT")
+options = os.environ["OPTIONS"]
+#options = "ABCDEF"
+server = os.environ["SERVER"]
+port = os.environ["PORT"]
+u = os.environ["U"]
+secret = os.environ["SECRET"]
+recipient = os.environ["RECIPIENT"]
 
 ## Functions
 def generate_captcha():
@@ -131,49 +131,49 @@ with col1: # left side of the layout
                     # Email configuration - **IMPORTANT**: for security these details should be present in the "Secrets" section of Streamlit
                     #### NOTE FOR DEVELOPERS: UNCOMMENT THE LINES BELOW ####
                     
-                    #smtp_server = server
-                    #smtp_port = port
-                    #smtp_username = u
-                    #smtp_password = secret
-                    #recipient_email = recipient
+                    smtp_server = server
+                    smtp_port = port
+                    smtp_username = u
+                    smtp_password = secret
+                    recipient_email = recipient
 
                     ## Create an SMTP connection
-                    #server = smtplib.SMTP(smtp_server, smtp_port)
-                    #server.starttls()
-                    #server.login(smtp_username, smtp_password)
+                    server = smtplib.SMTP(smtp_server, smtp_port)
+                    server.starttls()
+                    server.login(smtp_username, smtp_password)
 
                     ## Compose the email message
-                    #subject = "Contact Form Submission" # subject of the email you will receive upon contact.
-                    #body = f"Email: {email}\nMessage: {message}"
-                    #msg = MIMEMultipart()
-                    #msg['From'] = smtp_username
-                    #msg['To'] = recipient_email
-                    #msg['Subject'] = subject
-                    #msg.attach(MIMEText(body, 'plain'))
+                    subject = "ASTRAview Contact" # subject of the email you will receive upon contact.
+                    body = f"Email: {email}\nMessage: {message}"
+                    msg = MIMEMultipart()
+                    msg['From'] = smtp_username
+                    msg['To'] = recipient_email
+                    msg['Subject'] = subject
+                    msg.attach(MIMEText(body, 'plain'))
 
                     ## Send the email
-                    #server.sendmail(smtp_username, recipient_email, msg.as_string())
+                    server.sendmail(smtp_username, recipient_email, msg.as_string())
 
                     ## Send the confirmation email to the message sender # If you do not want to send a confirmation email leave this section commented
-                    #current_datetime = datetime.datetime.now()
-                    #formatted_datetime = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
-                    #confirmation_subject = f"Confirmation of Contact Form Submission ({formatted_datetime})"
-                    #confirmation_body = f"Thank you for contacting us! Your message has been received.\n\nYour message: {message}"
-                    #confirmation_msg = MIMEMultipart()
-                    #confirmation_msg['From'] = smtp_username
-                    #confirmation_msg['To'] = email  # Use the sender's email address here
-                    #confirmation_msg['Subject'] = confirmation_subject
-                    #confirmation_msg.attach(MIMEText(confirmation_body, 'plain'))
-                    #server.sendmail(smtp_username, email, confirmation_msg.as_string())
+                    current_datetime = datetime.datetime.now()
+                    formatted_datetime = current_datetime.strftime("%Y-%m-%d %H:%M:%S")
+                    confirmation_subject = f"Confirmation of Contact Form Submission ({formatted_datetime})"
+                    confirmation_body = f"Thank you for contacting us! Your message has been received.\n\nYour message:\n {message}"
+                    confirmation_msg = MIMEMultipart()
+                    confirmation_msg['From'] = smtp_username
+                    confirmation_msg['To'] = email  # Use the sender's email address here
+                    confirmation_msg['Subject'] = confirmation_subject
+                    confirmation_msg.attach(MIMEText(confirmation_body, 'plain'))
+                    server.sendmail(smtp_username, email, confirmation_msg.as_string())
 
                     ## Close the SMTP server connection
-                    #server.quit()
+                    server.quit()
 
-                    #st.success("Sent successfully!") # Success message to the user.
+                    st.success("Sent successfully!") # Success message to the user.
                     
                     #### NOTE FOR DEVELOPERS: UPON DEPLOYMENT DELETE THE SECTION BELOW ####
-                    st.info("""This would have been a message sent successfully!  
-                    For more information on activating the contact form, please check the [documentation](https://github.com/jlnetosci/streamlit-contact-form).""") # Please delete this info box if you have the contact form setup correctly.
+                    #st.info("""This would have been a message sent successfully!  
+                    #For more information on activating the contact form, please check the [documentation](https://github.com/jlnetosci/streamlit-contact-form).""") # Please delete this info box if you have the contact form setup correctly.
 
                     # Generate a new captcha to prevent button spamming.
                     st.session_state.captcha_text = generate_captcha()
