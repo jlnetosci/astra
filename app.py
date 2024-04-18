@@ -635,8 +635,7 @@ if button_generate_network:
 
     info_.markdown(""" <div style="text-align: justify;"> \n 
     <p> Please be patient while the network loads – time increases with the number of individuals and connections. </p>
-    <p> After generation the network goes through a physics simulation to better distribute individuals. </p>
-    <p> Individual nodes can also be moved to wield better separations. </p></div> """, unsafe_allow_html=True)
+    <p> In 2D, after generation the network goes through a physics simulation and nodes can also be moved to wield better separations. </p></div> """, unsafe_allow_html=True)
 
     with st.spinner('Processing data'):
         # Create the network visualization with selected colors
