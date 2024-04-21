@@ -27,6 +27,7 @@ from gedcom.element.family import FamilyElement
 from iteration_utilities import duplicates, unique_everseen
 from itertools import combinations, product
 from pyvis.network import Network
+from scipy.spatial.distance import pdist, squareform
 from st_pages import Page, show_pages, add_page_title
 from streamlit_js_eval import streamlit_js_eval
 from time import sleep
@@ -190,20 +191,29 @@ def process_gedcom(gedcom_parser):
         st.stop()
 
     # Create edges
-    pairs = [] #edges for couples
-    pairs.extend(tuple(val) for val in fams.values() if len(val) > 1)
-    pairs = [tuple(val) for val in fams.values() if len(val) > 1]
-    
-    children = [] #edges for parent-child
-    children.extend(list(product(fams[key], famc[key])) for key in fams.keys() if key in famc)
-    children = sum(children, [])
-    
-    edges = pairs + children #merge lists
+    try:
+        pairs = [] #edges for couples
+        pairs.extend(tuple(val) for val in fams.values() if len(val) > 1)
+        pairs = [tuple(val) for val in fams.values() if len(val) > 1]
+        
+        children = [] #edges for parent-child
+        children.extend(list(product(fams[key], famc[key])) for key in fams.keys() if key in famc)
+        children = sum(children, [])
+        
+        edges = pairs + children #merge lists
+
+        if len(edges) < 1:
+            raise ValueError("There seem to be no connections between individuals. Cannot proceed. Please check your file.")
+
+    except ValueError as e:
+        st.error(f'**Error:** {str(e)}')
+        st.stop()
+
     edges = process_edges(edges)
 
     # Create and filter nodes
     nodes = list(translator.values())
-    nodes = [node for node in nodes if any(node in pair for sublist in [pairs, children] for pair in sublist)] #delete nodes with no edges
+    nodes = [node for node in nodes if any(node in edge for edge in edges)] #delete nodes with no edges
 
     # Filter label dictionary for nodes with edges
     keys_to_delete = [key for key in labels if key not in nodes]
@@ -289,7 +299,7 @@ def create_network(nodes, labels, base_node_color, edges, bg_color, center_node)
         notebook=True, height="800px", width="100%", bgcolor=bg_color, cdn_resources="in_line"
     )
 
-    net.set_options('{"physics": {"solver": "force_atlas_2based"}}')
+    net.set_options('{"physics": {"solver": "barnesHut"}}')
 
     net.options['nodes'] = {
         'font': {
@@ -341,6 +351,55 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
     # Compute Fruchterman-Reingold layout for 3D graphs
     if 'pos3d' not in st.session_state:
         st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3, seed=9)
+        
+        data_dict = st.session_state['pos3d']
+
+        # Extract names and vectors from dictionary
+        names = list(data_dict.keys())
+        vectors = list(data_dict.values())
+
+        # Compute pairwise distances
+        pairwise_distances = pdist(vectors)
+
+        # Convert to square distance matrix
+        distance_matrix = squareform(pairwise_distances)
+
+        # Get indices of upper triangle (excluding diagonal) of distance matrix
+        upper_triangle_indices = np.triu_indices(len(names), k=1)
+
+        # Create list of (distance, name1, name2) tuples
+        distance_name_pairs = [
+            (distance_matrix[i, j], names[i], names[j])
+            for i, j in zip(upper_triangle_indices[0], upper_triangle_indices[1])
+        ]
+
+        # Sort distance_name_pairs by distance
+        #distance_name_pairs.sort()
+
+        # Display closest pairs and distances
+        #print("Closest pairs (sorted by distance):")
+        #for distance, name1, name2 in distance_name_pairs:
+        #    print(f"{name1} and {name2}: Distance = {distance:.4f}")
+            
+        # Update coordinates based on distance condition
+        threshold_distance = 0.0080
+        for distance, name1, name2 in distance_name_pairs:
+            if distance < threshold_distance:
+                # Check if name1 exists in data_dict
+                if name1 in data_dict:
+                    # Get current coordinates of name1
+                    current_vector = data_dict[name1]
+                    # Update z-coordinate by adding 0.01
+                    updated_vector = current_vector + np.array([0.0, 0.0, 0.01])
+                    # Update data_dict with the updated_vector
+                    data_dict[name1] = updated_vector
+
+        # Print updated data dictionary
+        #print("\nUpdated data dictionary:")
+        #for name, vector in data_dict.items():
+        #    print(f"{name}: {vector}")
+        #print(data_dict == st.session_state['pos3d']) # check if the pointer is working correctly.
+
     else:
         pass
 
@@ -468,7 +527,7 @@ if uploaded_file is None:
         mime="text/plain", use_container_width=True, key="example1_button")
     upload_gedcom.download_button(label="Example 2 (501 individuals)",
         data=example2_content,
-        file_name="Royal92.ged",
+        file_name="ASOIAF.ged",
         mime="text/plain", use_container_width=True, key="example2_button")
 
 button_generate_network = None  # Initialize the button variable
