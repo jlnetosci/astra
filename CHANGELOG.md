@@ -3,15 +3,24 @@
 ## [Unreleased]
 
 ### To be Added
-- Generate moving-threshold elasticgraph.
-- Generate tree of descendants from root.
-- Generate 3D network charts. ([#4](https://github.com/jlnetosci/astra/issues/4))
+- Save image files directly.
 
-### To be Changed
-- Change network physics for large numbers of individuals.([#2](https://github.com/jlnetosci/astra/issues/2)) 
+## [0.2.0b] - 2024-04-21
 
-### To be Fixed
-- Log button pushes.
+### Added
+- Generate 3D network charts. ([#4](https://github.com/jlnetosci/astra/issues/4)).
+- Second example file: ASOIAF.ged. 
+- Selection of several color palettes (Classic, Pastel, Nightly, Grayscale, Colorblind-friendly (Tol light)).
+- Choice of highlighting one individual besides root.
+- Frequently asked questions section.
+- Contact form.
+- Social media links.
+
+### Changed
+- App redesigned (logo, colors, etc).
+- Instructions moved to their own section and divided between quickstart and in-depth.
+- Selection of root individual and ancestors is now optional.
+- Change network physics and relative initial positions in 2D network generation.([#2](https://github.com/jlnetosci/astra/issues/2)) 
 
 ## [0.1.2b] - 2023-10-15
 

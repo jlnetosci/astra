@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import base64
 from PIL import Image
+from st_social_media_links import SocialMediaIcons
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -49,40 +50,54 @@ unsafe_allow_html=True)
 st.title("Instructions")
 
 st.header("Quickstart")
-st.write( 
-"""
-1. Click the "__Add GEDCOM__" section in the sidebar menu and __upload a GEDCOM__ file (if you do not have one, you can use one of the provided examples).\n
-2. Select a type of __view__ (__2D__ or __3D__) from the dropdown menu.\n
-3. Press the "__Generate Network__" button. \n 
+
+
+st.markdown("""<div style="text-align: justify;"> 
+
+1. Click the "**Add GEDCOM**" section in the sidebar menu and **upload a GEDCOM** file (if you do not have one, you can use one of the provided examples).\n
+2. Select a type of **view** (**2D** or **3D**) from the dropdown menu.\n
+3. Press the "**Generate Network**" button. \n 
 
 Upon data processing and network generation you will be able to interact with the visualization.
-"""
+</div>""", unsafe_allow_html=True
 )
 
 st.divider()
 
 st.header("In-depth Guide:")
 
-st.write( 
-"""
-1. Click the "__Add GEDCOM__" section in the sidebar menu.\n 
-2. __Upload a GEDCOM__ file (or one of the provided examples).\n
-3. If the file was parsed correctly a success message will appear. \n
-4. Select a type of __view__ (the classic __2D__ or the new __3D__ visualization) from the dropdown menu.\n
-5. Customize the network at your own will:
-    - __Highlights__
-        - Consider if you want to __highlight a specific individual__ as your __root/reference__ and select them from the menu. Deselect option in case you do not.
-        - If you want to __call attention to one additional person__, press "__Highlight another individual__" and select them from the dropdown list.        
-        - You can also emphasize the __acenstors__ of your selected reference in a different color (this option will not be available if you do not want a reference).
+st.markdown("""<div style="text-align: justify;"> 
 
-    - __Colors__:
-        - Choose a preset __color palette__ (between __Classic, Pastel, Greyscale, or Colorblind-friendly__), or
-        - You can __pick a color__ that bests suits your taste __for each of the highlighted__ options mentioned previously. 
+1. Click the "**Add GEDCOM**" section in the sidebar menu.\n 
+2. **Upload a GEDCOM** file (or one of the provided examples).\n
+    - If the file was parsed correctly a success message will appear. \n
+3. Select a type of **view** (the classic **2D** or the new **3D** visualization) from the drop down menu.\n
+4. Customize the network at your own will:
+    - **Highlights**
+        - Consider if you want to **highlight a specific individual** as your **root/reference** and select them from the menu. Uncheck the box in case you do not.
+        - If you want to **call attention to one additional person**, press "**Highlight another individual**" and select them from the drop down list.        
+        - You can also emphasize the **ancestors** of your selected reference in a different color (this option will not be available if you do not want a reference).
 
-6. Press the "__Generate Network__" button. \n 
+    - **Colors**:
+        - Choose a preset **color palette** (between **Classic, Pastel, Nightly, Grayscale, or Colorblind-friendly**), or
+        - You can **pick a color** that bests suits your taste **for each of the highlighted** options mentioned previously. 
 
-With the completion of data processing and network generation, users will have the capability to engage with the visualization interface. \\
-For 2D networks a physics simulation will be performed in order to yield better separations, the user is also able to manually displace nodes. \\
-3D networks are positionally static (defined by a layout algorithm), the user is able to zoom in and out at will and rotate it in any direction.
-"""
+5. Press the "**Generate Network**" button. \n 
+
+<p>With the completion of data processing and network generation, users will have the capability to engage with the visualization interface.</p> \
+<p>For 2D networks a physics simulation will be performed in order to yield better separations, the user is also able to manually displace nodes.</p> \
+<p>3D networks are positionally static (defined by a layout algorithm), the user is able to zoom in and out at will and rotate it in any direction.</p>
+</div>""", unsafe_allow_html=True
 )
+
+
+st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
+
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0b</b></div>""", unsafe_allow_html=True)
+
+
+social_media_links = ["https://www.youtube.com/@ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
+link_colors = ["#ff6665", "#81c7dc", None]
+
+social_media_icons = SocialMediaIcons(social_media_links, link_colors)
+social_media_icons.render(sidebar=True, justify_content="start")

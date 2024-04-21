@@ -1,8 +1,15 @@
-streamlit==1.30.0 
+streamlit==1.32.2
+numpy==1.22.0 
+plotly==5.17.0
+networkx==2.8.8
+matplotlib==3.8.0
 python-gedcom==1.0.0 
 pyvis==0.3.2
 iteration-utilities==0.12.0
+st-pages==0.4.5
+streamlit-js-eval==0.1.5
+st-social-media-links==0.1.1
+scipy==1.11.4
 captcha==0.5.0
 email-validator==2.1.0.post1
 Pillow==9.0.1
-streamlit-js-eval==0.1.5
