@@ -1,10 +1,10 @@
 """
-ASTRA: GEDCOM VISUALIZATION
+ASTRAviewer
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
 Version: 0.2.0b
-Last Updated: April 3, 2024
+Last Updated: April 21, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
