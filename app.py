@@ -3,8 +3,8 @@ ASTRAviewer
 
 Author: João L. Neto
 Contact: https://github.com/jlnetosci
-Version: 0.2.0b
-Last Updated: April 21, 2024
+Version: 0.2.1dev
+Last Updated: May 2, 2024
 
 Description:
 Accepts the upload of a GEDCOM file, parses it, and displays a "star map" like network visualization of the individuals. 
@@ -33,6 +33,7 @@ from streamlit_js_eval import streamlit_js_eval
 from time import sleep
 from random import seed
 from st_social_media_links import SocialMediaIcons
+from streamlit_profiler import Profiler
 
 ## Functions as a "hacky" way get logo above the multipage navigation bar. 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -61,9 +62,9 @@ def add_logo():
         unsafe_allow_html=True,
     )
 
-def parse_gedcom(uploaded_file):
+def parse_gedcom(temp_file_path):
     """
-    Creates a temporary file and parses it. 
+    Initiates parser and parses file. 
 
     input:
     :uploaded_file: GEDCOM file to be parsed.
@@ -71,29 +72,13 @@ def parse_gedcom(uploaded_file):
     return: 
     :gedcom_parser: Parsed file.
     """
-
-    # Save the uploaded file temporarily with UTF-8 encoding
-    temp_file_path = "temp_gedcom_file.ged"
-    with open(temp_file_path, "w", encoding='utf-8') as temp_file:
-        temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
-
-    # Additional check for GEDCOM file integrity.
-    with open("temp_gedcom_file.ged", "r", encoding='utf-8') as temp_file:
-        first_line = temp_file.readline()
-        if not first_line.lstrip('\ufeff').startswith("0 HEAD"):
-            raise ValueError("The uploaded file does not appear to be a valid GEDCOM file.")
-
-    # Check if the file path does not end with a newline and add one
-    if not temp_file_path.endswith('\n'):
-        with open(temp_file_path, "a", encoding='utf-8') as temp_file:
-            temp_file.write('\n')
-
+    
     # Initialize parser
     gedcom_parser = Parser()
     gedcom_parser.parse_file(temp_file_path, False)  # Use the default encoding
 
     # Remove the temporary GEDCOM file
-    os.remove(temp_file_path)
+    #os.remove(temp_file_path)
     
     return gedcom_parser
 
@@ -152,83 +137,59 @@ def process_gedcom(gedcom_parser):
 
     root_child_elements = gedcom_parser.get_root_child_elements()
     
-    # Process data
-    translator = {} #from pointer to node name
-    labels = {} #collect for node labels
-    
-    fams = {} #collect spouses per family for pair edges
-    famc = {} #collect per family for children edges
+    translator = {}; labels = {}; fams = {}; famc = {}
 
     elements = []
+    pattern = re.compile(r',\s*,')
     
-    for element in root_child_elements: #elements that are individuals or family
-        if isinstance(element, IndividualElement): #in elements that are individuals
+    for element in root_child_elements:
+        if isinstance(element, IndividualElement):
             elements.append(element.get_pointer())
             name = " ".join(element.get_name())
-            id = str(element.get_pointer()).replace("@", "")
-            bp = element.get_birth_data()[1] #birth place
-            bd = element.get_birth_data()[0] #birth date
+            id_ = ''.join(["(", str(element.get_pointer()).replace("@", ""), ")"])
+            bp = element.get_birth_data()[1]
+            bd = element.get_birth_data()[0]
     
-            #collect node info into translator
-            translator[element.get_pointer()] = str(name + " (" + id + ")")
-            labels[translator[element.get_pointer()]] = str(name + " \n " + bp + " \n " + bd)
+            translator_value = ' '.join([name, id_])
+            translator[element.get_pointer()] = translator_value
+            labels[translator_value] = ' \n '.join([name, bp, bd])
     
-            for family in gedcom_parser.get_families(element, family_type='FAMS'):
-                key = str(family.get_pointer())
-                value = str(translator[element.get_pointer()])
-                fams.setdefault(key, []).append(value)
-            
-            for family in gedcom_parser.get_families(element, family_type='FAMC'):
-                key = str(family.get_pointer())
-                value = str(translator[element.get_pointer()])
-                famc.setdefault(key, []).append(value)
-
+            for family_type in ['FAMS', 'FAMC']:
+                family_dict = fams if family_type == 'FAMS' else famc
+                for family in gedcom_parser.get_families(element, family_type=family_type):
+                    key = str(family.get_pointer())
+                    family_dict.setdefault(key, []).append(translator_value)
     try:
+        #print(elements)
         check_duplicates(elements)
 
     except ValueError as e:
         st.error(f'**Error:** {str(e)}')
         st.stop()
 
-    # Create edges
-    try:
-        pairs = [] #edges for couples
-        pairs.extend(tuple(val) for val in fams.values() if len(val) > 1)
-        pairs = [tuple(val) for val in fams.values() if len(val) > 1]
-        
-        children = [] #edges for parent-child
-        children.extend(list(product(fams[key], famc[key])) for key in fams.keys() if key in famc)
-        children = sum(children, [])
-        
-        edges = pairs + children #merge lists
+    pairs = [tuple(val) for val in fams.values() if len(val) > 1]
+    children = (pair for key in fams if key in famc for pair in product(fams[key], famc[key]))
+    edges = process_edges(list(pairs) + list(children))
 
-        if len(edges) < 1:
-            raise ValueError("There seem to be no connections between individuals. Cannot proceed. Please check your file.")
-
-    except ValueError as e:
-        st.error(f'**Error:** {str(e)}')
+    if not edges:
+        st.error('**Error:** There seem to be no connections between individuals. Cannot proceed. Please check your file.')
         st.stop()
 
-    edges = process_edges(edges)
+    edge_nodes = {node for edge in edges for node in edge}
+    nodes = [node for node in translator.values() if node in edge_nodes]
 
-    # Create and filter nodes
-    nodes = list(translator.values())
-    nodes = [node for node in nodes if any(node in edge for edge in edges)] #delete nodes with no edges
-
-    # Filter label dictionary for nodes with edges
-    keys_to_delete = [key for key in labels if key not in nodes]
+    keys_to_delete = labels.keys() - set(nodes)
     for key in keys_to_delete:
         del labels[key]
 
-    # Clean up labels
     for key, value in labels.items():
-        while ", , " in value:
-            value = re.sub(r',\s*,', ',', value)
-        labels[key] = value
+        labels[key] = pattern.sub(',', value)
 
-    return translator, nodes, labels, edges
+    reverse_translator = {value: key for key, value in translator.items()}
 
-def get_ancestors(gedcom_parser, translator, individual):
+    return translator, reverse_translator, nodes, labels, edges
+
+def get_ancestors(gedcom_parser, translator, reverse_translator, individual):
     """
     Creates a name to ID translator (dictionary). Gets a list of ancestors of a specified individual.
 
@@ -240,11 +201,9 @@ def get_ancestors(gedcom_parser, translator, individual):
     return:
     :ancestors: list of long IDs of ancestors of the selected :individual:
     """
-
-    reverse_translator = {value: key for key, value in translator.items()}
-    ancestors = gedcom_parser.get_ancestors(gedcom_parser.get_element_dictionary()[reverse_translator[individual]]) #takes long ID to short ID, calls location in memory to get ancestors.
-    ancestors = [translator[ancestor.get_pointer()] for ancestor in ancestors] # gets short IDs (pointers) and turns them into long IDs
-    ancestors.insert(0, individual)
+    ancestors = gedcom_parser.get_ancestors(gedcom_parser.get_element_dictionary()[reverse_translator[individual]])
+    ancestors = [translator[ancestor.get_pointer()] for ancestor in ancestors]
+    ancestors.append(individual)
     return ancestors
 
 def color_nodes(nodes, node_color, ancestors=None, ancestors_color=None, individual=None, individual_color=None, highlight_individual=None, highlight_individual_color=None):
@@ -350,55 +309,26 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
 
     # Compute Fruchterman-Reingold layout for 3D graphs
     if 'pos3d' not in st.session_state:
-        st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3, seed=9)
+        st.session_state['pos3d'] = nx.fruchterman_reingold_layout(G, dim=3, seed=9, iterations=20)
         
-        data_dict = st.session_state['pos3d']
+        #data_dict = st.session_state['pos3d']
 
         # Extract names and vectors from dictionary
-        names = list(data_dict.keys())
-        vectors = list(data_dict.values())
+        #names = list(data_dict.keys())
+        #vectors = np.array(list(data_dict.values()), dtype=np.float32)
 
-        # Compute pairwise distances
-        pairwise_distances = pdist(vectors)
-
-        # Convert to square distance matrix
-        distance_matrix = squareform(pairwise_distances)
-
-        # Get indices of upper triangle (excluding diagonal) of distance matrix
-        upper_triangle_indices = np.triu_indices(len(names), k=1)
+        # Compute pairwise distances for upper triangle pairs
+        #pairwise_distances = pdist(vectors, 'euclidean')
 
         # Create list of (distance, name1, name2) tuples
-        distance_name_pairs = [
-            (distance_matrix[i, j], names[i], names[j])
-            for i, j in zip(upper_triangle_indices[0], upper_triangle_indices[1])
-        ]
+        #distance_name_pairs = list(zip(pairwise_distances, combinations(names, 2)))
 
-        # Sort distance_name_pairs by distance
-        #distance_name_pairs.sort()
-
-        # Display closest pairs and distances
-        #print("Closest pairs (sorted by distance):")
-        #for distance, name1, name2 in distance_name_pairs:
-        #    print(f"{name1} and {name2}: Distance = {distance:.4f}")
-            
         # Update coordinates based on distance condition
-        threshold_distance = 0.0080
-        for distance, name1, name2 in distance_name_pairs:
-            if distance < threshold_distance:
-                # Check if name1 exists in data_dict
-                if name1 in data_dict:
-                    # Get current coordinates of name1
-                    current_vector = data_dict[name1]
-                    # Update z-coordinate by adding 0.01
-                    updated_vector = current_vector + np.array([0.0, 0.0, 0.01])
-                    # Update data_dict with the updated_vector
-                    data_dict[name1] = updated_vector
-
-        # Print updated data dictionary
-        #print("\nUpdated data dictionary:")
-        #for name, vector in data_dict.items():
-        #    print(f"{name}: {vector}")
-        #print(data_dict == st.session_state['pos3d']) # check if the pointer is working correctly.
+        #threshold_distance = 0.0080
+        #for distance, (name1, name2) in tqdm(distance_name_pairs, desc='Updating coordinates'):
+        #    if distance < threshold_distance:
+                # Update z-coordinate by adding 0.01
+        #        data_dict[name1] += np.array([0.0, 0.0, 0.01], dtype=np.float32)
 
     else:
         pass
@@ -415,29 +345,33 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
     edge_y = []
     edge_z = []
 
-    #edge_colors = [[('red', 'blue'), ('yellow', 'green')], ['black']*(len(edges)-2)]
-    #edge_colors = [item for sublist in edge_colors for item in sublist]
-
     edge_colors = []
     for edge in edges:
         for ind in edge:
             if ind in base_node_color:
                 edge_colors.append(base_node_color[ind])
-            #else:
-            #    result_list.append('')
         edge_colors.append(bg_color)  # Append an empty string after each tuple
 
-    for edge in edges:
+    # Preallocate lists
+    edge_x = [None] * len(edges) * 3
+    edge_y = [None] * len(edges) * 3
+    edge_z = [None] * len(edges) * 3
+
+    # Use NumPy arrays
+    node_x = np.array(node_x)
+    node_y = np.array(node_y)
+    node_z = np.array(node_z)
+
+    # Avoid repeated dictionary lookups
+    for i, edge in enumerate(edges):
         x0, y0, z0 = st.session_state['pos3d'][edge[0]]
         x1, y1, z1 = st.session_state['pos3d'][edge[1]]
-        edge_x += [x0, x1, None]
-        edge_y += [y0, y1, None]
-        edge_z += [z0, z1, None]
-        #edge_colors.append(base_node_color[edge[0]])
+        edge_x[i*3:i*3+3] = [x0, x1, None]
+        edge_y[i*3:i*3+3] = [y0, y1, None]
+        edge_z[i*3:i*3+3] = [z0, z1, None]
 
-    line_color = []
-    for color in list(base_node_color.values()):
-        line_color.append(darken_color(color, 0.2))
+    # Optimize line_color calculation
+    line_color = [darken_color(color, 0.2) for color in base_node_color.values()]
 
     # Create figure
     fig = go.Figure()
@@ -468,8 +402,6 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
 
     # Update layout
     fig.update_layout(
-        #title='3D Network Plot',
-        #titlefont_size=16,
         showlegend=False,
         hovermode='closest',
         scene=dict(
@@ -487,6 +419,67 @@ def plot_3d_network(nodes, edges, labels, base_node_color, bg_color):
 #### Streamlit app ####
 st.set_page_config(layout="wide", page_icon=favicon, initial_sidebar_state="expanded")
 
+#### STATIC ASSETS ####
+# Sidebar top
+if 'BASE_DIR' not in st.session_state: 
+    st.session_state['BASE_DIR'] = os.path.dirname(os.path.abspath(__file__))
+    IMAGE_PATH = os.path.join(st.session_state['BASE_DIR'], 'logo.png')
+    #st.sidebar.image(IMAGE_PATH, use_column_width=True)
+else: pass
+
+if 'example1_content' not in st.session_state: 
+    example1 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/TolkienFamily.ged')
+    with open(example1, 'rb') as file:
+        st.session_state['example1_content'] = file.read()
+else: pass
+
+if 'example2_content' not in st.session_state: 
+    example2 = os.path.join(BASE_DIR, 'gedcom_files/asoiaf/ASOIAF.ged')
+    with open(example2, 'rb') as file:
+        st.session_state['example2_content'] = file.read()
+else: pass
+
+if 'palettes' not in st.session_state: 
+    st.session_state['palettes'] = {
+    "Classic": {
+                "default_background_color": "#222222",
+                "default_individual_color": "#FFFFFF",
+                "default_root_color": "#FF0051",
+                "default_ancestor_color": "#ffa500",
+                "default_hightlight_color": "#A679FF"
+                },
+    "Pastel": {
+                "default_background_color": "#fff0db",
+                "default_individual_color": "#eed9c4",
+                "default_root_color": "#f6a192",
+                "default_ancestor_color": "#C2DCF7",
+                "default_hightlight_color": "#B19CD8"
+                },
+    "Nightly": {
+                "default_background_color": "#213b52",
+                "default_individual_color": "#FFFFFF",
+                "default_root_color": "#fdc134",
+                "default_ancestor_color": "#fdc134",
+                "default_hightlight_color": "#fdc134"
+                },
+    "Grayscale": {
+                "default_background_color": "#ffffff",
+                "default_individual_color": "#eeeeee",
+                "default_root_color": "#a3a3a3",
+                "default_ancestor_color": "#cccccc",
+                "default_hightlight_color": "#bbbbbb"
+                },
+    "Colorblind-friendly (Tol light)": {
+                "default_background_color": "#DDDDDD",
+                "default_individual_color": "#EEDD88",
+                "default_root_color": "#EE8866",
+                "default_ancestor_color": "#99DDFF",
+                "default_hightlight_color": "#FFAABB"
+                }
+    }
+else: pass
+
+#### VISUAL ASSETS ####
 # Show logo above navigation bar
 add_logo()
 
@@ -502,19 +495,7 @@ unsafe_allow_html=True)
 # Customize navigation bar
 show_pages([Page("app.py", "ASTRAviewer", "🌌"), Page("pages/faq.py", "Frequently asked questions", "❓"), Page("pages/instructions.py", "Instructions", "📋"), Page("pages/contact-form.py", "Contact me", "✉️")])
 
-# Sidebar top
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-IMAGE_PATH = os.path.join(BASE_DIR, 'logo.png')
-#st.sidebar.image(IMAGE_PATH, use_column_width=True)
-
-example1 = os.path.join(BASE_DIR, 'gedcom_files/genealogyoflife_tng/TolkienFamily.ged')
-with open(example1, 'rb') as file:
-    example1_content = file.read()
-
-example2 = os.path.join(BASE_DIR, 'gedcom_files/asoiaf/ASOIAF.ged')
-with open(example2, 'rb') as file:
-    example2_content = file.read()
-
+#### APP ####
 upload_gedcom = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Add GEDCOM}}$")
 
 uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"])
@@ -522,11 +503,11 @@ uploaded_file = upload_gedcom.file_uploader("Upload a GEDCOM file", type=["ged"]
 if uploaded_file is None:
     upload_gedcom.markdown("**Download example file:**")
     upload_gedcom.download_button(label="Example 1 (67 individuals)",
-        data=example1_content,
+        data=st.session_state['example1_content'],
         file_name="TolkienFamily.ged",
         mime="text/plain", use_container_width=True, key="example1_button")
     upload_gedcom.download_button(label="Example 2 (501 individuals)",
-        data=example2_content,
+        data=st.session_state['example2_content'],
         file_name="ASOIAF.ged",
         mime="text/plain", use_container_width=True, key="example2_button")
 
@@ -550,134 +531,139 @@ if uploaded_file is not None:
         # Update the hash of the previous file content
         st.session_state['previous_file_hash'] = st.session_state['new_file_hash']
 
+        if 'temp_file_path' in st.session_state:
+            del st.session_state['temp_file_path']
+
+        if 'parser' in st.session_state:
+            del st.session_state['parser']
+
+    # Save the uploaded file temporarily with UTF-8 encoding
+    #if 'temp_file_path' not in st.session_state:
+    st.session_state['temp_file_path'] = "temp_gedcom_file.ged"
+    with open(st.session_state['temp_file_path'], "w", encoding='utf-8') as temp_file:
+        temp_file.write(uploaded_file.read().decode('utf-8', 'ignore'))
+
+    # Additional check for GEDCOM file integrity.
+    with open("temp_gedcom_file.ged", "r", encoding='utf-8') as temp_file:
+        first_line = temp_file.readline()
+        if not first_line.lstrip('\ufeff').startswith("0 HEAD"):
+            raise ValueError("The uploaded file does not appear to be a valid GEDCOM file.")
+
+    # Check if the file path does not end with a newline and add one
+    if not st.session_state['temp_file_path'].endswith('\n'):
+        with open(st.session_state['temp_file_path'], "a", encoding='utf-8') as temp_file:
+            temp_file.write('\n')
+
     try:
-        parser = parse_gedcom(uploaded_file)
+        with st.spinner('Parsing data'):
+            if 'parser' not in st.session_state:
+                st.session_state['parser'] = parse_gedcom(st.session_state['temp_file_path'])
+            else: pass
 
-        translator, nodes, labels, edges = process_gedcom(parser)
+            translator, reverse_translator, nodes, labels, edges = process_gedcom(st.session_state['parser'])
 
-        success = upload_gedcom.success("✅ Parsing successful.")
-        #sleep(1) # Wait for 1 seconds
-        #success.empty() # Clear the alert
+            #print(len(nodes))
 
-        views = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Views}}$", expanded=True)
-        views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", 
-            "3D", 
-            #"Map"
-            ], index=None)
-        if views_sb is not None:
-            #st.sidebar.header("Select an Individual")
-            nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
-            
-            formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
+            success = upload_gedcom.success("✅ Parsing successful.")
+            #sleep(1) # Wait for 1 seconds
+            #success.empty() # Clear the alert
 
-            formating.markdown("**Color palette**")
-
-            palettes = {
-                "Classic": {
-                    "default_background_color": "#222222",
-                    "default_individual_color": "#FFFFFF",
-                    "default_root_color": "#FF0051",
-                    "default_ancestor_color": "#ffa500",
-                    "default_hightlight_color": "#A679FF"
-                },
-                "Pastel": {
-                    "default_background_color": "#fff0db",
-                    "default_individual_color": "#eed9c4",
-                    "default_root_color": "#f6a192",
-                    "default_ancestor_color": "#C2DCF7",
-                    "default_hightlight_color": "#B19CD8"
-                },
-                "Nightly": {
-                    "default_background_color": "#213b52",
-                    "default_individual_color": "#FFFFFF",
-                    "default_root_color": "#fdc134",
-                    "default_ancestor_color": "#fdc134",
-                    "default_hightlight_color": "#fdc134"
-                },
-                "Grayscale": {
-                    "default_background_color": "#ffffff",
-                    "default_individual_color": "#eeeeee",
-                    "default_root_color": "#a3a3a3",
-                    "default_ancestor_color": "#cccccc",
-                    "default_hightlight_color": "#bbbbbb"
-                },
-                "Colorblind-friendly (Tol light)": {
-                    "default_background_color": "#DDDDDD",
-                    "default_individual_color": "#EEDD88",
-                    "default_root_color": "#EE8866",
-                    "default_ancestor_color": "#99DDFF",
-                    "default_hightlight_color": "#FFAABB"
-                }
-            }
-
-            palette = formating.selectbox(label="Select a color palette", options=list(palettes.keys()), index=0, key="palette")
-
-            selected_palette = palettes.get(palette)
-            if selected_palette:
-                default_background_color = selected_palette["default_background_color"]
-                default_individual_color = selected_palette["default_individual_color"]
-                default_root_color = selected_palette["default_root_color"]
-                default_ancestor_color = selected_palette["default_ancestor_color"]
-                default_highlight_color = selected_palette["default_hightlight_color"]
-
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-            formating.markdown("**Background**")
-
-            selected_bg_color = formating.color_picker("Select color", default_background_color)
-
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-            formating.markdown("**Individuals**")
-
-            selected_base_node_color = formating.color_picker("Select color", default_individual_color)
-            
-            formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
-
-            formating.markdown("**Highlight individual**")
-            
-            root_sel = formating.checkbox(label="I want to select a root", value=True)
-            if root_sel:
-                default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
-
-                selected_individual = formating.selectbox(
-                "Select an Individual as root",
-                nodes_sorted,
-                index=default_index
-                )
-
-                selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
+            views = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Views}}$", expanded=True)
+            views_sb = views.selectbox(label="Select a view", options=["Classic (2D)", 
+                "3D", 
+                #"Map"
+                ], index=None)
+            if views_sb is not None:
+                #st.sidebar.header("Select an Individual")
+                nodes_sorted = sorted(nodes)  # Sort nodes alphabetically
                 
-                highlight_another_individual = formating.checkbox("Highlight another individual")
+                formating = st.sidebar.expander(label=r"$\textbf{\textsf{\normalsize Colors and highlight}}$", expanded=True)
 
-                if highlight_another_individual:
-                    highlight_individual = formating.selectbox(
-                        "Highlight individual",
-                        [node for node in nodes_sorted if node != selected_individual],
-                        index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
-                        )
-                    selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
-                
-                else:
-                    highlight_individual = None
+                formating.markdown("**Color palette**")
+
+                palette = formating.selectbox(label="Select a color palette", options=list(st.session_state['palettes'].keys()), index=0, key="palette")
+
+                selected_palette = st.session_state['palettes'].get(palette)
+                if selected_palette:
+                    default_background_color = selected_palette["default_background_color"]
+                    default_individual_color = selected_palette["default_individual_color"]
+                    default_root_color = selected_palette["default_root_color"]
+                    default_ancestor_color = selected_palette["default_ancestor_color"]
+                    default_highlight_color = selected_palette["default_hightlight_color"]
 
                 formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
 
-                formating.markdown("**Ancestors**")
+                formating.markdown("**Background**")
 
-                ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=True)
-                if ancestors_sel:
-                    ancestors = get_ancestors(parser, translator, selected_individual)    
-                    selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
+                selected_bg_color = formating.color_picker("Select color", default_background_color)
+
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+                formating.markdown("**Individuals**")
+
+                selected_base_node_color = formating.color_picker("Select color", default_individual_color)
+                
+                formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+                formating.markdown("**Highlight individual**")
+                
+                root_sel = formating.checkbox(label="I want to select a root", value=True)
+                if root_sel:
+                    default_index = next((i for i, node in enumerate(nodes_sorted) if re.search(r"\(I0*1\)", node)), 0)
+
+                    selected_individual = formating.selectbox(
+                    "Select an Individual as root",
+                    nodes_sorted,
+                    index=default_index
+                    )
+
+                    if 'previous_selected_individual' not in st.session_state:
+                        st.session_state['previous_selected_individual'] = selected_individual
+                        st.session_state['new_selected_individual'] = None
+                    else:
+                        st.session_state['new_selected_individual'] = selected_individual
+
+                    selected_root_color = formating.color_picker("Select color", default_root_color, key="selected_root_color")
+                    
+                    highlight_another_individual = formating.checkbox("Highlight another individual")
+
+                    if highlight_another_individual:
+                        highlight_individual = formating.selectbox(
+                            "Highlight individual",
+                            [node for node in nodes_sorted if node != selected_individual],
+                            index = next((i for i, node in enumerate([node for node in nodes_sorted if node != selected_individual]) if re.search(r"\(I0*2\)", node)), 0) if selected_individual == nodes_sorted[default_index] else default_index-1
+                            )
+                        selected_highlight_color = formating.color_picker("Select color", default_highlight_color, key="selected_highlight_color")
+                    
+                    else:
+                        highlight_individual = None
+
+                    formating.markdown("""<hr style='margin-top:0em; margin-bottom:1em; border-width: 3px' /> """, unsafe_allow_html=True)
+
+                    formating.markdown("**Ancestors**")
+
+                    if len(nodes) > 5000:
+                        ancestors_sel_val = False
+                    else: 
+                        ancestors_sel_val = True
+                    
+                    ancestors_sel = formating.checkbox(label="I want to highlight the root's direct ancestors", value=ancestors_sel_val)
+
+                    if ancestors_sel:
+                        if 'ancestors' not in st.session_state :
+                            ancestors = get_ancestors(st.session_state['parser'], translator, reverse_translator, selected_individual)
+                        else: pass
+
+                        selected_ancestor_color = formating.color_picker("Select color", default_ancestor_color)
+                    else:
+                        st.empty()
+                        ancestors = None
+               
                 else:
                     st.empty()
-                    ancestors = None
-           
-            else:
-                st.empty()
-                selected_individual = None
+                    selected_individual = None
 
-            button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
+                button_generate_network = st.sidebar.button("Generate Network", use_container_width=True, key="generate_network_button")
 
     except ValueError as e:
         st.error(f'**Error:** {str(e)}')
@@ -695,6 +681,8 @@ if button_generate_network:
     info_.markdown(""" <div style="text-align: justify;"> \n 
     <p> Please be patient while the network loads – time increases with the number of individuals and connections. </p>
     <p> In 2D, after generation the network goes through a physics simulation and nodes can also be moved to wield better separations. </p></div> """, unsafe_allow_html=True)
+
+    st.html(f'<div style="text-align: center; font-size: 2em; font-weight: bold;"> Network of {len(nodes)} individuals</div>')
 
     with st.spinner('Processing data'):
         # Create the network visualization with selected colors
@@ -750,12 +738,13 @@ if button_generate_network:
 
         if views_sb == "3D":
             # Plot the 3D network
-            fig = plot_3d_network(nodes, edges, labels, node_color, selected_bg_color)
-            st.plotly_chart(fig, use_container_width=True, height=800, config={'modeBarButtonsToRemove': ['toImage']})
+            with Profiler():
+                fig = plot_3d_network(nodes, edges, labels, node_color, selected_bg_color)
+                st.plotly_chart(fig, use_container_width=True, height=800, config={'modeBarButtonsToRemove': ['toImage']})
 
 st.sidebar.markdown(""" **Author:** [João L. Neto](https://github.com/jlnetosci)""", unsafe_allow_html=True)
 
-st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.0b</b></div>""", unsafe_allow_html=True)
+st.sidebar.markdown(""" <div style="text-align: right;"><b>v0.2.1dev</b></div>""", unsafe_allow_html=True)
 
 
 social_media_links = ["https://www.youtube.com/@ASTRAviewer/", "https://x.com/ASTRAviewer", "https://www.instagram.com/ASTRAviewer/"]
